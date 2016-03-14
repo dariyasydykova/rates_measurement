@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[     35610,        791]
-NotebookOptionsPosition[     34807,        759]
-NotebookOutlinePosition[     35165,        775]
-CellTagsIndexPosition[     35122,        772]
+NotebookDataLength[     34948,        770]
+NotebookOptionsPosition[     34295,        743]
+NotebookOutlinePosition[     34653,        759]
+CellTagsIndexPosition[     34610,        756]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -476,10 +476,9 @@ Cell[BoxData[{
   RowBox[{"temp1", "=", " ", 
    RowBox[{"Import", "[", 
     RowBox[{
-    "\"\<~/Desktop/projects/substitution_matrices_in_phenomenological_models/\
-therm_constraints_rate_variation/ddG_calculations/foldX/foldx_ddG/132L_A_\
-foldx_ddG.txt\>\"", ",", " ", "\"\<Table\>\""}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+    "\"\<~/Desktop/projects/therm_constraints_rate_variation/ddG_calculations/\
+foldX/foldx_ddG/132L_A_foldx_ddG.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"temp2", "=", 
    RowBox[{"Delete", "[", 
@@ -549,8 +548,8 @@ foldx_ddG.txt\>\"", ",", " ", "\"\<Table\>\""}], "]"}]}],
      RowBox[{
       RowBox[{"StringJoin", "[", 
        RowBox[{
-       "\"\<~/Desktop/projects/substitution_matrices_in_phenomenological_\
-models/numerically_derived_rates/site\>\"", ",", 
+       "\"\<~/Desktop/projects/substitution_matrices_in_pheno_models/\
+numerically_derived_rates/site\>\"", ",", 
         RowBox[{"ToString", "[", "k", "]"}], ",", 
         "\"\<_rates_132L_A.txt\>\""}], "]"}], ",", "rates", ",", 
       "\"\<Table\>\""}], "]"}]}]}], "\[IndentingNewLine]", 
@@ -719,25 +718,10 @@ models/numerically_derived_rates/site\>\"", ",",
    3.666644830686058*^9, 3.6666448313943977`*^9}, {3.6667020942577887`*^9, 
    3.666702095798476*^9}, {3.666702389352088*^9, 3.6667023898146563`*^9}, {
    3.666713234393971*^9, 3.666713239262744*^9}, {3.666717699137113*^9, 
-   3.666717699668047*^9}}],
+   3.666717699668047*^9}, {3.666962849707608*^9, 3.6669628718911753`*^9}}],
 
 Cell[BoxData[" "], "Input",
  CellChangeTimes->{3.666714591989031*^9}],
-
-Cell[BoxData[" "], "Input",
- CellChangeTimes->{3.666645391924967*^9}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.6665452734263563`*^9, 3.666545273431409*^9}, {
-  3.6666188923177567`*^9, 3.6666188930604277`*^9}, {3.666619296598092*^9, 
-  3.666619303566697*^9}}],
-
-Cell[BoxData["\<\"~/Desktop/projects/substitution_matrices_in_\
-phenomenological_models/site3_rates_132L_A.txt\"\>"], "Output",
- CellChangeTimes->{3.6666188936663437`*^9, 3.66661929736063*^9}]
-}, Open  ]],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.666541623899704*^9, 3.6665416248942823`*^9}, {
@@ -775,17 +759,12 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[400, 13, 18442, 458, 556, "Input"],
-Cell[18845, 473, 14678, 248, 369, "Input"],
-Cell[33526, 723, 69, 1, 28, "Input"],
-Cell[33598, 726, 69, 1, 28, "Input"],
-Cell[CellGroupData[{
-Cell[33692, 731, 196, 3, 28, "Input"],
-Cell[33891, 736, 192, 2, 28, "Output"]
-}, Open  ]],
-Cell[34098, 741, 145, 2, 28, "Input"],
-Cell[34246, 745, 265, 4, 28, "Input"],
-Cell[34514, 751, 192, 3, 28, "Input"],
-Cell[34709, 756, 94, 1, 28, "Input"]
+Cell[18845, 473, 14666, 247, 352, "Input"],
+Cell[33514, 722, 69, 1, 28, "Input"],
+Cell[33586, 725, 145, 2, 28, "Input"],
+Cell[33734, 729, 265, 4, 28, "Input"],
+Cell[34002, 735, 192, 3, 28, "Input"],
+Cell[34197, 740, 94, 1, 28, "Input"]
 }
 ]
 *)
