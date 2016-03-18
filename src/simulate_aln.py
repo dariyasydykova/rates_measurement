@@ -56,7 +56,7 @@ def get_q_matrix(num_model):
 	
 	return q_matrix_dict
 			
-def make_mutSel_model(q_matrix_dict, tree_file, aln_file, site_dupl, num_model):
+def make_mutSel_model(q_matrix_dict, tree_file, site_dupl, num_model):
 	'''
 	function simulates MutSel model for the number of site_dupl with num_model model types
 	'''
@@ -70,12 +70,14 @@ def make_mutSel_model(q_matrix_dict, tree_file, aln_file, site_dupl, num_model):
 		parts.append(p)
 					
 	##Evolving sequences
+	aln_file_temp1 = tree_file.replace("trees","aln")
+	aln_file = aln_file_temp1.replace(".tre",".fasta")
 	evolve = Evolver(partitions = parts, tree = tree)
 	evolve(ratefile = None, infofile = None, seqfile = aln_file)
 
 def main(argv):
 
-	if len(argv) != 4: # wrong number of arguments
+	if len(argv) != 3: # wrong number of arguments
 		print '''Usage:
 		simulate_aln.py <ddG_file> <tree_file> <aln_file> 
 		'''
@@ -83,14 +85,13 @@ def main(argv):
 		
 	ddG_file = argv[1]
 	tree_file = argv[2]
-	aln_file=argv[3]
 
 	# Define partition(s)
 	site_dupl = 1000 # number of sites simulated under one model
 	num_model = 5 #total number of models simulated such that the total number of sites is site_dupl*num_model
 	
 	q_matrix_dict = get_q_matrix(num_model)
-	make_mutSel_model(q_matrix_dict,tree_file, aln_file,site_dupl,num_model)
+	make_mutSel_model(q_matrix_dict,tree_file,site_dupl,num_model)
 		
 if __name__ == "__main__":
 	main(sys.argv)
