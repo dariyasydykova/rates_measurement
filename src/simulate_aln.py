@@ -86,7 +86,7 @@ def main(argv):
 	aln_file = argv[3]
 
 	# Define partition(s)
-	site_dupl = 10000 # number of sites simulated under one model
+	site_dupl = 100000 # number of sites simulated under one model
 	num_model = 5 #total number of models simulated such that the total number of sites is site_dupl*num_model
 	
 	q_matrix_dict = get_q_matrix(num_model)

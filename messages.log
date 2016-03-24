@@ -1,0 +1,149 @@
+
+Variable 'r' was not initialized prior to being used
+Variable 'END_OF_FILE' was not initialized prior to being used
+Row and/or column partition is empty. All the data will be used by default.
+Model JCfull assigned to t1
+Branch parameter of t1 set to :2
+Model JCfull assigned to t2
+Branch parameter of t2 set to :2
+One branch tree supplied - hopefully this IS what you meant to do.
+Rooted tree. Removing one branch - the left root child has been promoted to be the new root
+Partition  reversible model flag computed as 1
+Variable 'full_ln_likfn' was not initialized prior to being used
+Set GUI update interval to every 1285-th LF evaluation.
+Optimization settings:
+	OPTIMIZATION_METHOD = 4
+	OPTIMIZATION_PRECISION = 0.001
+	MAXIMUM_ITERATIONS_PER_VARIABLE = 5000
+
+Initial parameter values
+
+full_tree.t2.t = 0.1
+Internal error in _LikelihoodFunction::ConjugateGradientDescent. The function evaluated at current parameter values [-288872.3847488419] does not match the last recorded LF maximum [-288872.3815859384]
+Optimization finished in 7 loop passes.
+128 likelihood evaluation calls and 121 matrix exponentiations calls were made
+
+Row and/or column partition is empty. All the data will be used by default.
+Model JCsite assigned to t1
+Branch parameter of t1 set to :2
+Model JCsite assigned to t2
+Branch parameter of t2 set to :2
+One branch tree supplied - hopefully this IS what you meant to do.
+Rooted tree. Removing one branch - the left root child has been promoted to be the new root
+Partition  reversible model flag computed as 1
+
+ReplicateConstraint generated the following contsraints:
+site_tree.t2.t:=full_tree.t2.t__;
+
+Variable 'site_ln_likfn' was not initialized prior to being used
+Set GUI update interval to every 6097-th LF evaluation.
+Optimization settings:
+	OPTIMIZATION_METHOD = 4
+	OPTIMIZATION_PRECISION = 0.001
+	MAXIMUM_ITERATIONS_PER_VARIABLE = 5000
+
+Initial parameter values
+
+r = 0.1123348002350738
+Internal error in _LikelihoodFunction::ConjugateGradientDescent. The function evaluated at current parameter values [-59914.09668971643] does not match the last recorded LF maximum [-59914.09653624699]
+Optimization finished in 4 loop passes.
+71 likelihood evaluation calls and 67 matrix exponentiations calls were made
+
+Row and/or column partition is empty. All the data will be used by default.
+Model JCsite assigned to t1
+Branch parameter of t1 set to :2
+Model JCsite assigned to t2
+Branch parameter of t2 set to :2
+One branch tree supplied - hopefully this IS what you meant to do.
+Rooted tree. Removing one branch - the left root child has been promoted to be the new root
+Partition  reversible model flag computed as 1
+
+ReplicateConstraint generated the following contsraints:
+site_tree.t2.t:=full_tree.t2.t__;
+
+Set GUI update interval to every 1231-th LF evaluation.
+Optimization settings:
+	OPTIMIZATION_METHOD = 4
+	OPTIMIZATION_PRECISION = 0.001
+	MAXIMUM_ITERATIONS_PER_VARIABLE = 5000
+
+Initial parameter values
+
+r = 0.1554834773893197
+Optimization finished in 4 loop passes.
+60 likelihood evaluation calls and 56 matrix exponentiations calls were made
+
+Row and/or column partition is empty. All the data will be used by default.
+Model JCsite assigned to t1
+Branch parameter of t1 set to :2
+Model JCsite assigned to t2
+Branch parameter of t2 set to :2
+One branch tree supplied - hopefully this IS what you meant to do.
+Rooted tree. Removing one branch - the left root child has been promoted to be the new root
+Partition  reversible model flag computed as 1
+
+ReplicateConstraint generated the following contsraints:
+site_tree.t2.t:=full_tree.t2.t__;
+
+Set GUI update interval to every 1046-th LF evaluation.
+Optimization settings:
+	OPTIMIZATION_METHOD = 4
+	OPTIMIZATION_PRECISION = 0.001
+	MAXIMUM_ITERATIONS_PER_VARIABLE = 5000
+
+Initial parameter values
+
+r = 0.1171928404870426
+Internal error in _LikelihoodFunction::ConjugateGradientDescent. The function evaluated at current parameter values [-59890.9300836228] does not match the last recorded LF maximum [-59890.93006954688]
+Optimization finished in 4 loop passes.
+60 likelihood evaluation calls and 54 matrix exponentiations calls were made
+
+Row and/or column partition is empty. All the data will be used by default.
+Model JCsite assigned to t1
+Branch parameter of t1 set to :2
+Model JCsite assigned to t2
+Branch parameter of t2 set to :2
+One branch tree supplied - hopefully this IS what you meant to do.
+Rooted tree. Removing one branch - the left root child has been promoted to be the new root
+Partition  reversible model flag computed as 1
+
+ReplicateConstraint generated the following contsraints:
+site_tree.t2.t:=full_tree.t2.t__;
+
+Set GUI update interval to every 1295-th LF evaluation.
+Optimization settings:
+	OPTIMIZATION_METHOD = 4
+	OPTIMIZATION_PRECISION = 0.001
+	MAXIMUM_ITERATIONS_PER_VARIABLE = 5000
+
+Initial parameter values
+
+r = 0.1482153978078196
+Internal error in _LikelihoodFunction::ConjugateGradientDescent. The function evaluated at current parameter values [-59882.18841164254] does not match the last recorded LF maximum [-59882.18699055006]
+Optimization finished in 7 loop passes.
+122 likelihood evaluation calls and 113 matrix exponentiations calls were made
+
+Row and/or column partition is empty. All the data will be used by default.
+Model JCsite assigned to t1
+Branch parameter of t1 set to :2
+Model JCsite assigned to t2
+Branch parameter of t2 set to :2
+One branch tree supplied - hopefully this IS what you meant to do.
+Rooted tree. Removing one branch - the left root child has been promoted to be the new root
+Partition  reversible model flag computed as 1
+
+ReplicateConstraint generated the following contsraints:
+site_tree.t2.t:=full_tree.t2.t__;
+
+Set GUI update interval to every 1333-th LF evaluation.
+Optimization settings:
+	OPTIMIZATION_METHOD = 4
+	OPTIMIZATION_PRECISION = 0.001
+	MAXIMUM_ITERATIONS_PER_VARIABLE = 5000
+
+Initial parameter values
+
+r = 0.1350033712887679
+Internal error in _LikelihoodFunction::ConjugateGradientDescent. The function evaluated at current parameter values [-40457.89848901497] does not match the last recorded LF maximum [-40457.89848899876]
+Optimization finished in 5 loop passes.
+50 likelihood evaluation calls and 43 matrix exponentiations calls were made
