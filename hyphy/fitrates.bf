@@ -42,12 +42,12 @@ header = "site\trate\tlnL\n";
 fprintf(outfile, CLEAR_FILE, header);
 
 nsites = filtered_data.sites;
-for (global site_count = 0; site_count < nsites; site_count = site_count+10000)
+for (global site_count = 0; site_count < nsites; site_count = site_count+100000)
 {
        
     // single amino acid
     filter_string = "";
-    filter_string = filter_string + (site_count) + "-" + (site_count+9999);
+    filter_string = filter_string + (site_count) + "-" + (site_count+99999);
     DataSetFilter site_filter = CreateFilter(filtered_data, 1, filter_string, "", "");
 
     Model JCsite = (JC69_rt, JC_freqs, 1);
