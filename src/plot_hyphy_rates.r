@@ -20,8 +20,7 @@ for (i in c(1:5)) {
 
   p_hyphy_rates <- ggplot() +
     geom_line(data=t2,aes(time,r),color="red") + 
-    geom_point(data=t1,aes(branch_len,rate),color="blue",alpha=0.5,size=0.9) +
-    geom_line(data=t1,aes(branch_len,mean),color="blue") +
+    geom_boxplot(data=t1,aes(x=branch_len,group=branch_len,y=rate),color="blue", width=.01) +
     xlab("Time") +
     ylab("Rate") +
     scale_y_continuous(breaks=seq(-1,4.5,0.5), limits = c(-1,4.5)) +

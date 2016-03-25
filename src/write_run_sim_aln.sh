@@ -1,5 +1,10 @@
 #!/bin/bash
 num_sim=30
+site_dupl=100000
+
+if [ ! -d "./aln" ]; then
+	mkdir aln
+fi
 
 if [ ! -d "./aln" ]; then
 	mkdir aln
@@ -15,7 +20,7 @@ do
 	do
 		tree_file=n2_bl${br_len}.tre
 		aln_file=n2_bl${br_len}_${n}.fa
-		echo "python src/simulate_aln.py ../therm_constraints_rate_variation/ddG_calculations/foldX/foldx_ddG/132L_A_foldx_ddG.txt trees/${tree_file} aln/${aln_file}" >> ./src/run_sim_aln.sh	
+		echo "python src/simulate_aln.py ../therm_constraints_rate_variation/ddG_calculations/foldX/foldx_ddG/132L_A_foldx_ddG.txt trees/${tree_file} aln/${aln_file} ${site_dupl}" >> ./src/run_sim_aln.sh	
 	done
 done
 

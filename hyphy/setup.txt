@@ -1,3 +1,2 @@
 INFILE = aln_tree_input_files/n2_bl0.5_30_aln_tree.txt
 OUTFILE = rates/raw_rates/n2_bl0.5_30_rates.txt
-MODELFILE = JC_aa.mdl

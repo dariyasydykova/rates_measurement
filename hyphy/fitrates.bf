@@ -10,6 +10,7 @@ OPTIMIZATION_PRECSION = 0.0000000001;
 ACCEPT_BRANCH_LENGTHS=1;
 
 global r;
+global t;
 #include "setup_helper.ibf"; // code to read setup
 
 // Setup is read from default from file "setup.txt".
