@@ -11,8 +11,8 @@ for (file_name in file_lst) {
   
   str <- regexpr("bl\\d+",file_name)[1]
   end <- regexpr("_\\d+_rates.txt",file_name)[1]
-  bl <- as.numeric(substr(file_name,str+2,end-1))
-  t$branch_len <- rep(bl,length(t$site))
+  time <- as.numeric(substr(file_name,str+2,end-1))*2
+  t$time <- rep(time,length(t$site))
   
   t$site <- c(1:5)
   d <- rbind(d, t)
