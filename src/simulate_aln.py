@@ -41,7 +41,7 @@ def get_q_matrix(num_model):
 	q_matrix_dict = {}
 	
 	for i in range(num_model):
-		q_matrix_file = "q_matrices/site"+str(i+1)+"_q_matrix_132L_A.txt"	
+		q_matrix_file = "/home1/02159/ds29583/substitution_matrices_in_pheno_models/q_matrices/site"+str(i+1)+"_q_matrix_132L_A.txt"
 		q_list = open(q_matrix_file,'r')
 		q_matrix = []
 		
@@ -79,24 +79,25 @@ def make_mutSel_model(q_matrix_dict, pi_dict, tree_file, aln_file, site_dupl, nu
 		parts.append(p)
 					
 	##Evolving sequences	
-	#evolve = Evolver(partitions = parts, tree = tree)
-	#evolve(ratefile = None, infofile = None, seqfile = aln_file)
+	evolve = Evolver(partitions = parts, tree = tree)
+	evolve(ratefile = None, infofile = None, seqfile = aln_file)
 
 def main(argv):
 
-	if len(argv) != 5: # wrong number of arguments
+	if len(argv) != 6: # wrong number of arguments
 		print '''Usage:
-		simulate_aln.py <ddG_file> <tree_file> <aln_file> <site_dupl_num>
+		simulate_aln.py <ddG_file> <tree_file> <aln_file> <site_dupl_num> <num_model>
 		'''
 		sys.exit()
 		
 	ddG_file = argv[1]
 	tree_file = argv[2]
 	aln_file = argv[3]
-	site_dupl = int(argv[4]) # number of sites simulated under one model
-
+	
 	# Define partition(s) 
-	num_model = 5 #total number of models simulated such that the total number of sites is site_dupl*num_model
+	site_dupl = int(argv[4]) # number of sites simulated under one model
+	num_model = int(argv[5]) 
+
 	
 	pi_dict = get_pi_dict(ddG_file,num_model)
 	q_matrix_dict = get_q_matrix(num_model)
