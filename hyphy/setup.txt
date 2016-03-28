@@ -1,2 +1,2 @@
-INFILE = aln_tree_input_files/n2_bl0.5_30_aln_tree.txt
-OUTFILE = rates/raw_rates/n2_bl0.5_30_rates.txt
+INFILE = ../site_num_test/aln_tree_input_files/n2_bl0.4_n1000000_30_aln_tree.txt
+OUTFILE = ../site_num_test/rates/raw_rates/n2_bl0.4_n1000000_30_rates.txt

@@ -19,12 +19,14 @@ for (i in c(1:5)) {
   t1$mean <- mean_lst
 
   p_hyphy_rates <- ggplot() +
+    background_grid("xy")+
     geom_line(data=t2,aes(time,r),color="red") + 
     geom_boxplot(data=t1,aes(x=time,group=time,y=rate),color="blue", width=.01) +
+    #geom_point(data=t1,aes(x=2*t/19,y=rate),color="green", width=.01) +
     xlab("Time") +
     ylab("Rate") +
     scale_y_continuous(breaks=seq(-1,4.5,0.5), limits = c(-1,4.5)) +
-    scale_x_continuous(breaks=seq(0,1,0.2),limits = c(0,1),expand = c(0.01, 0)) +
+    scale_x_continuous(breaks=seq(0,1,0.1),limits = c(0,1.01),expand = c(0.01, 0)) +
     geom_hline(yintercept=1)+
     theme(axis.title = element_text(size = 14),
           axis.text = element_text(size = 12),
