@@ -20,7 +20,7 @@ global t;
 setup = readSetup();
 infile = setup["INFILE"];
 outfile = setup["OUTFILE"];
-//site_dupl = setup["SITE_DUPL"];
+site_dupl = 0+setup["SITE_DUPL"];
 #include "JC_aa.mdl"; // Can't find a way to have this file name be a variable in setup. Unfortunate. Either way, it currently also contains a frequency vector (equal) called JC_freqs.
 
 
@@ -45,12 +45,12 @@ fprintf(outfile, CLEAR_FILE, header);
 fprintf(stdout, header);
 
 nsites = filtered_data.sites;
-for (global site_count = 0; site_count < nsites; site_count = site_count+1000000)
+for (global site_count = 0; site_count < nsites; site_count = site_count+site_dupl)
 {
        
     // single amino acid
     filter_string = "";
-    filter_string = filter_string + (site_count) + "-" + (site_count+(1000000-1));
+    filter_string = filter_string + (site_count) + "-" + (site_count+(sisite_dupl-1));
     DataSetFilter site_filter = CreateFilter(filtered_data, 1, filter_string, "", "");
 
 

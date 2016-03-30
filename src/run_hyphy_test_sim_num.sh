@@ -1,6 +1,6 @@
 #!/bin/bash
 num_sim=30
-site_dupl_lst=(1000000) ##1000 100000 1000000)
+site_dupl_lst=(1000 10000 100000 1000000)
 br_len=0.4
 
 if [ ! -d "./site_num_test/rates/" ]; then
@@ -20,6 +20,7 @@ do
 		rates_file=n2_bl${br_len}_n${site_dupl}_${n}_rates.txt
 		echo "INFILE = ../site_num_test/aln_tree_input_files/${aln_tree_file}" > hyphy/setup.txt
 		echo "OUTFILE = ../site_num_test/rates/raw_rates/${rates_file}" >> hyphy/setup.txt
+		echo "SITE_DUPL = ${site_dupl}" >> hyphy/setup.txt
 		HYPHYMP hyphy/fitrates.bf
 	done
 done

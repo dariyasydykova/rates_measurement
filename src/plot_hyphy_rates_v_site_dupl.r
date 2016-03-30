@@ -4,14 +4,14 @@ library(dplyr)
 library(cowplot)
 
 t <- read.csv("site_num_test/rates/processed_rates/all_rates.csv")
-temp1 <- read.table("numerically_derived_rates/site1_rates_132L_A.txt",header=T)
-temp2 <- filter(temp1,time=="0.400001")
+temp1 <- read.table("numerically_derived_rates/raw_rates/site1_rates_132L_A.txt",header=T)
+temp2 <- filter(temp1,time=="0.800001")
 num_rate <- temp2$r
 t$diff <- num_rate-t$rate
 
 p_hyphy_rates <- ggplot() +
     background_grid("xy")+
-    geom_line(data=t2,aes(time,r),color="red") + 
+    geom_line(data=t,aes(time,r),color="red") + 
     xlab("Time") +
     ylab("Rate") +
     scale_y_continuous(breaks=seq(-1,4.5,0.5), limits = c(-1,4.5)) +

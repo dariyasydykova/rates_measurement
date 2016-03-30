@@ -97,7 +97,6 @@ def main(argv):
 	# Define partition(s) 
 	site_dupl = int(argv[4]) # number of sites simulated under one model
 	num_model = int(argv[5]) 
-
 	
 	pi_dict = get_pi_dict(ddG_file,num_model)
 	q_matrix_dict = get_q_matrix(num_model)

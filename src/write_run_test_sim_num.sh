@@ -1,7 +1,7 @@
 #!/bin/bash
 num_sim=30
 site_dupl_lst=(1000 10000 100000 1000000)
-br_len=0.4
+br_len=0.2
 num_model=1
 ##we use site1 for the test
 
