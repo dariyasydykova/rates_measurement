@@ -41,7 +41,7 @@ def get_q_matrix(num_model):
 	q_matrix_dict = {}
 	
 	for i in range(num_model):
-		q_matrix_file = "/home1/02159/ds29583/substitution_matrices_in_pheno_models/q_matrices/site"+str(i+1)+"_q_matrix_132L_A.txt"
+		q_matrix_file = "q_matrices/site"+str(i+1)+"_q_matrix_132L_A.txt"
 		q_list = open(q_matrix_file,'r')
 		q_matrix = []
 		
