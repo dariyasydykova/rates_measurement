@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[     41704,        917]
-NotebookOptionsPosition[     41240,        895]
-NotebookOutlinePosition[     41602,        911]
-CellTagsIndexPosition[     41559,        908]
+NotebookDataLength[     41750,        917]
+NotebookOptionsPosition[     41286,        895]
+NotebookOutlinePosition[     41648,        911]
+CellTagsIndexPosition[     41605,        908]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -646,7 +646,7 @@ foldX/foldx_ddG/132L_A_foldx_ddG.txt\>\"", ",", " ", "\"\<Table\>\""}],
    RowBox[{"Drop", "[", 
     RowBox[{"temp2", ",", 
      RowBox[{"{", 
-      RowBox[{"6", ",", "totalSites"}], "}"}]}], "]"}]}], 
+      RowBox[{"11", ",", "totalSites"}], "}"}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
@@ -891,7 +891,7 @@ numerically_derived_rates/raw_rates/site\>\"", ",",
    3.668452130734312*^9, 3.6684521578699007`*^9}, {3.668452188000608*^9, 
    3.668452194159086*^9}, {3.668452225279888*^9, 3.668452346138987*^9}, {
    3.668452386093884*^9, 3.668452458359521*^9}, {3.6684525186809177`*^9, 
-   3.668452520816414*^9}}]
+   3.668452520816414*^9}, {3.668455756839958*^9, 3.66845575744506*^9}}]
 },
 WindowSize->{946, 699},
 WindowMargins->{{-1720, Automatic}, {-77, Automatic}},
@@ -911,7 +911,7 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[400, 13, 24981, 613, 709, "Input"],
-Cell[25384, 628, 15852, 265, 369, "Input"]
+Cell[25384, 628, 15898, 265, 369, "Input"]
 }
 ]
 *)
