@@ -1,43 +1,4 @@
 
 Variable 'r' was not initialized prior to being used
-Variable 't' was not initialized prior to being used
+Variable 't_global' was not initialized prior to being used
 Variable 'END_OF_FILE' was not initialized prior to being used
-Row and/or column partition is empty. All the data will be used by default.
-Model JCfull assigned to t1
-Model JCfull assigned to t2
-One branch tree supplied - hopefully this IS what you meant to do.
-Rooted tree. Removing one branch - the left root child has been promoted to be the new root
-Partition  reversible model flag computed as 1
-Variable 'full_ln_likfn' was not initialized prior to being used
-Set GUI update interval to every 5154-th LF evaluation.
-Optimization settings:
-	OPTIMIZATION_METHOD = 4
-	OPTIMIZATION_PRECISION = 0.001
-	MAXIMUM_ITERATIONS_PER_VARIABLE = 5000
-
-Initial parameter values
-
-t = 0.1885315768859656
-Optimization finished in 4 loop passes.
-65 likelihood evaluation calls and 62 matrix exponentiations calls were made
-
-Row and/or column partition is empty. All the data will be used by default.
-Model JCsite assigned to t1
-Model JCsite assigned to t2
-One branch tree supplied - hopefully this IS what you meant to do.
-Rooted tree. Removing one branch - the left root child has been promoted to be the new root
-Partition  reversible model flag computed as 1
-Variable 'site_ln_likfn' was not initialized prior to being used
-Set GUI update interval to every 6097-th LF evaluation.
-Optimization settings:
-	OPTIMIZATION_METHOD = 4
-	OPTIMIZATION_PRECISION = 0.001
-	MAXIMUM_ITERATIONS_PER_VARIABLE = 5000
-
-Initial parameter values
-
-r = 0.1785789589580565
-Internal error in _LikelihoodFunction::ConjugateGradientDescent. The function evaluated at current parameter values [-5991234.603462812] does not match the last recorded LF maximum [-5991234.520772651]
-Internal error in _LikelihoodFunction::ConjugateGradientDescent. The function evaluated at current parameter values [-5991234.520774276] does not match the last recorded LF maximum [-5991234.520772726]
-Optimization finished in 7 loop passes.
-90 likelihood evaluation calls and 80 matrix exponentiations calls were made

@@ -10,7 +10,7 @@ OPTIMIZATION_PRECSION = 0.0000000001;
 ACCEPT_BRANCH_LENGTHS=0;
 
 global r;
-global t;
+global t_global;
 #include "setup_helper.ibf"; // code to read setup
 
 // Setup is read from default from file "setup.txt".
@@ -35,9 +35,7 @@ Tree full_tree = DATAFILE_TREE;
 LikelihoodFunction full_ln_likfn = (filtered_data, full_tree);
 Optimize(full_res, full_ln_likfn);
 
-
-// HERE: Grab the fit "t" parameter for the global fit and constrain it to all future t's. This works, and ReplicateConstraint DOES NOT
-global t:=full_res[0][0];
+ReplicateConstraint ("this1.?.t:=t_global", full_tree);
 
 fprintf(stdout, "Step 2: Site-specific rate scalar computation.\n");
 header = "site\trate\tt\tlnL\n";

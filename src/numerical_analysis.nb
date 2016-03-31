@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[     41466,        924]
-NotebookOptionsPosition[     41004,        902]
-NotebookOutlinePosition[     41364,        918]
-CellTagsIndexPosition[     41321,        915]
+NotebookDataLength[     41704,        917]
+NotebookOptionsPosition[     41240,        895]
+NotebookOutlinePosition[     41602,        911]
+CellTagsIndexPosition[     41559,        908]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -241,34 +241,18 @@ Cell[BoxData[
         RowBox[{"gPrime", "[", 
          RowBox[{"k", ",", "piList", ",", "qList", ",", "m"}], "]"}], "^", 
         "2"}], ")"}]}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
-   RowBox[{
+   RowBox[{"(*", 
     RowBox[{
-     RowBox[{"r", "[", 
-      RowBox[{"k_", ",", " ", "pList_", ",", "piList_", ",", "m_"}], "]"}], ":=", 
      RowBox[{
-      RowBox[{"Log", "[", 
-       RowBox[{
-        RowBox[{"(", 
-         RowBox[{"19", 
-          RowBox[{"Sum", "[", 
-           RowBox[{
-            RowBox[{
-             RowBox[{
-              RowBox[{
-              "piList", "\[LeftDoubleBracket]", "k", 
-               "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", "i", 
-              "\[RightDoubleBracket]"}], 
-             RowBox[{
-              RowBox[{
-              "pList", "\[LeftDoubleBracket]", "k", "\[RightDoubleBracket]"}],
-               "\[LeftDoubleBracket]", 
-              RowBox[{"i", ",", "j"}], "\[RightDoubleBracket]"}]}], ",", 
-            RowBox[{"{", 
-             RowBox[{"i", ",", "1", ",", "20"}], "}"}], ",", 
-            RowBox[{"{", 
-             RowBox[{"j", ",", "1", ",", "20"}], "}"}]}], "]"}]}], ")"}], "/", 
-        RowBox[{"(", 
-         RowBox[{
+      RowBox[{"Full", " ", "version", " ", "of", " ", 
+       RowBox[{"r", ":", "\[IndentingNewLine]", 
+        RowBox[{"r", "[", 
+         RowBox[{"k_", ",", " ", "pList_", ",", "piList_", ",", "m_"}], 
+         "]"}]}]}], ":=", 
+      RowBox[{
+       RowBox[{"Log", "[", 
+        RowBox[{
+         RowBox[{"(", 
           RowBox[{"19", 
            RowBox[{"Sum", "[", 
             RowBox[{
@@ -282,14 +266,17 @@ Cell[BoxData[
                RowBox[{
                "pList", "\[LeftDoubleBracket]", "k", 
                 "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", 
-               RowBox[{"i", ",", "i"}], "\[RightDoubleBracket]"}]}], ",", 
+               RowBox[{"i", ",", "j"}], "\[RightDoubleBracket]"}]}], ",", 
              RowBox[{"{", 
-              RowBox[{"i", ",", "1", ",", "20"}], "}"}]}], "]"}]}], "-", 
-          RowBox[{"Sum", "[", 
-           RowBox[{
-            RowBox[{"If", "[", 
+              RowBox[{"i", ",", "1", ",", "20"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"j", ",", "1", ",", "20"}], "}"}]}], "]"}]}], ")"}], 
+         "/", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"19", 
+            RowBox[{"Sum", "[", 
              RowBox[{
-              RowBox[{"i", "\[NotEqual]", "j"}], ",", 
               RowBox[{
                RowBox[{
                 RowBox[{
@@ -300,41 +287,34 @@ Cell[BoxData[
                 RowBox[{
                 "pList", "\[LeftDoubleBracket]", "k", 
                  "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", 
-                RowBox[{"i", ",", "j"}], "\[RightDoubleBracket]"}]}], ",", 
-              "0"}], "]"}], ",", 
-            RowBox[{"{", 
-             RowBox[{"i", ",", "1", ",", "20"}], "}"}], ",", 
-            RowBox[{"{", 
-             RowBox[{"j", ",", "1", ",", "20"}], "}"}]}], "]"}]}], ")"}]}], 
-       "]"}], "/", 
-      RowBox[{"Log", "[", 
-       RowBox[{
-        RowBox[{"(", 
-         RowBox[{"19", 
-          RowBox[{"Sum", "[", 
-           RowBox[{
-            RowBox[{"Sum", "[", 
-             RowBox[{
+                RowBox[{"i", ",", "i"}], "\[RightDoubleBracket]"}]}], ",", 
+              RowBox[{"{", 
+               RowBox[{"i", ",", "1", ",", "20"}], "}"}]}], "]"}]}], "-", 
+           RowBox[{"Sum", "[", 
+            RowBox[{
+             RowBox[{"If", "[", 
               RowBox[{
+               RowBox[{"i", "\[NotEqual]", "j"}], ",", 
                RowBox[{
                 RowBox[{
-                "piList", "\[LeftDoubleBracket]", "l", 
-                 "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", "i", 
-                "\[RightDoubleBracket]"}], 
-               RowBox[{
+                 RowBox[{
+                 "piList", "\[LeftDoubleBracket]", "k", 
+                  "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", "i", 
+                 "\[RightDoubleBracket]"}], 
                 RowBox[{
-                "pList", "\[LeftDoubleBracket]", "l", 
-                 "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", 
-                RowBox[{"i", ",", "j"}], "\[RightDoubleBracket]"}]}], ",", 
-              RowBox[{"{", 
-               RowBox[{"i", ",", "1", ",", "20"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"j", ",", "1", ",", "20"}], "}"}]}], "]"}], ",", 
-            RowBox[{"{", 
-             RowBox[{"l", ",", "1", ",", "m"}], "}"}]}], "]"}]}], ")"}], "/", 
-        
-        RowBox[{"(", 
-         RowBox[{
+                 RowBox[{
+                 "pList", "\[LeftDoubleBracket]", "k", 
+                  "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", 
+                 RowBox[{"i", ",", "j"}], "\[RightDoubleBracket]"}]}], ",", 
+               "0"}], "]"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"i", ",", "1", ",", "20"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"j", ",", "1", ",", "20"}], "}"}]}], "]"}]}], ")"}]}], 
+        "]"}], "/", 
+       RowBox[{"Log", "[", 
+        RowBox[{
+         RowBox[{"(", 
           RowBox[{"19", 
            RowBox[{"Sum", "[", 
             RowBox[{
@@ -350,18 +330,20 @@ Cell[BoxData[
                  RowBox[{
                  "pList", "\[LeftDoubleBracket]", "l", 
                   "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", 
-                 RowBox[{"i", ",", "i"}], "\[RightDoubleBracket]"}]}], ",", 
+                 RowBox[{"i", ",", "j"}], "\[RightDoubleBracket]"}]}], ",", 
                RowBox[{"{", 
-                RowBox[{"i", ",", "1", ",", "20"}], "}"}]}], "]"}], ",", 
+                RowBox[{"i", ",", "1", ",", "20"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"j", ",", "1", ",", "20"}], "}"}]}], "]"}], ",", 
              RowBox[{"{", 
-              RowBox[{"l", ",", "1", ",", "m"}], "}"}]}], "]"}]}], "-", 
-          RowBox[{"Sum", "[", 
-           RowBox[{
+              RowBox[{"l", ",", "1", ",", "m"}], "}"}]}], "]"}]}], ")"}], "/", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"19", 
             RowBox[{"Sum", "[", 
              RowBox[{
-              RowBox[{"If", "[", 
+              RowBox[{"Sum", "[", 
                RowBox[{
-                RowBox[{"i", "\[NotEqual]", "j"}], ",", 
                 RowBox[{
                  RowBox[{
                   RowBox[{
@@ -372,18 +354,41 @@ Cell[BoxData[
                   RowBox[{
                   "pList", "\[LeftDoubleBracket]", "l", 
                    "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", 
-                  RowBox[{"i", ",", "j"}], "\[RightDoubleBracket]"}]}], ",", 
-                "0"}], "]"}], ",", 
+                  RowBox[{"i", ",", "i"}], "\[RightDoubleBracket]"}]}], ",", 
+                RowBox[{"{", 
+                 RowBox[{"i", ",", "1", ",", "20"}], "}"}]}], "]"}], ",", 
               RowBox[{"{", 
-               RowBox[{"i", ",", "1", ",", "20"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"j", ",", "1", ",", "20"}], "}"}]}], "]"}], ",", 
-            RowBox[{"{", 
-             RowBox[{"l", ",", "1", ",", "m"}], "}"}]}], "]"}]}], ")"}]}], 
-       "]"}]}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+               RowBox[{"l", ",", "1", ",", "m"}], "}"}]}], "]"}]}], "-", 
+           RowBox[{"Sum", "[", 
+            RowBox[{
+             RowBox[{"Sum", "[", 
+              RowBox[{
+               RowBox[{"If", "[", 
+                RowBox[{
+                 RowBox[{"i", "\[NotEqual]", "j"}], ",", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{
+                   "piList", "\[LeftDoubleBracket]", "l", 
+                    "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", "i", 
+                   "\[RightDoubleBracket]"}], 
+                  RowBox[{
+                   RowBox[{
+                   "pList", "\[LeftDoubleBracket]", "l", 
+                    "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", 
+                   RowBox[{"i", ",", "j"}], "\[RightDoubleBracket]"}]}], ",", 
+                 "0"}], "]"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"i", ",", "1", ",", "20"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"j", ",", "1", ",", "20"}], "}"}]}], "]"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"l", ",", "1", ",", "m"}], "}"}]}], "]"}]}], ")"}]}], 
+        "]"}]}]}], ";"}], "*)"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
-     RowBox[{"rSimple", "[", 
+     RowBox[{"r", "[", 
       RowBox[{"k_", ",", " ", "pList_", ",", "piList_", ",", "m_"}], "]"}], ":=", 
      RowBox[{
       RowBox[{"Log", "[", 
@@ -436,34 +441,110 @@ Cell[BoxData[
         RowBox[{"(", 
          RowBox[{"1", "/", "19"}], ")"}]}], "]"}]}]}], ";"}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
-   RowBox[{"(*", 
+   RowBox[{
     RowBox[{
-     RowBox[{
-      RowBox[{"rSmallt", "[", 
-       RowBox[{
-       "k_", ",", " ", "qList_", ",", "piList_", ",", "t_", ",", "m_"}], 
-       "]"}], ":=", " ", 
+     RowBox[{"rSmallt", "[", 
       RowBox[{
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{"Sum", "[", 
+      "k_", ",", " ", "qList_", ",", "piList_", ",", "t_", ",", "m_"}], "]"}],
+      ":=", " ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Sum", "[", 
+         RowBox[{
           RowBox[{
            RowBox[{
             RowBox[{
-             RowBox[{
-             "piList", "\[LeftDoubleBracket]", "k", "\[RightDoubleBracket]"}],
-              "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}], 
+            "piList", "\[LeftDoubleBracket]", "k", "\[RightDoubleBracket]"}], 
+            "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}], 
+           RowBox[{
             RowBox[{
+            "qList", "\[LeftDoubleBracket]", "k", "\[RightDoubleBracket]"}], 
+            "\[LeftDoubleBracket]", 
+            RowBox[{"i", ",", "i"}], "\[RightDoubleBracket]"}]}], ",", 
+          RowBox[{"{", 
+           RowBox[{"i", ",", "1", ",", "20"}], "}"}]}], "]"}], "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "/", "m"}], ")"}], 
+          RowBox[{"Sum", "[", 
+           RowBox[{
+            RowBox[{"Sum", "[", 
              RowBox[{
-             "qList", "\[LeftDoubleBracket]", "k", "\[RightDoubleBracket]"}], 
-             "\[LeftDoubleBracket]", 
-             RowBox[{"i", ",", "i"}], "\[RightDoubleBracket]"}]}], ",", 
-           RowBox[{"{", 
-            RowBox[{"i", ",", "1", ",", "20"}], "}"}]}], "]"}], "/", 
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                "piList", "\[LeftDoubleBracket]", "j", 
+                 "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", "i", 
+                "\[RightDoubleBracket]"}], 
+               RowBox[{
+                RowBox[{
+                "qList", "\[LeftDoubleBracket]", "j", 
+                 "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", 
+                RowBox[{"i", ",", "i"}], "\[RightDoubleBracket]"}]}], ",", 
+              RowBox[{"{", 
+               RowBox[{"i", ",", "1", ",", "20"}], "}"}]}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "1", ",", "m"}], "}"}]}], "]"}]}], ")"}]}], 
+       ")"}], "+", " ", 
+      RowBox[{"(", 
+       RowBox[{"t", 
+        RowBox[{
          RowBox[{"(", 
           RowBox[{
+           RowBox[{
+            RowBox[{"gPrime", "[", 
+             RowBox[{"k", ",", "piList", ",", "qList", ",", "m"}], "]"}], 
+            RowBox[{"fSecond", "[", 
+             RowBox[{"k", ",", "piList", ",", "qList"}], "]"}]}], "-", 
+           RowBox[{
+            RowBox[{"fPrime", "[", 
+             RowBox[{"k", ",", "piList", ",", "qList"}], "]"}], 
+            RowBox[{"gSecond", "[", 
+             RowBox[{"k", ",", "piList", ",", "qList", ",", "m"}], "]"}]}]}], 
+          ")"}], "/", 
+         RowBox[{"(", 
+          RowBox[{"2", 
            RowBox[{"(", 
-            RowBox[{"1", "/", "m"}], ")"}], 
+            RowBox[{
+             RowBox[{"gPrime", "[", 
+              RowBox[{"k", ",", "piList", ",", "qList", ",", "m"}], "]"}], 
+             "^", "2"}], ")"}]}], ")"}]}]}], ")"}]}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"rLarget", "[", 
+      RowBox[{"k_", ",", "piList_", ",", "m_"}], "]"}], ":=", 
+     RowBox[{
+      RowBox[{"Log", "[", 
+       RowBox[{"19", "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"20", 
+           RowBox[{"Sum", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{
+               RowBox[{
+               "piList", "\[LeftDoubleBracket]", "k", 
+                "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", "i", 
+               "\[RightDoubleBracket]"}], 
+              RowBox[{
+               RowBox[{
+               "piList", "\[LeftDoubleBracket]", "k", 
+                "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", "i", 
+               "\[RightDoubleBracket]"}]}], ",", 
+             RowBox[{"{", 
+              RowBox[{"i", ",", "1", ",", "20"}], "}"}]}], "]"}]}], "-", 
+          "1"}], ")"}]}], "]"}], "/", 
+      RowBox[{"Log", "[", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"19", "m"}], ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"20", 
            RowBox[{"Sum", "[", 
             RowBox[{
              RowBox[{"Sum", "[", 
@@ -476,90 +557,14 @@ Cell[BoxData[
                  "\[RightDoubleBracket]"}], 
                 RowBox[{
                  RowBox[{
-                 "qList", "\[LeftDoubleBracket]", "j", 
-                  "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", 
-                 RowBox[{"i", ",", "i"}], "\[RightDoubleBracket]"}]}], ",", 
+                 "piList", "\[LeftDoubleBracket]", "j", 
+                  "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", "i", 
+                 "\[RightDoubleBracket]"}]}], ",", 
                RowBox[{"{", 
                 RowBox[{"i", ",", "1", ",", "20"}], "}"}]}], "]"}], ",", 
              RowBox[{"{", 
-              RowBox[{"j", ",", "1", ",", "m"}], "}"}]}], "]"}]}], ")"}]}], 
-        ")"}], "+", " ", 
-       RowBox[{"(", 
-        RowBox[{"t", 
-         RowBox[{
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"gPrime", "[", 
-              RowBox[{"k", ",", "piList", ",", "qList", ",", "m"}], "]"}], 
-             RowBox[{"fSecond", "[", 
-              RowBox[{"k", ",", "piList", ",", "qList"}], "]"}]}], "-", 
-            RowBox[{
-             RowBox[{"fPrime", "[", 
-              RowBox[{"k", ",", "piList", ",", "qList"}], "]"}], 
-             RowBox[{"gSecond", "[", 
-              RowBox[{"k", ",", "piList", ",", "qList", ",", "m"}], "]"}]}]}],
-            ")"}], "/", 
-          RowBox[{"(", 
-           RowBox[{"2", 
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{"gPrime", "[", 
-               RowBox[{"k", ",", "piList", ",", "qList", ",", "m"}], "]"}], 
-              "^", "2"}], ")"}]}], ")"}]}]}], ")"}]}]}], ";", 
-     "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"rLarget", "[", 
-       RowBox[{"k_", ",", "piList_", ",", "m_"}], "]"}], ":=", 
-      RowBox[{
-       RowBox[{"Log", "[", 
-        RowBox[{"19", "/", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"20", 
-            RowBox[{"Sum", "[", 
-             RowBox[{
-              RowBox[{
-               RowBox[{
-                RowBox[{
-                "piList", "\[LeftDoubleBracket]", "k", 
-                 "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", "i", 
-                "\[RightDoubleBracket]"}], 
-               RowBox[{
-                RowBox[{
-                "piList", "\[LeftDoubleBracket]", "k", 
-                 "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", "i", 
-                "\[RightDoubleBracket]"}]}], ",", 
-              RowBox[{"{", 
-               RowBox[{"i", ",", "1", ",", "20"}], "}"}]}], "]"}]}], "-", 
-           "1"}], ")"}]}], "]"}], "/", 
-       RowBox[{"Log", "[", 
-        RowBox[{
-         RowBox[{"(", 
-          RowBox[{"19", "m"}], ")"}], "/", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"20", 
-            RowBox[{"Sum", "[", 
-             RowBox[{
-              RowBox[{"Sum", "[", 
-               RowBox[{
-                RowBox[{
-                 RowBox[{
-                  RowBox[{
-                  "piList", "\[LeftDoubleBracket]", "j", 
-                   "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", "i", 
-                  "\[RightDoubleBracket]"}], 
-                 RowBox[{
-                  RowBox[{
-                  "piList", "\[LeftDoubleBracket]", "j", 
-                   "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", "i", 
-                  "\[RightDoubleBracket]"}]}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"i", ",", "1", ",", "20"}], "}"}]}], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"j", ",", "1", ",", "m"}], "}"}]}], "]"}]}], "-", 
-           "m"}], ")"}]}], "]"}]}]}], ";"}], "*)"}]}]}]], "Input",
+              RowBox[{"j", ",", "1", ",", "m"}], "}"}]}], "]"}]}], "-", "m"}],
+          ")"}]}], "]"}]}]}], ";"}]}]}]], "Input",
  CellChangeTimes->{{3.666553835701701*^9, 3.6665540070785217`*^9}, {
    3.666554043727579*^9, 3.666554056852316*^9}, {3.6665540925352182`*^9, 
    3.6665543078440866`*^9}, {3.6665544012635727`*^9, 3.666554490096428*^9}, {
@@ -618,7 +623,8 @@ Cell[BoxData[
    3.66812608678049*^9}, {3.6681835813070097`*^9, 3.66818365503058*^9}, {
    3.668183703854649*^9, 3.668183725507903*^9}, {3.668183773881493*^9, 
    3.6681838571298437`*^9}, {3.668448855393283*^9, 3.668448978249704*^9}, {
-   3.668449118809103*^9, 3.668449151496573*^9}}],
+   3.668449118809103*^9, 3.668449151496573*^9}, {3.6684515124435587`*^9, 
+   3.668451545036263*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -646,7 +652,7 @@ foldX/foldx_ddG/132L_A_foldx_ddG.txt\>\"", ",", " ", "\"\<Table\>\""}],
   RowBox[{
    RowBox[{"DDGlist", " ", "=", " ", 
     RowBox[{"Drop", "[", 
-     RowBox[{"temp2", ",", "0", ",", "1"}], "]"}]}], ";"}], 
+     RowBox[{"temp3", ",", "0", ",", "1"}], "]"}]}], ";"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"m", "=", 
@@ -676,7 +682,9 @@ foldX/foldx_ddG/132L_A_foldx_ddG.txt\>\"", ",", " ", "\"\<Table\>\""}],
  RowBox[{"For", "[", 
   RowBox[{
    RowBox[{"k", "=", "1"}], ",", 
-   RowBox[{"k", "<", "6"}], ",", 
+   RowBox[{"k", "<", 
+    RowBox[{"(", 
+     RowBox[{"m", "+", "1"}], ")"}]}], ",", 
    RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"rates", " ", "=", " ", 
@@ -688,55 +696,32 @@ foldX/foldx_ddG/132L_A_foldx_ddG.txt\>\"", ",", " ", "\"\<Table\>\""}],
           RowBox[{"k", ",", 
            RowBox[{"makepList", "[", 
             RowBox[{"DDGlist", ",", "t", ",", "m"}], "]"}], ",", "piList", 
-           ",", "m"}], "]"}]}], "}"}], ",", 
+           ",", "m"}], "]"}], ",", 
+         RowBox[{"rSmallt", "[", 
+          RowBox[{"k", ",", "qList", ",", "piList", ",", "t", ",", "m"}], 
+          "]"}], ",", 
+         RowBox[{"rLarget", "[", 
+          RowBox[{"k", ",", "piList", ",", "m"}], "]"}]}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"t", ",", "0.000001", ",", "1.5", ",", ".02"}], "}"}]}], 
-      "]"}]}], ";", 
-    RowBox[{"(*", 
-     RowBox[{
-      RowBox[{
-       RowBox[{
-        RowBox[{
-         RowBox[{
-          RowBox[{"rSmallt", "[", 
-           RowBox[{"k", ",", "qList", ",", "piList", ",", "t", ",", "m"}], 
-           "]"}], ",", 
-          RowBox[{"rLarget", "[", 
-           RowBox[{"k", ",", "piList", ",", "m"}], "]"}]}], "}"}], ",", 
-        RowBox[{"{", 
-         RowBox[{"t", ",", "0.000001", ",", "1.5", ",", ".02"}], "}"}]}], 
-       "]"}], ";"}], "*)"}], "\[IndentingNewLine]", 
+      "]"}]}], ";", "\[IndentingNewLine]", 
     RowBox[{"rates", " ", "=", " ", 
      RowBox[{"Prepend", "[", 
       RowBox[{"rates", ",", 
        RowBox[{"{", 
-        RowBox[{"\"\<site\>\"", ",", "\"\<time\>\"", ",", "\"\<r\>\""}], 
-        "}"}]}], "]"}]}], ";"}]}], " ", 
-  RowBox[{"(*", 
-   RowBox[{
-    RowBox[{
+        RowBox[{
+        "\"\<site\>\"", ",", "\"\<time\>\"", ",", "\"\<r\>\"", ",", 
+         "\"\<r_small_t\>\"", ",", "\"\<r_large_t\>\""}], "}"}]}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
      RowBox[{
-      RowBox[{",", "\"\<r_small_t\>\"", ",", "\"\<r_large_t\>\""}], "}"}], 
-     "]"}], ";"}], "*)"}], "\[IndentingNewLine]", 
-  "]"}], "\[IndentingNewLine]", 
- RowBox[{"Export", "[", 
-  RowBox[{
-   RowBox[{"StringJoin", "[", 
-    RowBox[{
-    "\"\<~/Desktop/projects/substitution_matrices_in_pheno_models/numerically_\
-derived_rates/raw_rates/site\>\"", ",", 
-     RowBox[{"ToString", "[", "k", "]"}], ",", "\"\<_rates_132L_A.txt\>\""}], 
-    "]"}], ",", "rates", ",", "\"\<Table\>\""}], "]"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"(*", 
-   RowBox[{
-    RowBox[{
-     RowBox[{"ListPlot", "[", "rates", "]"}], ",", 
-     RowBox[{"PlotRange", "\[Rule]", 
-      RowBox[{"{", 
+      RowBox[{"StringJoin", "[", 
        RowBox[{
-        RowBox[{"-", "50"}], ",", "10"}], "}"}]}]}], "]"}], 
-   "*)"}]}]}], "Input",
+       "\"\<~/Desktop/projects/substitution_matrices_in_pheno_models/\
+numerically_derived_rates/raw_rates/site\>\"", ",", 
+        RowBox[{"ToString", "[", "k", "]"}], ",", 
+        "\"\<_rates_132L_A.txt\>\""}], "]"}], ",", "rates", ",", 
+      "\"\<Table\>\""}], "]"}]}]}], "\[IndentingNewLine]", "]"}]}], "Input",
  CellChangeTimes->{{3.665334005608182*^9, 3.6653340526268063`*^9}, 
    3.665339406135244*^9, {3.665340026413166*^9, 3.665340071422674*^9}, {
    3.665340175414175*^9, 3.665340229719329*^9}, {3.6653402666190977`*^9, 
@@ -898,10 +883,18 @@ derived_rates/raw_rates/site\>\"", ",",
    3.668124695734672*^9}, {3.668126015919313*^9, 3.668126016727784*^9}, {
    3.6681260740645447`*^9, 3.668126192971343*^9}, {3.668168819969781*^9, 
    3.668168820394648*^9}, {3.668183477250852*^9, 3.668183509118125*^9}, {
-   3.6684513100950613`*^9, 3.668451396997781*^9}}]
+   3.6684513100950613`*^9, 3.668451430414987*^9}, {3.668451498411332*^9, 
+   3.668451501683041*^9}, {3.668451552388288*^9, 3.668451621365396*^9}, 
+   3.668451696265066*^9, {3.6684518040589314`*^9, 3.6684518391957912`*^9}, {
+   3.6684519144638987`*^9, 3.668451950543082*^9}, {3.668452035747382*^9, 
+   3.668452037809722*^9}, {3.668452071428516*^9, 3.6684520718119917`*^9}, {
+   3.668452130734312*^9, 3.6684521578699007`*^9}, {3.668452188000608*^9, 
+   3.668452194159086*^9}, {3.668452225279888*^9, 3.668452346138987*^9}, {
+   3.668452386093884*^9, 3.668452458359521*^9}, {3.6684525186809177`*^9, 
+   3.668452520816414*^9}}]
 },
 WindowSize->{946, 699},
-WindowMargins->{{-1887, Automatic}, {Automatic, 0}},
+WindowMargins->{{-1720, Automatic}, {-77, Automatic}},
 FrontEndVersion->"10.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 10, \
 2015)",
 StyleDefinitions->"Default.nb"
@@ -917,8 +910,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[400, 13, 24780, 607, 658, "Input"],
-Cell[25183, 622, 15817, 278, 386, "Input"]
+Cell[400, 13, 24981, 613, 709, "Input"],
+Cell[25384, 628, 15852, 265, 369, "Input"]
 }
 ]
 *)
