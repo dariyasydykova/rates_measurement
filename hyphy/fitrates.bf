@@ -28,7 +28,7 @@ DataSet raw_data  = ReadDataFile(infile);
 DataSetFilter filtered_data = CreateFilter(raw_data, 1);
 
 fprintf(stdout, "Step 1: Global optimization of branch lengths.\n");
-Model JCfull = (JC69_t, JC_freqs, 1);
+Model JCfull = (JC69_t, JC_freqs, 0);
 UseModel(USE_NO_MODEL);
 UseModel(JCfull);
 Tree full_tree = DATAFILE_TREE;

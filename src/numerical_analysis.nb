@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[     39801,        880]
-NotebookOptionsPosition[     39187,        854]
-NotebookOutlinePosition[     39544,        870]
-CellTagsIndexPosition[     39501,        867]
+NotebookDataLength[     41466,        924]
+NotebookOptionsPosition[     41004,        902]
+NotebookOutlinePosition[     41364,        918]
+CellTagsIndexPosition[     41321,        915]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -381,6 +381,61 @@ Cell[BoxData[
             RowBox[{"{", 
              RowBox[{"l", ",", "1", ",", "m"}], "}"}]}], "]"}]}], ")"}]}], 
        "]"}]}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"rSimple", "[", 
+      RowBox[{"k_", ",", " ", "pList_", ",", "piList_", ",", "m_"}], "]"}], ":=", 
+     RowBox[{
+      RowBox[{"Log", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"20", "/", "19"}], ")"}], 
+         RowBox[{"Sum", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{
+             "piList", "\[LeftDoubleBracket]", "k", "\[RightDoubleBracket]"}],
+              "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}], 
+            RowBox[{
+             RowBox[{
+             "pList", "\[LeftDoubleBracket]", "k", "\[RightDoubleBracket]"}], 
+             "\[LeftDoubleBracket]", 
+             RowBox[{"i", ",", "i"}], "\[RightDoubleBracket]"}]}], ",", 
+           RowBox[{"{", 
+            RowBox[{"i", ",", "1", ",", "20"}], "}"}]}], "]"}]}], "-", 
+        RowBox[{"(", 
+         RowBox[{"1", "/", "19"}], ")"}]}], "]"}], "/", 
+      RowBox[{"Log", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"20", "/", 
+           RowBox[{"(", 
+            RowBox[{"19", "m"}], ")"}]}], ")"}], 
+         RowBox[{"Sum", "[", 
+          RowBox[{
+           RowBox[{"Sum", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{
+               RowBox[{
+               "piList", "\[LeftDoubleBracket]", "l", 
+                "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", "i", 
+               "\[RightDoubleBracket]"}], 
+              RowBox[{
+               RowBox[{
+               "pList", "\[LeftDoubleBracket]", "l", 
+                "\[RightDoubleBracket]"}], "\[LeftDoubleBracket]", 
+               RowBox[{"i", ",", "i"}], "\[RightDoubleBracket]"}]}], ",", 
+             RowBox[{"{", 
+              RowBox[{"i", ",", "1", ",", "20"}], "}"}]}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"l", ",", "1", ",", "m"}], "}"}]}], "]"}]}], "-", 
+        RowBox[{"(", 
+         RowBox[{"1", "/", "19"}], ")"}]}], "]"}]}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{
@@ -562,7 +617,8 @@ Cell[BoxData[
    3.6681055453367643`*^9, 3.668105645965819*^9}, {3.668126083031817*^9, 
    3.66812608678049*^9}, {3.6681835813070097`*^9, 3.66818365503058*^9}, {
    3.668183703854649*^9, 3.668183725507903*^9}, {3.668183773881493*^9, 
-   3.6681838571298437`*^9}}],
+   3.6681838571298437`*^9}, {3.668448855393283*^9, 3.668448978249704*^9}, {
+   3.668449118809103*^9, 3.668449151496573*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -576,6 +632,16 @@ foldX/foldx_ddG/132L_A_foldx_ddG.txt\>\"", ",", " ", "\"\<Table\>\""}],
   RowBox[{"temp2", "=", 
    RowBox[{"Delete", "[", 
     RowBox[{"temp1", ",", "1"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"totalSites", "=", " ", 
+   RowBox[{"Length", "[", "temp2", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"temp3", " ", "=", " ", 
+   RowBox[{"Drop", "[", 
+    RowBox[{"temp2", ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "totalSites"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"DDGlist", " ", "=", " ", 
@@ -617,7 +683,7 @@ foldX/foldx_ddG/132L_A_foldx_ddG.txt\>\"", ",", " ", "\"\<Table\>\""}],
      RowBox[{"Table", "[", 
       RowBox[{
        RowBox[{"{", 
-        RowBox[{"t", ",", 
+        RowBox[{"k", ",", "t", ",", 
          RowBox[{"r", "[", 
           RowBox[{"k", ",", 
            RowBox[{"makepList", "[", 
@@ -644,24 +710,23 @@ foldX/foldx_ddG/132L_A_foldx_ddG.txt\>\"", ",", " ", "\"\<Table\>\""}],
      RowBox[{"Prepend", "[", 
       RowBox[{"rates", ",", 
        RowBox[{"{", 
-        RowBox[{"\"\<time\>\"", ",", "\"\<r\>\""}], "}"}]}], "]"}]}], ";", 
-    " ", 
-    RowBox[{"(*", 
+        RowBox[{"\"\<site\>\"", ",", "\"\<time\>\"", ",", "\"\<r\>\""}], 
+        "}"}]}], "]"}]}], ";"}]}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
      RowBox[{
-      RowBox[{
-       RowBox[{
-        RowBox[{",", "\"\<r_small_t\>\"", ",", "\"\<r_large_t\>\""}], "}"}], 
-       "]"}], ";"}], "*)"}], "\[IndentingNewLine]", 
-    RowBox[{"Export", "[", 
-     RowBox[{
-      RowBox[{"StringJoin", "[", 
-       RowBox[{
-       "\"\<~/Desktop/projects/substitution_matrices_in_pheno_models/\
-numerically_derived_rates/raw_rates/site\>\"", ",", 
-        RowBox[{"ToString", "[", "k", "]"}], ",", 
-        "\"\<_rates_132L_A.txt\>\""}], "]"}], ",", "rates", ",", 
-      "\"\<Table\>\""}], "]"}]}]}], "\[IndentingNewLine]", 
+      RowBox[{",", "\"\<r_small_t\>\"", ",", "\"\<r_large_t\>\""}], "}"}], 
+     "]"}], ";"}], "*)"}], "\[IndentingNewLine]", 
   "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"StringJoin", "[", 
+    RowBox[{
+    "\"\<~/Desktop/projects/substitution_matrices_in_pheno_models/numerically_\
+derived_rates/raw_rates/site\>\"", ",", 
+     RowBox[{"ToString", "[", "k", "]"}], ",", "\"\<_rates_132L_A.txt\>\""}], 
+    "]"}], ",", "rates", ",", "\"\<Table\>\""}], "]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"(*", 
    RowBox[{
@@ -832,28 +897,11 @@ numerically_derived_rates/raw_rates/site\>\"", ",",
    3.66810661586765*^9, 3.668106617468432*^9}, {3.668124693457781*^9, 
    3.668124695734672*^9}, {3.668126015919313*^9, 3.668126016727784*^9}, {
    3.6681260740645447`*^9, 3.668126192971343*^9}, {3.668168819969781*^9, 
-   3.668168820394648*^9}, {3.668183477250852*^9, 3.668183509118125*^9}}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.666541623899704*^9, 3.6665416248942823`*^9}, {
-  3.6665443044081163`*^9, 3.666544315473888*^9}}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{
-  3.66653992274756*^9, {3.666543921822278*^9, 3.66654403753477*^9}, {
-   3.666544146075598*^9, 3.666544149914248*^9}, {3.6665442035973387`*^9, 
-   3.666544227732789*^9}, {3.6665443623165493`*^9, 3.666544362624419*^9}}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.666544043668612*^9, 3.666544072119688*^9}, {
-  3.666544159338661*^9, 3.6665441925167837`*^9}, {3.666544371599737*^9, 
-  3.666544373419162*^9}}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.6665443756848288`*^9, 3.666544375690831*^9}}]
+   3.668168820394648*^9}, {3.668183477250852*^9, 3.668183509118125*^9}, {
+   3.6684513100950613`*^9, 3.668451396997781*^9}}]
 },
-WindowSize->{852, 677},
-WindowMargins->{{88, Automatic}, {Automatic, 0}},
+WindowSize->{946, 699},
+WindowMargins->{{-1887, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 10, \
 2015)",
 StyleDefinitions->"Default.nb"
@@ -869,12 +917,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[400, 13, 22629, 551, 641, "Input"],
-Cell[23032, 566, 15443, 268, 352, "Input"],
-Cell[38478, 836, 145, 2, 28, "Input"],
-Cell[38626, 840, 265, 4, 28, "Input"],
-Cell[38894, 846, 192, 3, 28, "Input"],
-Cell[39089, 851, 94, 1, 28, "Input"]
+Cell[400, 13, 24780, 607, 658, "Input"],
+Cell[25183, 622, 15817, 278, 386, "Input"]
 }
 ]
 *)
