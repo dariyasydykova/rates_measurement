@@ -3,8 +3,8 @@ library(ggplot2)
 library(dplyr)
 library(cowplot)
 
-input_dir <- "site_num_test/rates/raw_rates"
-output_dir <- "site_num_test/rates/processed_rates/"
+input_dir <- "hyphy/rates/raw_rates"
+output_dir <- "hyphy/rates/processed_rates/"
 
 file_lst <- list.files(input_dir,full.names=T)
 
@@ -17,11 +17,7 @@ for (file_name in file_lst) {
   time <- as.numeric(substr(file_name,str+2,end-1))*2
   t$time <- rep(time,length(t$site))
   
-  str <- regexpr("_n\\d+",file_name)[1]
-  end <- regexpr("_\\d+_rates.txt",file_name)[1]
-  site_dupl <- as.numeric(substr(file_name,str+2,end-1))
-  t$site_dupl <- rep(site_dupl,length(t$site))
-  
+  t$site <- c(1:10)
   d <- rbind(d, t)
 }
 
