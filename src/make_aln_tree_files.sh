@@ -6,7 +6,7 @@ if [ ! -d "./hyphy/aln_tree_files/" ]; then
 	mkdir ./hyphy/aln_tree_files/
 fi
 
-for br_len in `seq 0.02 0.02 0.52` 
+for br_len in `seq -f %.2f 0.02 0.02 0.52` 
 do	
 	for n in $(seq 1 $num_sim) 
 	do
