@@ -10,7 +10,7 @@ if [ ! -d "./hyphy/rates/raw_rates" ]; then
 	mkdir ./hyphy/rates/raw_rates
 fi
 
-for br_len in `seq 0.02 0.02 0.52` 
+for br_len in `seq -f %.2f 0.02 0.02 0.52` 
 do	
 	for n in $(seq 1 $num_sim) 
 	do
