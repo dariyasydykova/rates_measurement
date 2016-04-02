@@ -15,7 +15,7 @@ if [ -f "./src/run_sim_aln.sh" ]; then
 	rm ./src/run_sim_aln.sh 
 fi
 
-for br_len in `seq 0.02 0.02 0.52` 
+for br_len in `seq -f %.2f 0.02 0.02 0.52` 
 do	
 	for n in $(seq 1 $num_sim) 
 	do
