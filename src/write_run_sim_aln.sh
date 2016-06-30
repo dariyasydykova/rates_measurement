@@ -7,10 +7,6 @@ if [ ! -d "./aln" ]; then
 	mkdir aln
 fi
 
-if [ ! -d "./aln" ]; then
-	mkdir aln
-fi
-
 if [ -f "./src/run_sim_aln.sh" ]; then
 	rm ./src/run_sim_aln.sh 
 fi
