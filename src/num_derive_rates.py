@@ -48,40 +48,6 @@ def get_q_matrix_jc():
 	q_matrix = np.full((20,20),1.0/19)
 	np.fill_diagonal(q_matrix,-1)
 	return q_matrix
-
-def get_q_matrix_wag():
-	infile = "./q_matrices/wag/wag.dat"
-	q_file = open(infile,"r")
-	
-	q_matrix = []
-	for line in q_file:
-		line = line.strip()
-		
-		line_arr = np.fromstring(line,dtype=float,sep=' ')
-		if line_arr[0]==-1:
-			continue 
-		
-		if len(line_arr)==1:
-			q_temp = np.hstack((line_arr,np.zeros(20-len(line_arr))))
-		else:
-			new_row = np.hstack((line_arr,np.zeros(20-len(line_arr))))
-			q_temp=np.vstack((q_temp,new_row))
-		
-	q_tril_temp=np.matrix(q_temp)
-	q_matrix=q_tril_temp+q_tril_temp.T
-	np.fill_diagonal(q_matrix,q_tril_temp.diagonal())
-	
-	return q_matrix
-		
-def get_q_matrix_lg():
-	q_matrix = np.full((20,20),1.0/19)
-	np.fill_diagonal(q_matrix,-1)
-	return q_matrix
-
-def get_q_matrix_jtt():
-	q_matrix = np.full((20,20),1.0/19)
-	np.fill_diagonal(q_matrix,-1)
-	return q_matrix
 		
 def get_p_matrix(t,q_matrix):
 	p_matrix = linalg.expm(t*q_matrix)
@@ -95,7 +61,8 @@ def get_gamma_dist_true_r_lst(total_sites):
 		true_r = np.random.gamma(1,1)
 		true_r_lst.append(true_r)
 	
-	return true_r_lst
+	mean_true_r = np.mean(true_r_lst)
+	return true_r_lst/mean_true_r
 	
 def get_site_sums(total_sites,pi_data,q_data,true_r_lst = None,site_specific = True):
 	site_sum_dict = {}
@@ -174,30 +141,24 @@ def main():
 	pi_dict_jc = np.full((20),1.0/20)
 	q_dict_ms = get_q_matrix_dict_ms(ddg_dict)
 	q_dict_jc = get_q_matrix_jc()
-	q_dict_wag = get_q_matrix_wag() 
-	#q_dict_lg = 
-	#q_dict_jtt = 
 	
 	true_r_lst_ms = np.full(total_sites-1,1.0)
 	true_r_lst_jc = get_gamma_dist_true_r_lst(total_sites)
 
 	site_sums_ms = get_site_sums(total_sites, pi_dict_ms, q_dict_ms, true_r_lst_ms)
 	site_sums_jc = get_site_sums(total_sites, pi_dict_jc, q_dict_jc, true_r_lst_jc, site_specific=False)
-	site_sums_wag = get_site_sums(total_sites, pi_dict_jc, q_dict_wag, true_r_lst_jc, site_specific=False)
 
 	r_tilde_dict_ms = get_r_tilde(total_sites,site_sums_ms)
 	r_tilde_dict_jc = get_r_tilde(total_sites,site_sums_jc)
-	r_tilde_dict_wag = get_r_tilde(total_sites,site_sums_wag)
 	
 	r_tilde_dict_ms_normalized =  get_r_tilde_normalized(total_sites,site_sums_ms)
 	r_tilde_dict_jc_normalized = get_r_tilde_normalized(total_sites,site_sums_jc)
-	r_tilde_dict_wag_normalized = get_r_tilde_normalized(total_sites,site_sums_wag)
 
-	out.write("site\ttime\tr_tilde_ms_norm\tr_tilde_jc_norm\tr_tilde_wag_norm\ttrue_r_jc\n")
+	out.write("site\ttime\tr_tilde_ms_norm\tr_tilde_jc_norm\ttrue_r_jc\n")
 	t_lst = np.arange(0.000002,2,0.02)
 	for site in ddg_dict:
 		for i in range(len(t_lst)):
-			line = str(site-1)+ "\t" +str(t_lst[i])+ "\t"+str(r_tilde_dict_ms_normalized[site][i])+"\t"+str(r_tilde_dict_jc_normalized[site][i])+"\t"+str(r_tilde_dict_wag_normalized[site][i])+"\t"+str(true_r_lst_jc[site-2])+"\n"
+			line = str(site-1)+ "\t" +str(t_lst[i])+ "\t"+str(r_tilde_dict_ms_normalized[site][i])+"\t"+str(r_tilde_dict_jc_normalized[site][i])+"\t"+str(true_r_lst_jc[site-2])+"\n"
 			out.write(line)
 		
 main()
