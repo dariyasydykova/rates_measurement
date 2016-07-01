@@ -1,6 +1,8 @@
 import sys
 import re
 import numpy as np
+from scipy.linalg import eig
+
 
 def reformat(mat, freq, wag_mdl,model_name):
 	
@@ -57,7 +59,7 @@ def collect_matrix_vals(tmpl):
 			if len(line_lst) == 1:
 				val = re.findall('\d*\.?\d+', line)
 				F=np.append(F,float(val[0]))
-			
+	
 	return M,F
 	
 def main():
