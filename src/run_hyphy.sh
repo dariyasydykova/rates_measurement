@@ -19,6 +19,6 @@ do
 		echo "INFILE = aln_tree_files/${aln_tree_file}" > hyphy/setup.txt
 		echo "OUTFILE = rates/raw_rates/${rates_file}" >> hyphy/setup.txt
 		echo "SITE_DUPL = ${site_dupl}" >> hyphy/setup.txt
-		HYPHYMP hyphy/fitrates.bf
+		HYPHYMP hyphy/fitrates_WAG.bf
 	done
 done
