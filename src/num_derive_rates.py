@@ -154,11 +154,11 @@ def main():
 	r_tilde_dict_ms_normalized =  get_r_tilde_normalized(total_sites,site_sums_ms)
 	r_tilde_dict_jc_normalized = get_r_tilde_normalized(total_sites,site_sums_jc)
 
-	out.write("site\ttime\tr_tilde_ms_norm\tr_tilde_jc_norm\ttrue_r_jc\n")
+	out.write("site\ttime\tr_tilde_ms_norm\tr_tilde_ms\tr_tilde_jc_norm\ttrue_r_jc\n")
 	t_lst = np.arange(0.000002,2,0.02)
 	for site in ddg_dict:
 		for i in range(len(t_lst)):
-			line = str(site-1)+ "\t" +str(t_lst[i])+ "\t"+str(r_tilde_dict_ms_normalized[site][i])+"\t"+str(r_tilde_dict_jc_normalized[site][i])+"\t"+str(true_r_lst_jc[site-2])+"\n"
+			line = str(site-1)+ "\t" +str(t_lst[i])+"\t"+str(r_tilde_dict_ms_normalized[site][i])+"\t"+str(r_tilde_dict_ms[site][i])+"\t"+str(r_tilde_dict_jc_normalized[site][i])+"\t"+str(true_r_lst_jc[site-2])+"\n"
 			out.write(line)
 		
 main()

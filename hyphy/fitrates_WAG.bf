@@ -27,8 +27,10 @@ site_dupl = 0+setup["SITE_DUPL"];
 DataSet raw_data  = ReadDataFile(infile);
 DataSetFilter filtered_data = CreateFilter(raw_data, 1);
 
+HarvestFrequencies(obsFreqsFull, filtered_data, 1, 1, 1);
+
 fprintf(stdout, "Step 1: Global optimization of branch lengths.\n");
-Model WAGfull = (WAG_t, WAG_freqs, 1);
+Model WAGfull = (WAG_t, obsFreqsFull, 1);
 UseModel(USE_NO_MODEL);
 UseModel(WAGfull);
 Tree full_tree = DATAFILE_TREE;
@@ -53,7 +55,7 @@ for (global site_count = 0; site_count < nsites; site_count = site_count+site_du
     DataSetFilter site_filter = CreateFilter(filtered_data, 1, filter_string, "", "");
 
 
-    Model WAGsite = (WAG_rt, WAG_freqs, 1);
+    Model WAGsite = (WAG_rt, obsFreqsFull, 1);
     UseModel(USE_NO_MODEL);
     UseModel(WAGsite);
     Tree site_tree = DATAFILE_TREE;

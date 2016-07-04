@@ -10,7 +10,7 @@ if [ ! -d "./hyphy/rates/raw_rates" ]; then
 	mkdir ./hyphy/rates/raw_rates
 fi
 
-model_name_arr=("JC" "WAG" "JTT" "LG")
+model_name_arr=("JC" "JC_equalf" "WAG" "JTT" "LG")
 for model in ${model_name_arr[@]}
 do
 	for br_len in `seq -f %.2f 0.02 0.02 0.52` 

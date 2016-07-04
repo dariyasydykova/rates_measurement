@@ -27,8 +27,10 @@ site_dupl = 0+setup["SITE_DUPL"];
 DataSet raw_data  = ReadDataFile(infile);
 DataSetFilter filtered_data = CreateFilter(raw_data, 1);
 
+HarvestFrequencies(obsFreqsFull, filtered_data, 1, 1, 1);
+
 fprintf(stdout, "Step 1: Global optimization of branch lengths.\n");
-Model JCfull = (JC69_t, JC_freqs, 1);
+Model JCfull = (JC69_t, obsFreqsFull, 1);
 UseModel(USE_NO_MODEL);
 UseModel(JCfull);
 Tree full_tree = DATAFILE_TREE;
@@ -51,9 +53,8 @@ for (global site_count = 0; site_count < nsites; site_count = site_count+site_du
     filter_string = "";
     filter_string = filter_string + (site_count) + "-" + (site_count+(site_dupl-1));
     DataSetFilter site_filter = CreateFilter(filtered_data, 1, filter_string, "", "");
-
-
-    Model JCsite = (JC69_rt, JC_freqs, 1);
+	
+    Model JCsite = (JC69_rt, obsFreqsFull, 1);
     UseModel(USE_NO_MODEL);
     UseModel(JCsite);
     Tree site_tree = DATAFILE_TREE;
