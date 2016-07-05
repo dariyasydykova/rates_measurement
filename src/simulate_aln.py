@@ -20,8 +20,8 @@ def get_pi_dict(ddG_file,num_model):
 		
 		line = line.strip()
 		line_lst = line.split("\t")
-		site_num = int(line_lst[0])-1
-		if site_num==num_model+1:
+		site_num = int(line_lst[0])
+		if site_num==num_model:
 			break
 		
 		exp_temp = [ math.exp(-float(ddG)) for ddG in line_lst[1:]]
@@ -34,14 +34,14 @@ def get_pi_dict(ddG_file,num_model):
 	
 	return pi_dict
 
-def get_q_matrix(num_model):
+def get_q_matrix(site_lst,num_model):
 	'''
 	function computes Q matrix for each site and returns the dictionary with Q matrix as the numpy array (values) for each site (keys).
 	'''
 	q_matrix_dict = {}
 	
-	for i in range(num_model):
-		q_matrix_file = "q_matrices/site"+str(i+1)+"_q_matrix_132L_A.txt"
+	for i in range(len(site_lst)):
+		q_matrix_file = "q_matrices/site"+str(site_lst[i])+"_q_matrix_132L_A.txt"
 		q_list = open(q_matrix_file,'r')
 		q_matrix = []
 		
@@ -52,26 +52,26 @@ def get_q_matrix(num_model):
 			rates_list = [ float(x) for x in line_lst]
 			q_matrix.append(rates_list)
 	
-		q_matrix_dict[i] = q_matrix
+		q_matrix_dict[site_lst[i]] = q_matrix
 	
 	return q_matrix_dict
 			
-def make_mutSel_model(q_matrix_dict, pi_dict, tree_file, aln_file, site_dupl, num_model):
+def make_mutSel_model(site_lst,q_matrix_dict, pi_dict, tree_file, aln_file, site_dupl, num_model):
 	'''
 	function simulates MutSel model for the number of site_dupl with num_model model types
 	'''
 	tree=read_tree(file = tree_file)
 
 	parts = []						
-	for i in range(num_model):
-		custom_matrix = q_matrix_dict[i]
+	for i in range(len(site_lst)):
+		custom_matrix = q_matrix_dict[site_lst[i]]
 		model = Model("custom", {"matrix": custom_matrix})
 		
 		
 		##checking if frequencies are correct
 		freqs=model.params['state_freqs']
 		for j in range(len(freqs)):
-			true_f = pi_dict[i+1]
+			true_f = pi_dict[site_lst[i]]
 			if freqs[j]-true_f[j]>0.01:
 				print "wrong pi values"
 		
@@ -99,8 +99,8 @@ def main(argv):
 	num_model = int(argv[5]) 
 	
 	pi_dict = get_pi_dict(ddG_file,num_model)
-	q_matrix_dict = get_q_matrix(num_model)
-	make_mutSel_model(q_matrix_dict, pi_dict, tree_file, aln_file, site_dupl, num_model)
+	q_matrix_dict = get_q_matrix(pi_dict.keys(),num_model)
+	make_mutSel_model(pi_dict.keys(),q_matrix_dict, pi_dict, tree_file, aln_file, site_dupl, num_model)
 		
 if __name__ == "__main__":
 	main(sys.argv)

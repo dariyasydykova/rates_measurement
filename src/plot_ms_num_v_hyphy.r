@@ -45,5 +45,5 @@ for (i in c(1:10)){
           axis.text = element_text(size = 16))+
     scale_color_discrete(guide = guide_legend(title = "Model"),labels = c("JC","JC equal freq","JTT","LG","WAG"))
   print(p_rates)
-  #ggsave(paste0("plots/site",i,"_ms_an_v_num.png"))
+  ggsave(paste0("plots/site",i,"_ms_an_v_num.png"))
 }
