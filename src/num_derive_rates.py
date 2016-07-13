@@ -55,41 +55,48 @@ def get_p_matrix(t,q_matrix):
 		print "Rows in the projection matrix do not add up to 1!"
 	return p_matrix
 
-def get_gamma_dist_true_r_lst(total_sites):
-	true_r_lst = []
-	for site in range(2,total_sites+1):
+def get_gamma_dist_true_r_dict(site_lst):
+	true_r_dict = {}
+	norm_r_dict = {}
+	
+	for site in site_lst:
 		true_r = np.random.gamma(1,1)
-		true_r_lst.append(true_r)
+		true_r_dict[site]=true_r
 	
-	mean_true_r = np.mean(true_r_lst)
-	return true_r_lst/mean_true_r
+	mean_true_r = np.mean(true_r_dict.values())
+	for site in site_lst:
+		norm_r = true_r_dict[site]/mean_true_r
+		norm_r_dict[site] = norm_r
 	
-def get_site_sums(total_sites,pi_data,q_data,true_r_lst = None,site_specific = True):
+	return norm_r_dict
+	
+def get_site_sums(site_lst, pi_data,q_data,true_r_dict = None ,site_specific = True):
 	site_sum_dict = {}
 	
-	for site in range(2,total_sites+1):
-		if site > total_sites:
-			break
-		else:  
-			if site_specific:
-				pi_arr = pi_data[site]
-				q_matrix = q_data[site]
-			else: 
-				pi_arr = pi_data
-				q_matrix = q_data
-				
-			true_r = true_r_lst[site-2]
-			q_matrix = q_matrix*true_r
-			
-			sum_lst = []
-			for t in np.arange(0.000002,2,0.02):
-				p_matrix = get_p_matrix(t, q_matrix)
-				sum = 0
-				for i in range(20):
-					prod = pi_arr[i]*p_matrix[i,i]
-					sum += prod
-				sum_lst.append(sum)
-			site_sum_dict[site]= sum_lst
+	for site in site_lst:
+		if site_specific:
+			pi_arr = pi_data[site]
+			q_matrix = q_data[site]
+		else: 
+			pi_arr = pi_data
+			q_matrix = q_data
+		
+		if true_r_dict == None:
+			true_r = 1	
+		else:
+			true_r = true_r_dict[site]
+		
+		q_matrix = q_matrix*true_r
+		
+		sum_lst = []
+		for t in np.arange(0.000002,2,0.02):
+			p_matrix = get_p_matrix(t, q_matrix)
+			sum = 0
+			for i in range(20):
+				prod = pi_arr[i]*p_matrix[i,i]
+				sum += prod
+			sum_lst.append(sum)
+		site_sum_dict[site]= sum_lst
 	
 	return site_sum_dict
 		
@@ -133,32 +140,34 @@ def main():
 
 	ddg_file = open(infile,"r")
 	out = open(outfile,"w")
+	total_sites = 130
 	
-	total_sites = 11
 	ddg_dict = get_ddg_dict(ddg_file,total_sites)
-		
+	
+	site_lst = ddg_dict.keys()	
+	
 	pi_dict_ms = get_pi_dict(ddg_dict)
 	pi_dict_jc = np.full((20),1.0/20)
 	q_dict_ms = get_q_matrix_dict_ms(ddg_dict)
 	q_dict_jc = get_q_matrix_jc()
 	
-	true_r_lst_ms = np.full(total_sites-1,1.0)
-	true_r_lst_jc = get_gamma_dist_true_r_lst(total_sites)
-
-	site_sums_ms = get_site_sums(total_sites, pi_dict_ms, q_dict_ms, true_r_lst_ms)
-	site_sums_jc = get_site_sums(total_sites, pi_dict_jc, q_dict_jc, true_r_lst_jc, site_specific=False)
-
-	r_tilde_dict_ms = get_r_tilde(total_sites,site_sums_ms)
-	r_tilde_dict_jc = get_r_tilde(total_sites,site_sums_jc)
+	true_r_dict_jc = get_gamma_dist_true_r_dict(site_lst)
 	
-	r_tilde_dict_ms_normalized =  get_r_tilde_normalized(total_sites,site_sums_ms)
-	r_tilde_dict_jc_normalized = get_r_tilde_normalized(total_sites,site_sums_jc)
+	site_sums_ms = get_site_sums(site_lst, pi_dict_ms, q_dict_ms)
+	site_sums_jc = get_site_sums(site_lst, pi_dict_jc, q_dict_jc, true_r_dict_jc , site_specific=False)
+
+	r_tilde_dict_ms = get_r_tilde(len(site_lst),site_sums_ms)
+	r_tilde_dict_jc = get_r_tilde(len(site_lst),site_sums_jc)
+	
+	r_tilde_dict_ms_normalized =  get_r_tilde_normalized(len(site_lst),site_sums_ms)
+	r_tilde_dict_jc_normalized = get_r_tilde_normalized(len(site_lst),site_sums_jc)
 
 	out.write("site\ttime\tr_tilde_ms_norm\tr_tilde_ms\tr_tilde_jc_norm\ttrue_r_jc\n")
 	t_lst = np.arange(0.000002,2,0.02)
-	for site in ddg_dict:
+	for site in site_lst:
 		for i in range(len(t_lst)):
-			line = str(site-1)+ "\t" +str(t_lst[i])+"\t"+str(r_tilde_dict_ms_normalized[site][i])+"\t"+str(r_tilde_dict_ms[site][i])+"\t"+str(r_tilde_dict_jc_normalized[site][i])+"\t"+str(true_r_lst_jc[site-2])+"\n"
+			#line = str(site)+ "\t" +str(t_lst[i])+"\t"+str(r_tilde_dict_ms_normalized[site][i])+"\t"+str(r_tilde_dict_ms[site][i])+"\t"+str(r_tilde_dict_jc_normalized[site][i])+"\t"+str(true_r_dict_jc[site])+"\n"
+			line = "%d\t%f\t%f\t%f\t%f\t%f\n" %(site,t_lst[i],r_tilde_dict_ms_normalized[site][i],r_tilde_dict_ms[site][i],r_tilde_dict_jc_normalized[site][i],true_r_dict_jc[site])
 			out.write(line)
 		
 main()
