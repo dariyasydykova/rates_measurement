@@ -1,6 +1,6 @@
 #!/bin/bash
 num_sim=30
-site_dupl=100000
+site_dupl=10000
 
 if [ ! -d "./hyphy/rates" ]; then
 	mkdir ./hyphy/rates
