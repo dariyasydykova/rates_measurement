@@ -16,13 +16,15 @@ for (bl in br_len) {
 
 ##Generating trees for simulations with all sites for all empirical matrices 
 num_taxa <- c(128,256,512,1024,2048)
-br_len <- c(0.0001,0.001,0.01,0.1)
+br_len <- c(0.00005,0.0005,0.005,0.05,0.5)
 for (num in num_taxa) {
   tree <- stree(num, type = "balanced") # generated binary tree w/ num of taxa.
   for (bl in br_len) {
     tree$edge.length <- rep(bl,nrow(tree$edge)) # sets all branch lengths to bl
   
-    if (bl==0.0001) {
+    if (bl==0.00005) {
+      bl_str <- sprintf("%.5f",bl)
+    } else if(bl==0.0005) {
       bl_str <- sprintf("%.4f",bl)
     } else bl_str <- bl
     
