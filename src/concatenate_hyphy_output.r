@@ -22,7 +22,7 @@ for (file_name in file_lst) {
   model <- substr(file_name,str,end-1)
   t$model <- rep(model,length(t$site))
   
-  t$site <- c(1:10)
+  t$site <- c(1:length(t$site))
   d <- rbind(d, t)
 }
 
