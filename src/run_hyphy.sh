@@ -1,6 +1,9 @@
 #!/bin/bash
-num_sim=30
-site_dupl=10000
+num_sim=50
+site_dupl=1
+total_sites=130
+taxa_num_arr=(128 256 512 1024 2048)
+br_len_arr=(0.00005 0.0005 0.005 0.05 0.5)
 
 if [ ! -d "./hyphy/rates" ]; then
 	mkdir ./hyphy/rates
