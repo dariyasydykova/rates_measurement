@@ -16,16 +16,19 @@ fi
 model_name_arr=("JC" "JC_equalf" "WAG" "JTT" "LG")
 for model in ${model_name_arr[@]}
 do
-	for br_len in `seq -f %.2f 0.02 0.02 0.52` 
-	do	
-		for n in $(seq 1 $num_sim) 
+	for br_len in ${br_len_arr[*]} 
+	do	 
+		for num in ${taxa_num_arr[*]}  
 		do
-			aln_tree_file=n2_bl${br_len}_${n}_aln_tree.txt
-			rates_file=n2_bl${br_len}_${n}_${model}_rates.txt
-			echo "INFILE = aln_tree_files/${aln_tree_file}" > hyphy/setup.txt
-			echo "OUTFILE = rates/raw_rates/${rates_file}" >> hyphy/setup.txt
-			echo "SITE_DUPL = ${site_dupl}" >> hyphy/setup.txt
-			HYPHYMP hyphy/fitrates_${model}.bf
+			for i in $(seq 1 $num_sim) 
+			do
+				aln_tree_file=n${num}_bl${br_len}_${i}_aln_tree.txt
+				rates_file=n${num}_bl${br_len}_${i}_${model}_rates.txt
+				echo "INFILE = aln_tree_files/all_sites/${aln_tree_file}" > hyphy/setup.txt
+				echo "OUTFILE = rates/raw_rates/${rates_file}" >> hyphy/setup.txt
+				echo "SITE_DUPL = ${site_dupl}" >> hyphy/setup.txt
+				HYPHYMP hyphy/fitrates_${model}.bf
+			done
 		done
 	done
 done
