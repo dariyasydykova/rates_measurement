@@ -1,1 +1,0 @@
-site	rate	t	lnL
