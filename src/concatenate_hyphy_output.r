@@ -4,13 +4,25 @@ library(dplyr)
 library(cowplot)
 
 input_dir <- "hyphy/rates/raw_rates"
-output_dir <- "hyphy/rates/processed_rates/"
+output_file <- "hyphy/rates/processed_rates/all_rates.csv"
+
+num_taxa_exist <- TRUE
 
 file_lst <- list.files(input_dir,full.names=T)
 
 d <- data.frame()
 for (file_name in file_lst) {
   t <- read.table(file_name,header=T)
+  
+  print(file_name)
+  print(head(t))
+  
+  if (num_taxa_exist) {
+    str <- regexpr("n\\d+",file_name)[1]
+    end <- regexpr("_bl\\d+",file_name)[1]
+    num <- as.numeric(substr(file_name,str+1,end-1))
+    t$num_taxa <- rep(num,length(t$site)) 
+  }
   
   str <- regexpr("bl\\d+",file_name)[1]
   end <- regexpr("_\\d+_\\w+_rates.txt",file_name)[1]
@@ -26,7 +38,7 @@ for (file_name in file_lst) {
   d <- rbind(d, t)
 }
 
-write.csv(d,file=paste0(output_dir,"all_rates.csv"),quote=F,row.names=F)
+write.csv(d,file=output_file,quote=F,row.names=F)
 
 
 
