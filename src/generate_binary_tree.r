@@ -15,8 +15,8 @@ for (bl in br_len) {
 }
 
 ##Generating trees for simulations with all sites for all empirical matrices 
-num_taxa <- c(128,256,512,1024,2048)
-br_len <- c(0.00005,0.0005,0.005,0.05,0.5)
+num_taxa <- c(64,128,256,512)
+br_len <- c(0.00005,0.0005,0.005,0.05)
 for (num in num_taxa) {
   tree <- stree(num, type = "balanced") # generated binary tree w/ num of taxa.
   for (bl in br_len) {

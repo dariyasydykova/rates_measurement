@@ -3,8 +3,9 @@ library(ggplot2)
 library(dplyr)
 library(cowplot)
 
-input_dir <- "hyphy/rates/raw_rates"
-output_file <- "hyphy/rates/processed_rates/all_rates.csv"
+setwd("substitution_matrices_in_pheno_models/")
+input_dir <- "hyphy/rates/raw_rates/ten_sites"
+output_file <- "hyphy/rates/processed_rates/all_rates_ten_sites.csv"
 
 num_taxa_exist <- TRUE
 
@@ -13,9 +14,6 @@ file_lst <- list.files(input_dir,full.names=T)
 d <- data.frame()
 for (file_name in file_lst) {
   t <- read.table(file_name,header=T)
-  
-  print(file_name)
-  print(head(t))
   
   if (num_taxa_exist) {
     str <- regexpr("n\\d+",file_name)[1]
