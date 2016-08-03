@@ -1,7 +1,7 @@
 #!/bin/bash
 num_sim=30
 site_dupl=100000
-total_sites=129
+total_sites=130
 
 if [ ! -d "./aln" ]; then
 	mkdir aln

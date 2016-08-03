@@ -4,8 +4,8 @@ library(dplyr)
 library(cowplot)
 
 setwd("substitution_matrices_in_pheno_models/")
-input_dir <- "hyphy/rates/raw_rates/ten_sites"
-output_file <- "hyphy/rates/processed_rates/all_rates_ten_sites.csv"
+input_dir <- "inferred_rates/raw_rates/all_sites"
+output_file <- "inferred_rates/processed_rates/all_rates_ten_sites.csv"
 
 num_taxa_exist <- TRUE
 
