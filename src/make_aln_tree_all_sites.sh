@@ -1,7 +1,7 @@
 #!/bin/bash
-file_arr=(aln/ten_sites/*)
+file_arr=($SCRATCH/substitution_matrices_in_pheno_models_data/aln/all_sites/*)
 
-output_dir="hyphy/aln_tree_files/ten_sites"
+output_dir="hyphy/aln_tree_files/all_sites"
 
 for aln_file in ${file_arr[*]} 
 do	 
