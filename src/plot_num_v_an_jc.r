@@ -4,10 +4,10 @@ library(dplyr)
 library(cowplot)
 
 t1 <- read.table("numerically_derived_rates/all_rates.txt",header=T)
-t2<- read.csv("hyphy/rates/processed_rates/all_rates_ten_sites.csv")
+t2<- read.csv("inferred_rates/processed_rates/all_rates_ten_sites.csv")
 
-t_an <- group_by(t1[1:1000,],time) %>% mutate(rate_mean=mean(r_tilde_ms))
-t_hyphy <- group_by(t2,time) %>% mutate(rate_mean=mean(rate))
+t_an <- group_by(t1[1:1000,],time) %>% mutate(rate_mean=mean(r_tilde_ms)) %>% mutate(r_tilde_ms_norm_ten_sites = r_tilde_ms / rate_mean)
+t_hyphy <- group_by(t2,time) %>% mutate(rate_mean=mean(rate)) %>% mutate(rate_norm = rate / rate_mean)
 
 site_lst_t1 <- unique(t_an$site)
 site_lst_t2 <- unique(t2$site)
@@ -15,8 +15,6 @@ site_lst_t2 <- unique(t2$site)
 for (i in site_lst_t2){
   r_an <- filter(t_an,site==site_lst_t1[i])
   r_inf <- filter(t_hyphy,site==i) 
-  r_an <- mutate(r_an, r_tilde_ms_norm_ten_sites = r_tilde_ms / rate_mean)
-  r_inf <- mutate(r_inf, rate_norm = rate / rate_mean)
   
   p_rates <- ggplot() +
     background_grid("xy")+
@@ -28,7 +26,7 @@ for (i in site_lst_t2){
                  fun.ymin = function(x) mean(x) - sd(x)/sqrt(length(x)), 
                  fun.ymax = function(x) mean(x) + sd(x)/sqrt(length(x)), 
                  geom = "pointrange",
-                 size=0.3)+
+                 size=0.6)+
     xlab("Time") +
     ylab("Rate") +
     coord_cartesian(ylim=c(0,2.5),xlim=c(0,1))+
