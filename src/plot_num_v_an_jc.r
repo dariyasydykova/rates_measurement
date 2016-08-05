@@ -34,7 +34,8 @@ for (i in site_lst_t2){
     scale_x_continuous(breaks=seq(0,1,0.2),expand = c(0.01, 0)) +
     geom_hline(yintercept=1)+
     theme(axis.title = element_text(size = 16),
-          axis.text = element_text(size = 16))
+          axis.text = element_text(size = 16))+
+    scale_colour_manual()
   print(p_rates)
   ggsave(paste0("plots/site",i,"_ms_an_v_num_JC_equalf.png"))
 }
