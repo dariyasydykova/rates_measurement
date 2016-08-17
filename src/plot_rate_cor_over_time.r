@@ -3,9 +3,11 @@ library(ggplot2)
 library(dplyr)
 library(cowplot)
 
+setwd("substitution_matrices_in_pheno_models/")
 t1 <- read.table("numerically_derived_rates/all_rates.txt",header=T)
 t2 <- read.csv("inferred_rates/processed_rates/all_rates_all_sites.csv")
 
+#get the mean inferred rate at each time point
 r_inf <- group_by(t2,time,model) %>% mutate(rate_mean=mean(rate)) %>% mutate(rate_norm = rate / rate_mean) 
 r_an <- group_by(t1,site) %>% mutate(r_tilde_ms_norm_small_t=r_tilde_ms_norm[1])
 
