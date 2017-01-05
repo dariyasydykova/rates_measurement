@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[     41862,        935]
-NotebookOptionsPosition[     41403,        913]
-NotebookOutlinePosition[     41760,        929]
-CellTagsIndexPosition[     41717,        926]
+NotebookDataLength[     44673,       1006]
+NotebookOptionsPosition[     44055,        979]
+NotebookOutlinePosition[     44412,        995]
+CellTagsIndexPosition[     44369,        992]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -91,11 +91,10 @@ Cell[BoxData[{
       RowBox[{"j", ",", "1", ",", "20"}], "}"}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"p", "[", 
-    RowBox[{"Q_", ",", "t_"}], "]"}], ":=", 
-   RowBox[{"MatrixExp", "[", 
-    RowBox[{"t", " ", "Q"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"p", "[", 
+   RowBox[{"Q_", ",", "t_"}], "]"}], ":=", 
+  RowBox[{"MatrixExp", "[", 
+   RowBox[{"t", " ", "Q"}], "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{
@@ -622,7 +621,9 @@ Cell[BoxData[{
    3.668183703854649*^9, 3.668183725507903*^9}, {3.668183773881493*^9, 
    3.6681838571298437`*^9}, {3.668448855393283*^9, 3.668448978249704*^9}, {
    3.668449118809103*^9, 3.668449151496573*^9}, {3.6684515124435587`*^9, 
-   3.668451545036263*^9}, 3.675255370083363*^9}],
+   3.668451545036263*^9}, 3.675255370083363*^9, 3.684789273196347*^9}],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
@@ -680,16 +681,62 @@ foldX/foldx_ddG/132L_A_foldx_ddG.txt\>\"", ",", " ", "\"\<Table\>\""}],
       RowBox[{"k", ",", "1", ",", "m"}], "}"}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"qList", " ", "=", " ", 
-   RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"qList", " ", "=", " ", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"q", "[", 
+       RowBox[{
+       "DDGlist", "\[LeftDoubleBracket]", "k", "\[RightDoubleBracket]"}], 
+       "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"k", ",", "1", ",", "m"}], "}"}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"For", "[", 
     RowBox[{
-     RowBox[{"q", "[", 
-      RowBox[{
-      "DDGlist", "\[LeftDoubleBracket]", "k", "\[RightDoubleBracket]"}], 
-      "]"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"k", ",", "1", ",", "m"}], "}"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+     RowBox[{"k", "=", "1"}], ",", 
+     RowBox[{"k", "<", 
+      RowBox[{"(", 
+       RowBox[{"m", "+", "1"}], ")"}]}], ",", 
+     RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"rates", " ", "=", " ", 
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"k", ",", "t", ",", 
+           RowBox[{"r", "[", 
+            RowBox[{"k", ",", 
+             RowBox[{"makepList", "[", 
+              RowBox[{"DDGlist", ",", "t", ",", "m"}], "]"}], ",", "piList", 
+             ",", "m"}], "]"}], ",", 
+           RowBox[{"rSmallt", "[", 
+            RowBox[{"k", ",", "qList", ",", "piList", ",", "t", ",", "m"}], 
+            "]"}], ",", 
+           RowBox[{"rLarget", "[", 
+            RowBox[{"k", ",", "piList", ",", "m"}], "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"t", ",", "0.000001", ",", "1.5", ",", ".02"}], "}"}]}], 
+        "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"rates", " ", "=", " ", 
+       RowBox[{"Prepend", "[", 
+        RowBox[{"rates", ",", 
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<site\>\"", ",", "\"\<time\>\"", ",", "\"\<r\>\"", ",", 
+           "\"\<r_small_t\>\"", ",", "\"\<r_large_t\>\""}], "}"}]}], "]"}]}], 
+      ";", "\[IndentingNewLine]", 
+      RowBox[{"Export", "[", 
+       RowBox[{
+        RowBox[{"StringJoin", "[", 
+         RowBox[{
+         "\"\<~/Desktop/projects/substitution_matrices_in_pheno_models/\
+numerically_derived_rates/raw_rates/site\>\"", ",", 
+          RowBox[{"ToString", "[", "k", "]"}], ",", 
+          "\"\<_rates_132L_A.txt\>\""}], "]"}], ",", "rates", ",", 
+        "\"\<Table\>\""}], "]"}]}]}], "\[IndentingNewLine]", "]"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{"For", "[", 
   RowBox[{
    RowBox[{"k", "=", "1"}], ",", 
@@ -697,42 +744,15 @@ foldX/foldx_ddG/132L_A_foldx_ddG.txt\>\"", ",", " ", "\"\<Table\>\""}],
     RowBox[{"(", 
      RowBox[{"m", "+", "1"}], ")"}]}], ",", 
    RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"rates", " ", "=", " ", 
-     RowBox[{"Table", "[", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"k", ",", "t", ",", 
-         RowBox[{"r", "[", 
-          RowBox[{"k", ",", 
-           RowBox[{"makepList", "[", 
-            RowBox[{"DDGlist", ",", "t", ",", "m"}], "]"}], ",", "piList", 
-           ",", "m"}], "]"}], ",", 
-         RowBox[{"rSmallt", "[", 
-          RowBox[{"k", ",", "qList", ",", "piList", ",", "t", ",", "m"}], 
-          "]"}], ",", 
-         RowBox[{"rLarget", "[", 
-          RowBox[{"k", ",", "piList", ",", "m"}], "]"}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"t", ",", "0.000001", ",", "1.5", ",", ".02"}], "}"}]}], 
-      "]"}]}], ";", "\[IndentingNewLine]", 
-    RowBox[{"rates", " ", "=", " ", 
-     RowBox[{"Prepend", "[", 
-      RowBox[{"rates", ",", 
-       RowBox[{"{", 
-        RowBox[{
-        "\"\<site\>\"", ",", "\"\<time\>\"", ",", "\"\<r\>\"", ",", 
-         "\"\<r_small_t\>\"", ",", "\"\<r_large_t\>\""}], "}"}]}], "]"}]}], 
-    ";", "\[IndentingNewLine]", 
-    RowBox[{"Export", "[", 
+   RowBox[{"rates", " ", "=", " ", 
+    RowBox[{"Table", "[", 
      RowBox[{
-      RowBox[{"StringJoin", "[", 
-       RowBox[{
-       "\"\<~/Desktop/projects/substitution_matrices_in_pheno_models/\
-numerically_derived_rates/raw_rates/site\>\"", ",", 
-        RowBox[{"ToString", "[", "k", "]"}], ",", 
-        "\"\<_rates_132L_A.txt\>\""}], "]"}], ",", "rates", ",", 
-      "\"\<Table\>\""}], "]"}]}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+      RowBox[{"{", 
+       RowBox[{"makepList", "[", 
+        RowBox[{"DDGlist", ",", "t", ",", "m"}], "]"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "0.000001", ",", "1.5", ",", ".02"}], "}"}]}], 
+     "]"}]}]}]}]}], "Input",
  CellChangeTimes->{{3.665334005608182*^9, 3.6653340526268063`*^9}, 
    3.665339406135244*^9, {3.665340026413166*^9, 3.665340071422674*^9}, {
    3.665340175414175*^9, 3.665340229719329*^9}, {3.6653402666190977`*^9, 
@@ -909,7 +929,53 @@ numerically_derived_rates/raw_rates/site\>\"", ",",
    3.6752553194355173`*^9}, {3.675255381999771*^9, 3.675255416679379*^9}, {
    3.675255486123742*^9, 3.675255488357555*^9}, {3.675255726005834*^9, 
    3.6752557314405117`*^9}, 3.675255816206573*^9, {3.675256926373538*^9, 
-   3.675256941331759*^9}, {3.6752573054692297`*^9, 3.6752573107770443`*^9}}]
+   3.675256941331759*^9}, {3.6752573054692297`*^9, 3.6752573107770443`*^9}, {
+   3.684789049963512*^9, 3.684789056102955*^9}, {3.6847893266392603`*^9, 
+   3.684789327424053*^9}, {3.684789361560835*^9, 3.684789365833723*^9}, {
+   3.684789405585917*^9, 3.684789441471972*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[RowBox[{\\\"Export\\\", \\\"::\\\", \
+\\\"nodir\\\"}], \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during \
+this calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.68478937023516*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"OpenWrite", "::", "noopen"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Cannot open \
+\[NoBreak]\\!\\(\\*RowBox[{\\\"\\\\\\\"/Users/dariyasydykova/Desktop/projects/\
+substitution_matrices_in_pheno_models/numerically_derived_rates/raw_rates/\
+site3_rates_132L_A.txt\\\\\\\"\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/noopen\\\", ButtonNote -> \
+\\\"OpenWrite::noopen\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.68478937027221*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[RowBox[{\\\"OpenWrite\\\", \\\"::\\\", \\\"noopen\
+\\\"}], \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.684789370293303*^9}]
+}, Open  ]]
 },
 WindowSize->{745, 594},
 WindowMargins->{{-1, Automatic}, {Automatic, 0}},
@@ -928,8 +994,13 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[400, 13, 24179, 611, 794, "Input"],
-Cell[24582, 626, 16817, 285, 420, "Input"]
+Cell[400, 13, 24179, 610, 794, "Input"],
+Cell[CellGroupData[{
+Cell[24604, 627, 17690, 307, 437, "Input"],
+Cell[42297, 936, 561, 12, 24, "Message"],
+Cell[42861, 950, 609, 12, 60, "Message"],
+Cell[43473, 964, 566, 12, 24, "Message"]
+}, Open  ]]
 }
 ]
 *)

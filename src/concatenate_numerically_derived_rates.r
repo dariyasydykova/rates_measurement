@@ -3,8 +3,8 @@ library(ggplot2)
 library(dplyr)
 library(cowplot)
 
-input_dir <- "numerically_derived_rates/raw_rates"
-output_dir <- "numerically_derived_rates/processed_rates/"
+input_dir <- "analytically_derived_rates/raw_rates"
+output_dir <- "analytically_derived_rates/processed_rates/"
 
 file_lst <- list.files(input_dir,full.names=T)
 
