@@ -4,15 +4,15 @@ library(dplyr)
 library(cowplot)
 
 setwd("substitution_matrices_in_pheno_models/")
-t1 <- read.table("analytically_derived_rates/all_rates.txt",header=T)
+t1 <- read.table("analytically_derived_rates/rates_all_sites.txt",header=T)
 t2 <- read.csv("inferred_rates/processed_rates/all_rates_all_sites.csv")
 
 r_an <- t1 %>% filter(time==0.000002) %>% select(site,r_tilde_ms_norm)
 r_an$site <- 1:length(r_an$site)
-r_inf <- group_by(t2,time,model,num_taxa,rep) %>% mutate(rate_mean=mean(rate)) %>% mutate(rate_norm = rate / rate_mean) 
-r_combined <- left_join(r_inf,r_an)
+r_inf <- t2 %>% group_by(time,model,num_taxa,rep) %>% mutate(rate_mean=mean(rate), rate_norm = rate / rate_mean) 
+all_r <- left_join(r_inf,r_an)
 
-r <- r_combined %>% 
+r <- all_r %>% 
   mutate(cor=cor(rate_norm,r_tilde_ms_norm,method="spearman",use="pairwise.complete.obs"),
                    rmsd=sqrt(mean((rate_norm - r_tilde_ms_norm)^2)))
 
@@ -68,7 +68,7 @@ for (m in model_lst){
                            ncol=2,
                            nrow=1)
   final_p <- plot_grid( p_row, legend, rel_widths = c(2, .4))
-  save_plot(paste0("plots/",m,"_cor_rmsd_bias_small_t.png"), final_p,
+  save_plot(paste0("plots/",m,"_cor_rmsd.png"), final_p,
             ncol = 2, # we're saving a grid plot of 2 columns
             nrow = 1, # and 2 rows
             # each individual subplot should have an aspect ratio of 1.3

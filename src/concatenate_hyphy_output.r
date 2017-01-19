@@ -5,7 +5,7 @@ library(cowplot)
 
 setwd("substitution_matrices_in_pheno_models/")
 input_dir <- "inferred_rates/raw_rates/all_sites"
-output_file <- "inferred_rates/processed_rates/all_rates_all_sites.csv"
+output_file <- "inferred_rates/processed_rates/rates_all_sites.csv"
 
 num_taxa_exist <- TRUE
 
@@ -41,6 +41,7 @@ for (file_name in file_lst) {
   d <- rbind(d, t)
 }
 
+d <- d %>% rename(inf_rate = rate)
 write.csv(d,file=output_file,quote=F,row.names=F)
 
 

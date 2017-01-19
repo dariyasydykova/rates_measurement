@@ -8,69 +8,73 @@ from Bio.Align import MultipleSeqAlignment
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 
-def get_pi_dict(ddG_file,num_model):
-	'''
-	function computes pi vector for each site and returns a dictionary with pi vectors (values) for each site (keys). 
-	'''
-	ddG_list = open(ddG_file,'r')
-	pi_dict = {}
-	for line in ddG_list:
-		if line.startswith('SITE'):
-			continue
-		
+##get_ddg_dict reformats delta-delta Gs from a ddg file. 
+##The function outputs a dictionary that uses sites as keys and a list of delta delta Gs as values. 
+def get_ddg_dict(ddg_file,site_limit):		
+	ddg_file.next()
+	ddg_dict = {}
+	for line in ddg_file:
 		line = line.strip()
-		line_lst = line.split("\t")
-		site_num = int(line_lst[0])
-		if site_num==num_model:
-			break
 		
-		exp_temp = [ math.exp(-float(ddG)) for ddG in line_lst[1:]]
-		pi_total = sum(exp_temp)
-		pi_lst = [ exp/pi_total for exp in exp_temp]
-		if 1-sum(pi_lst)>0.00001:
-			print 'pi sum does not add up to 1'
+		line_lst = np.fromstring(line,dtype=float,sep=' ')
+		site = int(line_lst[0])	
 		
-		pi_dict[site_num] = pi_lst
-	
-	return pi_dict
+		if site_limit == None:
+			ddg_lst = np.delete(line_lst,0)
+			ddg_dict[site]=ddg_lst
+			continue
+			
+		if site > site_limit:
+			break			
+		else:
+			ddg_lst = np.delete(line_lst,0)
+			ddg_dict[site]=ddg_lst
+			
+	return ddg_dict
 
-def get_q_matrix(site_lst):
-	'''
-	function computes Q matrix for each site and returns the dictionary with Q matrix as the numpy array (values) for each site (keys).
-	'''
-	q_matrix_dict = {}
+##get_pi_lst computes equilibrium frequencies (pi) for each amino acid from site-wise delta delta G values.
+##The function uses equation 13 from J. Echave, E. J. Jackson, and C. O. Wilke (2015).
+def get_pi_lst(ddg_lst):	
+	pi_lst = np.exp(-ddg_lst)/np.sum(np.exp(-ddg_lst))
+	if sum(pi_lst)-1 > 0.0000001:
+		print "Equilibrium frequencies do not add up to 1!"
+		sys.exit()
+	return pi_lst
 	
-	for i in site_lst:
-		q_matrix_file = "/home1/02159/ds29583/substitution_matrices_in_pheno_models/q_matrices/site"+str(i)+"_q_matrix_132L_A.txt"
-		q_list = open(q_matrix_file,'r')
-		q_matrix = []
+##get_q_matrix calculates a substitution matrix Q according to the Mutation-Selection model by Sella and Hirsh.
+def get_mutsel_q_matrix(ddg_lst):	
+	temp_s = np.reshape(ddg_lst, (len(ddg_lst), 1))
+	s_matrix = temp_s - temp_s.transpose()
+	np.fill_diagonal(s_matrix, 1)
+
+	q_matrix=s_matrix/(1-np.exp(-s_matrix))
+	np.fill_diagonal(q_matrix, 0)
+	np.fill_diagonal(q_matrix, -np.nansum(q_matrix,axis=1))
+
+	if q_matrix.sum()-0 > 0.0000001:
+		print "Rows in the subsitution matrix do not add up to 0!"
+		sys.exit()
 		
-		for line in q_list:
-			line = line.strip()
-			line_lst = line.split("\t")
-			
-			rates_list = [ float(x) for x in line_lst]
-			q_matrix.append(rates_list)
-	
-		q_matrix_dict[i] = q_matrix
-	
-	return q_matrix_dict
-			
-def make_mutSel_model(q_matrix_dict, pi_dict, tree_file, aln_file, site_dupl, num_model):
+	return q_matrix
+
+def make_mutSel_model(ddg_file, tree_file, aln_file, site_dupl, site_limit):
 	'''
 	function simulates MutSel model for the number of site_dupl with num_model model types
 	'''
 	tree=read_tree(file = tree_file)
 
+	ddg_dict = get_ddg_dict(ddg_file,site_limit)
+	
 	parts = []						
-	for i in pi_dict.keys():
-		custom_matrix = np.array(q_matrix_dict[i])
-		equilib_freqs = np.array(pi_dict[i])
+	for i in ddg_dict:
+		ddg_lst = ddg_dict[i]
+		custom_matrix = get_mutsel_q_matrix(ddg_lst)
+		equilib_freqs = get_pi_lst(ddg_lst)
 		model = Model("custom", {"matrix": custom_matrix})		
 		
 		##checking if frequencies are correct
 		freqs=model.params['state_freqs']
-		true_f = pi_dict[i]
+		true_f = equilib_freqs
 		for j in range(len(freqs)):
 			if freqs[j]-true_f[j]>0.01:
 				print "wrong pi values"
@@ -86,21 +90,25 @@ def main(argv):
 
 	if len(argv) != 6: # wrong number of arguments
 		print '''Usage:
-		simulate_aln.py <ddG_file> <tree_file> <aln_file> <site_dupl_num> <num_model>
+		simulate_aln.py <ddG_file> <tree_file> <aln_file> <site_dupl_num> <site_limit>
 		'''
 		sys.exit()
 		
-	ddG_file = argv[1]
+	ddg_file = argv[1]
 	tree_file = argv[2]
 	aln_file = argv[3]
 	
 	# Define partition(s) 
 	site_dupl = int(argv[4]) # number of sites simulated under one model
-	num_model = int(argv[5]) 
+	site_limit = int(argv[5]) 
 	
-	pi_dict = get_pi_dict(ddG_file,num_model)
-	q_matrix_dict = get_q_matrix(pi_dict.keys())
-	make_mutSel_model(q_matrix_dict, pi_dict, tree_file, aln_file, site_dupl, num_model)
+	if site_limit == "all":
+		site_limit == None
+	else:
+		site_limit = int(site_limit)
+	
+	ddg_file = open(ddg_file,"r")
+	make_mutSel_model(ddg_file, tree_file, aln_file, site_dupl, site_limit)
 		
 if __name__ == "__main__":
 	main(sys.argv)

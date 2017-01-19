@@ -67,7 +67,7 @@ def get_p_matrix(t,q_matrix,r=1):
 		
 	return p_matrix
 
-##This functions makes a dictionary of true rates each site provided. 
+##This functions makes a dictionary of true rates for each site provided. 
 ##The true rates are pulled from a gamma distribution. 
 ##The final rates are normalized to the mean rate amont all sites.
 def get_true_r_dict(site_lst):
