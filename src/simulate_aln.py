@@ -24,12 +24,12 @@ def get_ddg_dict(ddg_file,site_limit):
 			ddg_dict[site]=ddg_lst
 			continue
 			
-		if site > site_limit:
+		if len(ddg_dict) == site_limit:
 			break			
 		else:
 			ddg_lst = np.delete(line_lst,0)
 			ddg_dict[site]=ddg_lst
-			
+	
 	return ddg_dict
 
 ##get_pi_lst computes equilibrium frequencies (pi) for each amino acid from site-wise delta delta G values.
