@@ -1,5 +1,5 @@
 #!/bin/bash
-site_dupl_arr=(100 1000 10000 100000 1000000)
+site_dupl_arr=(10 100 1000 10000 100000)
 num_sim=50
 
 tree_file=n2_bl0.24.tre

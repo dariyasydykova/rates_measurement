@@ -192,6 +192,6 @@ def main():
 			true_r_dict, r_tilde_jc = get_r_tilde(site,t,ddg_dict,true_r_dict) 
 			
  			line = "%d\t%f\t%.10f\t%.10f\t%0.10f\t%0.10f\n" %(site,t,r_tilde_ms,r_tilde_small_t,r_tilde_jc,true_r_dict[site]) 
- 			out_rate_file.write(line)
+ 			#out_rate_file.write(line)
 		
 main()

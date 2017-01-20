@@ -7,7 +7,8 @@ setwd("substitution_matrices_in_pheno_models/")
 t1 <- read.table("analytically_derived_rates/rates_ten_sites.txt",header=T)
 t2<- read.csv("inferred_rates/processed_rates/rates_ten_sites.csv")
 
-t_hyphy <- t2 %>% group_by(time) %>% mutate(rate_mean=mean(rate), rate_norm = rate / rate_mean)
+t_hyphy <- t2 %>% group_by(time) %>% 
+  mutate(rate_mean=mean(rate), rate_norm = rate / rate_mean)
 
 sites_to_plot <- c(1,2,4,5,7,9)
 plot_lst <- list()
