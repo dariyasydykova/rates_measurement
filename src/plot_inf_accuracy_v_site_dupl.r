@@ -5,17 +5,28 @@ library(cowplot)
 library(readr)
 
 setwd("substitution_matrices_in_pheno_models/")
-r_inf <- read_csv( "inferred_rates/processed_rates/rates_site_dupl.csv")
+r_inf <- read.csv( "inferred_rates/processed_rates/rates_site_dupl.csv")
+r_an <- read_tsv("analytically_derived_rates/rates_ten_sites.txt")
 
-p <- ggplot(r,aes(site_dupl,inf_rate)) +
+true_r <- r_an %>%
+  filter(site==r_an$site[1],time==r_inf$time[1]+0.000002) %>%
+  mutate(site=1)
+
+r <- r_inf %>%
+  group_by(site_dupl) %>% 
+  mutate(inf_rate_norm=inf_rate/mean(inf_rate)) %>%
+  filter(site==1) %>%
+  left_join(true_r,by="site")
+  
+p <- ggplot(r,aes(site_dupl,inf_rate_norm)) +
   #background_grid("xy")+
   geom_point(size=0.9,alpha=0.8) + 
-  geom_hline(aes(yintercept=1),color="red")+
+  geom_hline(aes(yintercept=r_tilde_ms),color="red")+
   ylab("Rate") +
-  xlab("Site Dupl") +
-  coord_cartesian(ylim=c(0.01,100))+
-  scale_y_log10(breaks=c(0.01,0.1,1,10,100),label=c("0.01","0.1","1","10","100")) +
-  scale_x_log10(breaks=c(100,1000,10000,100000,1000000),label=c("100","1000","10000","100000","1000000"))+
+  xlab("Site Duplicates") +
+  coord_cartesian(ylim=c(0.001,1000))+
+  scale_y_log10(breaks=c(0.001,0.01,0.1,1,10,100,1000),label=c("0.001","0.01","0.1","1","10","100","1000")) +
+  scale_x_log10(breaks=c(100,1000,10000,100000),label=c("100","1000","10000","100000"))+
   theme(axis.title = element_text(size = 10),
         axis.text = element_text(size = 10))
 
