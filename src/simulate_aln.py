@@ -100,9 +100,9 @@ def main(argv):
 	
 	# Define partition(s) 
 	site_dupl = int(argv[4]) # number of sites simulated under one model
-	site_limit = int(argv[5]) 
+	site_limit = argv[5]
 	
-	if site_limit == "all":
+	if site_limit == "all" or site_limit=="None":
 		site_limit == None
 	else:
 		site_limit = int(site_limit)

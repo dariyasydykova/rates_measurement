@@ -1,10 +1,11 @@
 #!/bin/bash
 site_dupl_arr=(10 100 1000 10000 100000)
 num_sim=50
-total_sites=10 #sets the limit. This will only generate dupl for one site
+total_sites='None' #sets the limit. This will only generate dupl for one site
 
-if [ ! -d "./aln" ]; then
+if [ ! -d "./aln/site_dupl" ]; then
 	mkdir aln
+	mkdir aln/site_dupl
 fi
 
 if [ -f "./src/run_site_dupl_sim.sh" ]; then
