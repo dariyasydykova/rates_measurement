@@ -122,7 +122,7 @@ def get_mutsel_q_matrix(s_matrix,mu_matrix):
 		
 	q_matrix=np.ones((61,61))
 	non_zero=s_matrix != 0
-	q_matrix[non_zero]=mu_matrix[non_zero]*(s_matrix[non_zero]/(1-np.exp(-s_matrix[non_zero]))) ##A_ij=S_ij/(1-exp(-S_ij))
+	q_matrix[non_zero]=mu_matrix[non_zero]*(s_matrix[non_zero]/(1-np.exp(-s_matrix[non_zero]))) ##A_ij=m_ij*(S_ij/(1-exp(-S_ij))
 	
 	np.fill_diagonal(q_matrix,0)
 	np.fill_diagonal(q_matrix, -np.sum(q_matrix,axis=1))
@@ -130,6 +130,7 @@ def get_mutsel_q_matrix(s_matrix,mu_matrix):
  	if q_matrix.sum()-0 > 0.0000001:
  		print "Rows in the subsitution matrix do not add up to 0!"
  		sys.exit()
+
  	return q_matrix
 	
 ##get_p_matrix calculates a P(t) matrix for a given time with a given Q matrix.
@@ -143,13 +144,8 @@ def get_p_matrix(t,q_matrix):
 	return p_matrix
 	
 def get_pi_lst(p_matrix):
-	#vl=linalg.eig(p_matrix,left=True,right=False)[1][:,0]
-	#pi_lst=vl/sum(vl)
-	#pi_lst=linalg.eig(p_matrix,left=True,right=False)[1][:,0]
-	A=p_matrix[0:6,0:6]
-	pi_lst=linalg.eig(A,left=True,right=False)[1][:,0]
-	#print A
-	#print pi_lst
+	vl=np.real(linalg.eig(p_matrix,left=True,right=False)[1][:,1])
+	pi_lst=vl/sum(vl)
 	return pi_lst
 
 ##get_r_tilde calculates a site-wise rate (normalized) using equation ?? from D. K. Sydykova and C. O. Wilke (2017)
@@ -167,14 +163,13 @@ def get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst):
 		p_matrix = get_p_matrix(t,q_matrix)
 		
 		p_matrix_equil = get_p_matrix(100000,q_matrix)
-		#pi_lst = get_pi_lst(p_matrix_equil)
-		pi_lst=np.diagonal(p_matrix_equil)
+		pi_lst = get_pi_lst(p_matrix_equil)
 		
 		site_sum = 0
 		for i in range(61):
 			site_sum += pi_lst[i]*p_matrix[i,i]
 			
-		denom_sum += np.log((61/60.0)*site_sum-(1/60))
+		denom_sum += np.log((20/19.0)*site_sum-(1/19.0))
 	
 	##Calculate site-wise variables and the numerator
 	site_ddg_lst = ddg_dict[site]
@@ -185,8 +180,7 @@ def get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst):
 	site_p_matrix = get_p_matrix(t,site_q_matrix)
 	
 	site_p_matrix_equil = get_p_matrix(10000,site_q_matrix)
-	#site_pi_lst = get_pi_lst(site_p_matrix_equil)
-	site_pi_lst=np.diagonal(site_p_matrix_equil)
+	site_pi_lst = get_pi_lst(site_p_matrix_equil)
 	
 	#print 'site',site,'pi lst',site_pi_lst
 	site_sum = 0	
@@ -194,7 +188,7 @@ def get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst):
  		site_sum += site_pi_lst[i]*site_p_matrix [i,i]
 
  	m = len(ddg_dict.keys())
- 	r_tilde = np.log( (61/60.0)*site_sum-(1/60.0) ) / ( (1.0/m) * denom_sum)
+ 	r_tilde = np.log( (20/19.0)*site_sum-(1/19.0) ) / ( (1.0/m) * denom_sum)
  	
  	return r_tilde  
  	
@@ -227,7 +221,7 @@ def main():
 
 	if len(sys.argv) != 6: # wrong number of arguments
 		print """Usage:
-	python analytically_derived_rates.py <ddG_file> <output_txt_file> <site_limit> 
+	python analytically_derived_rates.py <ddG_file> <output_txt_file> <site_limit> <nuc> <mu_rate> 
 	"""
 		sys.exit()
 
@@ -254,6 +248,7 @@ def main():
 		for t in np.arange(0.000002,2,0.02):
 	 		r_tilde_ms = get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst)
  			line = "%d\t%f\t%.10f\t%s\t%d\n" %(site,t,r_tilde_ms,nuc_mu_rate,mu_rate) 
+ 			print line
  			out_rate_file.write(line)
 		
 main()
