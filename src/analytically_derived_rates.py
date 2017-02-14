@@ -28,10 +28,17 @@ def get_ddg_dict(ddg_file,site_limit):
 
 ##get_pi_lst computes equilibrium frequencies (pi) for each amino acid from site-wise delta delta G values.
 ##The function uses equation 13 from J. Echave, E. J. Jackson, and C. O. Wilke (2015).
-def get_pi_lst(ddg_lst):	
-	pi_lst = np.exp(-ddg_lst)/np.sum(np.exp(-ddg_lst))
-	if sum(pi_lst)-1 > 0.0000001:
-		print "Equilibrium frequencies do not add up to 1!"
+# def get_pi_lst_ddg(ddg_lst):	
+# 	pi_lst = np.exp(-ddg_lst)/np.sum(np.exp(-ddg_lst))
+# 	if sum(pi_lst)-1 > 0.0000001:
+# 		print "Equilibrium frequencies do not add up to 1!"
+# 		sys.exit()
+# 	return pi_lst
+
+def get_pi_lst(p_matrix):
+	pi_lst=np.diagonal(p_matrix)
+	if np.all(pi_lst<=0):
+		print 'Negative equilibrium frequencies!'
 		sys.exit()
 	return pi_lst
 	
@@ -92,10 +99,13 @@ def get_r_tilde(site,t,ddg_dict,true_r_dict=False):
 	denom_sum = 0	
 	for temp_site in ddg_dict:
 		if true_r_dict==False:
-			ddg_lst = ddg_dict[temp_site]
-			pi_lst = get_pi_lst(ddg_lst)
+			ddg_lst = ddg_dict[temp_site]			
 			q_matrix = get_mutsel_q_matrix(ddg_lst)
 			p_matrix = get_p_matrix(t,q_matrix)
+
+			p_matrix_equil = get_p_matrix(10,q_matrix)
+			pi_lst= get_pi_lst(p_matrix_equil)
+			
 		else:
 			pi_lst = np.tile(1/20.0,20)
 			q_matrix = get_jc_q_matrix()
@@ -111,9 +121,12 @@ def get_r_tilde(site,t,ddg_dict,true_r_dict=False):
 	##Calculate site-wise variables and the numerator
 	if true_r_dict==False:
 		site_ddg_lst = ddg_dict[site]
- 		site_pi_lst = get_pi_lst(site_ddg_lst)
  		site_q_matrix = get_mutsel_q_matrix(site_ddg_lst)
   		site_p_matrix = get_p_matrix(t,site_q_matrix)
+  		
+  		site_p_matrix_equil = get_p_matrix(10,site_q_matrix)
+  		site_pi_lst = get_pi_lst(site_p_matrix_equil)
+		
 	else:
 		site_pi_lst = np.tile(1/20.0,20)
 		site_q_matrix = get_jc_q_matrix()
@@ -124,6 +137,8 @@ def get_r_tilde(site,t,ddg_dict,true_r_dict=False):
   	for i in range(20):
  		site_sum += site_pi_lst[i]*site_p_matrix [i,i]
 
+	print 'site',site
+	print 'aa pi lst',site_pi_lst
  	#m is the total number of sites
  	m = len(ddg_dict.keys())
  	r_tilde = np.log( (20/19.0)*site_sum-(1/19.0) ) / ( (1.0/m) * denom_sum)
@@ -139,9 +154,11 @@ def get_r_tilde_small_t(site,ddg_dict):
 	denom_sum = 0
 	for temp_site in ddg_dict:		
 		ddg_lst = ddg_dict[temp_site]
-		pi_lst = get_pi_lst(ddg_lst)
 		q_matrix = get_mutsel_q_matrix(ddg_lst)
 		
+		p_matrix_equil = get_p_matrix(10,q_matrix)
+		pi_lst = get_pi_lst(p_matrix_equil)
+			
 		site_sum = 0
 		for i in range(20):
 			site_sum += pi_lst[i]*q_matrix[i,i]
@@ -149,8 +166,11 @@ def get_r_tilde_small_t(site,ddg_dict):
 		
 	##Calculate site-wise variables and the numerator
 	site_ddg_lst = ddg_dict[site]
- 	site_pi_lst = get_pi_lst(site_ddg_lst)
  	site_q_matrix = get_mutsel_q_matrix(site_ddg_lst)
+ 	
+ 	site_p_matrix_equil = get_p_matrix(10,site_q_matrix)
+	site_pi_lst = get_pi_lst(site_p_matrix_equil)
+
   	site_sum = 0
   	for i in range(20):
  		site_sum += site_pi_lst[i]*site_q_matrix [i,i]
@@ -185,13 +205,18 @@ def main():
 	ddg_dict = get_ddg_dict(ddg_file,site_limit)
 	true_r_dict = get_true_r_dict(ddg_dict)
 	
-	for site in ddg_dict:				
-		r_tilde_small_t = get_r_tilde_small_t(site,ddg_dict)
-		for t in np.arange(0.000002,2,0.02):
-			r_tilde_ms = get_r_tilde(site,t,ddg_dict)
-			true_r_dict, r_tilde_jc = get_r_tilde(site,t,ddg_dict,true_r_dict) 
-			
- 			line = "%d\t%f\t%.10f\t%.10f\t%0.10f\t%0.10f\n" %(site,t,r_tilde_ms,r_tilde_small_t,r_tilde_jc,true_r_dict[site]) 
- 			#out_rate_file.write(line)
+	for site in ddg_dict:		
+		t=0.6
+		r_tilde_ms = get_r_tilde(site,t,ddg_dict)
+  		line = '%d\t%f\t%.10f' %(site,t,r_tilde_ms) 
+  		print line		
+		# r_tilde_small_t = get_r_tilde_small_t(site,ddg_dict)
+# 		for t in np.arange(0.000002,2,0.02):
+# 			r_tilde_ms = get_r_tilde(site,t,ddg_dict)
+# 			true_r_dict, r_tilde_jc = get_r_tilde(site,t,ddg_dict,true_r_dict) 
+# 			
+#  			line = "%d\t%f\t%.10f\t%.10f\t%0.10f\t%0.10f" %(site,t,r_tilde_ms,r_tilde_small_t,r_tilde_jc,true_r_dict[site]) 
+#  			print line
+#  			out_rate_file.write(line+'\n')
 		
 main()
