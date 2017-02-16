@@ -137,8 +137,6 @@ def get_r_tilde(site,t,ddg_dict,true_r_dict=False):
   	for i in range(20):
  		site_sum += site_pi_lst[i]*site_p_matrix [i,i]
 
-	print 'site',site
-	print 'aa pi lst',site_pi_lst
  	#m is the total number of sites
  	m = len(ddg_dict.keys())
  	r_tilde = np.log( (20/19.0)*site_sum-(1/19.0) ) / ( (1.0/m) * denom_sum)
@@ -206,17 +204,13 @@ def main():
 	true_r_dict = get_true_r_dict(ddg_dict)
 	
 	for site in ddg_dict:		
-		t=0.6
-		r_tilde_ms = get_r_tilde(site,t,ddg_dict)
-  		line = '%d\t%f\t%.10f' %(site,t,r_tilde_ms) 
-  		print line		
-		# r_tilde_small_t = get_r_tilde_small_t(site,ddg_dict)
-# 		for t in np.arange(0.000002,2,0.02):
-# 			r_tilde_ms = get_r_tilde(site,t,ddg_dict)
-# 			true_r_dict, r_tilde_jc = get_r_tilde(site,t,ddg_dict,true_r_dict) 
-# 			
-#  			line = "%d\t%f\t%.10f\t%.10f\t%0.10f\t%0.10f" %(site,t,r_tilde_ms,r_tilde_small_t,r_tilde_jc,true_r_dict[site]) 
-#  			print line
-#  			out_rate_file.write(line+'\n')
+		r_tilde_small_t = get_r_tilde_small_t(site,ddg_dict)
+		for t in np.arange(0.000002,2,0.02):
+			r_tilde_ms = get_r_tilde(site,t,ddg_dict)
+			true_r_dict, r_tilde_jc = get_r_tilde(site,t,ddg_dict,true_r_dict) 
+			
+ 			line = "%d\t%f\t%.10f\t%.10f\t%0.10f\t%0.10f" %(site,t,r_tilde_ms,r_tilde_small_t,r_tilde_jc,true_r_dict[site]) 
+ 			#print line
+ 			out_rate_file.write(line+'\n')
 		
 main()

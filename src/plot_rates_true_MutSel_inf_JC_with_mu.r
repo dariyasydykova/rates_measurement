@@ -49,6 +49,7 @@ for (i in sites_to_plot){
     #geom_line(data=r_mu3,aes(x=time,y=r_tilde,group=mu_nuc),color="green",size=0.8) +
     #geom_line(data=r_mu5,aes(x=time,y=r_tilde,group=mu_nuc),color="blue",size=0.8) +
     geom_line(data=r_an,aes(x=time,y=r_tilde_ms),color="black",size=0.8) +
+    geom_text(data=r_an,x=1.75,y=3.25,label=paste0("site ",i))+
     xlab("Time") +
     ylab("Relative rate") +
     coord_cartesian(ylim=c(0,3.5),xlim=c(0,2))+
