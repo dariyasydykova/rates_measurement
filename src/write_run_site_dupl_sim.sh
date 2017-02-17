@@ -18,7 +18,7 @@ do
 	for i in $(seq 1 $num_sim) 
 	do
 		aln_file=n2_bl0.24_site_dupl_${site_dupl}_${i}.fa
-		echo python src/simulate_aln.py 132L_A_foldx_ddG.txt trees/$tree_file aln/site_dupl/$aln_file $site_dupl $total_sites >> ./src/run_site_dupl_sim.sh	
+		echo python src/simulate_aa_aln.py 132L_A_foldx_ddG.txt trees/$tree_file aln/site_dupl/$aln_file $site_dupl $total_sites >> ./src/run_site_dupl_sim.sh	
 	done 
 done
 
