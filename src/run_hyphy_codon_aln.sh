@@ -1,8 +1,6 @@
 #!/bin/bash
 num_sim=30
 site_dupl=100000
-total_sites=11
-sim_space='codon'
 model='JC_equalf'
 
 if [ ! -d "./hyphy/rates" ]; then
@@ -19,8 +17,8 @@ do
 	do
 		aln_tree_file=n2_bl${br_len}_${i}_aln_tree.txt
 		rates_file=n2_bl${br_len}_${i}_${model}_rates.txt
-		echo "INFILE = aln_tree_files/all_sites/${aln_tree_file}" > hyphy/setup.txt
-		echo "OUTFILE = rates/raw_rates/${rates_file}" >> hyphy/setup.txt
+		echo "INFILE = aln_tree_files/translated/${aln_tree_file}" > hyphy/setup.txt
+		echo "OUTFILE = ../inferred_rates/raw_rates/translated/${rates_file}" >> hyphy/setup.txt
 		echo "SITE_DUPL = ${site_dupl}" >> hyphy/setup.txt
 		HYPHYMP hyphy/fitrates_${model}.bf
 	done
