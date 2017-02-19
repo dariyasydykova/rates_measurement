@@ -20,8 +20,8 @@ def main():
 	aa_bl=codon_bl*0.7702233
 	new_tree='(t1:'+str(aa_bl)+',t2:'+str(aa_bl)+');'
 	
-	new_tree_file=output_dir+'/'+'n2_codon_bl'+str(codon_bl)+'.tre'
-	
+	new_tree_file=output_dir+'/'+'n2_codon_bl%.2f.tre' %codon_bl
+	print new_tree_file
 	out = open(new_tree_file,'w')
 	out.write(new_tree)
 	
