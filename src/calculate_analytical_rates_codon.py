@@ -58,6 +58,9 @@ def get_nuc_mu_matrix(nuc,mu_rate):
 	
 def get_aa_to_codon_dict():
 	
+# 	aa_to_codon_dict = {'ALA':['GCT','GCC'],
+# 	'GLY':['GGT','GGC']}
+	
 	aa_to_codon_dict = {'PHE':['TTT','TTC'],
 	'LEU':['TTA','TTG','CTT','CTC','CTA','CTG'],
 	'ILE':['ATT','ATC','ATA'],
@@ -121,9 +124,10 @@ def get_codon_mut_rate(nuc_mu_matrix, nuc_lst,codon_lst_lst):
 	
 	codon_lst=[codon for sublst in codon_lst_lst for codon in sublst]
 	
-	codon_mu_matrix=np.zeros((61,61))
-	for i in range(61):	
-		for j in range(61):
+	codon_num=len(codon_lst)
+	codon_mu_matrix=np.zeros((codon_num,codon_num))
+	for i in range(codon_num):
+		for j in range(codon_num):
 			ci = codon_lst[i]
 			cj = codon_lst[j]
 			pos_diff = [k for k in range(len(ci)) if ci[k] != cj[k]]
@@ -140,15 +144,20 @@ def get_codon_mut_rate(nuc_mu_matrix, nuc_lst,codon_lst_lst):
 	if np.sum(codon_mu_matrix)-61 > 0.0000001:
 		print "Rows in the mutation rate matrix do not add up to 0!"
 		sys.exit()
-		
+	
 	return codon_mu_matrix
 
 ##get_q_matrix calculates a substitution matrix Q according to the Mutation-Selection model by Sella and Hirsh.
-def get_mutsel_q_matrix(s_matrix,mu_matrix):	
-		
-	q_matrix=np.ones((61,61))
-	non_zero=s_matrix != 0
-	q_matrix[non_zero]=mu_matrix[non_zero]*(s_matrix[non_zero]/(1-np.exp(-s_matrix[non_zero]))) ##A_ij=m_ij*(S_ij/(1-exp(-S_ij))
+def get_mutsel_q_matrix(s_matrix,mu_matrix,codon_lst_lst):	
+	
+	codon_num=len(s_matrix[0,:])
+	q_matrix=np.zeros((codon_num,codon_num))
+	
+	zero_m=get_bool_zero_matrix(codon_lst_lst)
+	q_matrix[zero_m]=1
+	
+	non_zero_m=np.invert(zero_m)
+	q_matrix[non_zero_m]=mu_matrix[non_zero_m]*(s_matrix[non_zero_m]/(1-np.exp(-s_matrix[non_zero_m]))) ##A_ij=m_ij*(S_ij/(1-exp(-S_ij))
 	
 	np.fill_diagonal(q_matrix,0)
 	np.fill_diagonal(q_matrix, -np.nansum(q_matrix,axis=1))
@@ -179,55 +188,88 @@ def get_pi_lst(p_matrix):
 		sys.exit()
 	return pi_lst
 
+def get_bool_zero_matrix(codon_lst_lst):
+
+	codon_lst_temp=[codon for sublst in codon_lst_lst for codon in sublst]
+	num_codon=len(codon_lst_temp)
+	m=np.zeros((num_codon,num_codon),dtype=bool)
+	sum=0
+	for i in range(len(codon_lst_lst)):
+		codon_lst=codon_lst_lst[i]
+		
+		for k in range(len(codon_lst)):
+			m_i=sum+k
+			for j in range(len(codon_lst)):	
+				m_j=sum+j
+				m[m_i,m_j]=True
+			
+		sum += len(codon_lst)
+		
+	return m	
+		
 ##get_r_tilde calculates a site-wise rate (normalized) using equation ?? from D. K. Sydykova and C. O. Wilke (2017)
 def get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst):
 				
 	##Calculate all sites denominator
-	denom_sum = 0	
+	denom_sum = 0
+	
 	for temp_site in ddg_dict:
 		ddg_lst = ddg_dict[temp_site]
-	
+
 		s_matrix,codon_lst_lst = get_codon_s_matrix(ddg_lst,aa_lst)
 		mu_matrix=get_codon_mut_rate(nuc_mu_matrix, nuc_lst, codon_lst_lst)
-		q_matrix=get_mutsel_q_matrix(s_matrix,mu_matrix)
-		
+		q_matrix=get_mutsel_q_matrix(s_matrix,mu_matrix,codon_lst_lst)
+
 		p_matrix = get_p_matrix(t,q_matrix)
-		
+
 		p_matrix_equil = get_p_matrix(10,q_matrix)
 		pi_lst = get_pi_lst(p_matrix_equil)
-		
-		site_sum = 0
-		non_zero=s_matrix != 0
-		p_matrix_with_zeros = np.zeros((61,61))
-		p_matrix_with_zeros[non_zero] = p_matrix[non_zero]
+
+		zero_m=get_bool_zero_matrix(codon_lst_lst)
+		p_matrix[zero_m]=0
+		pi_p_matrix=np.zeros((61,61))
 		for i in range(len(pi_lst)):
-			for j in range(len(pi_lst)):
-				site_sum += pi_lst[i]*p_matrix_with_zeros[i,j]
-		
-		denom_sum += np.log( 1.0-((20/19.0)*site_sum))
+			pi_p_matrix[i,:]=pi_lst[i]*p_matrix[i,:]		
+
+		denom_sum += np.log( 1.0-((20.0/19.0)*np.sum(pi_p_matrix)))
 				
 	##Calculate site-wise variables and the numerator
 	site_ddg_lst = ddg_dict[site]
 	site_s_matrix, codon_lst_lst = get_codon_s_matrix(site_ddg_lst,aa_lst)
 	mu_matrix=get_codon_mut_rate(nuc_mu_matrix, nuc_lst, codon_lst_lst)
 	
-	site_q_matrix = get_mutsel_q_matrix(site_s_matrix,mu_matrix)
+# 	print 'site', site
+# 	print 'codon lst of lsts', codon_lst_lst
+# 	print 'site ddg lst', site_ddg_lst
+# 	print 'codon mu matrix', mu_matrix
+# 	print 'site s matrix', site_s_matrix
+	
+	site_q_matrix = get_mutsel_q_matrix(site_s_matrix,mu_matrix,codon_lst_lst)
 	site_p_matrix = get_p_matrix(t,site_q_matrix)
+	
+# 	print 'site q matrix', site_q_matrix 
+# 	print 'site p matrix', site_p_matrix
 	
 	site_p_matrix_equil = get_p_matrix(10,site_q_matrix)
 	site_pi_lst = get_pi_lst(site_p_matrix_equil)
 	
-	site_sum = 0
-	non_zero=site_s_matrix != 0
-	site_p_matrix_with_zeros = np.zeros((61,61))
-	site_p_matrix_with_zeros[non_zero] = site_p_matrix[non_zero]
-  	for i in range(len(site_pi_lst)):
-  		for j in range(len(site_pi_lst)):
- 			site_sum += site_pi_lst[i]*site_p_matrix_with_zeros[i,j]
+# 	print 'site p equil matrix', site_p_matrix_equil
+# 	print 'site pi lst', site_pi_lst
+	
+	zero_m=get_bool_zero_matrix(codon_lst_lst)
+#  	print 'zero matrix', zero_m
+  	site_p_matrix[zero_m]=0
+  	site_pi_p_matrix=np.zeros((61,61))
+	for i in range(len(site_pi_lst)):
+		site_pi_p_matrix[i,:]=site_pi_lst[i]*site_p_matrix[i,:]		
+		
+# 	print 'pi*p matrix', pi_p_matrix
+	site_sum=np.sum(site_pi_p_matrix)
 	
   	m = len(ddg_dict.keys())
- 	r_tilde = np.log( 1.0-((20/19.0)*site_sum) ) / ( (1.0/m) * denom_sum)
+ 	r_tilde = np.log( 1.0-((20.0/19.0)*site_sum) ) / ( (1.0/m) * denom_sum)
  	
+#  	print 'r tilde', r_tilde
  	return r_tilde  
  	
 def main():
@@ -254,10 +296,11 @@ def main():
 	out_rate_file.write('site\ttime\tr_tilde\tmu_nuc\tmu_rate\n')
 	
 	ddg_dict,aa_lst = get_ddg_dict(ddg_file,site_limit)
-
 	nuc_mu_matrix, nuc_lst = get_nuc_mu_matrix(nuc_mu_rate,mu_rate)
-	
+
 	for site in ddg_dict:
+# 		t=0.5
+# 		r_tilde_ms = get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst)
 		for t in np.arange(0.000002,2,0.02):
 	 		r_tilde_ms = get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst)
  			line = '%d\t%f\t%.10f\t%s\t%d' %(site,t,r_tilde_ms,nuc_mu_rate,mu_rate) 
