@@ -25,7 +25,7 @@ do
 		fi
 		
 		if [ $sim_space = 'codon' ]; then 
-			echo "python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/${tree_file} ../substitution_matrices_in_pheno_models_data/codon_aln/${aln_file} ${site_dupl} ${total_sites}" >> ./src/run_sim_aln.sh	
+			echo "python src/simulate_codon_aln.py trees/${tree_file} ../substitution_matrices_in_pheno_models_data/codon_aln/${aln_file} ${site_dupl} ${total_sites}" >> ./src/run_sim_aln.sh	
 		fi 
 	done
 done

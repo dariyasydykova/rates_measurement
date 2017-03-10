@@ -57,6 +57,8 @@ for (i in sites_to_plot){
     # geom_line(data=r_mu_G5,aes(x=time,y=r_tilde),color="brown",size=0.8) +
     # geom_line(data=r_mu_A1,aes(x=time,y=r_tilde),color="yellow",size=0.8) +
     geom_line(data=r_mu1,aes(x=time*0.7702233,y=r_tilde),color="red",size=0.8) +
+    geom_line(data=r_mu1,aes(x=time*0.7702233,y=r_tilde_small_t),color="blue",size=0.8) +
+    #geom_line(data=r_mu1,aes(x=time*0.7702233,y=r_tilde_large_t),color="green",size=0.8) +
     #geom_line(data=r_mu3,aes(x=time,y=r_tilde,group=mu_nuc),color="green",size=0.8) +
     #geom_line(data=r_mu5,aes(x=time,y=r_tilde,group=mu_nuc),color="blue",size=0.8) +
     geom_line(data=r_an,aes(x=time,y=r_tilde_ms),color="black",size=0.8) +

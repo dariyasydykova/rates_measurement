@@ -5,11 +5,11 @@ library(cowplot)
 
 setwd("substitution_matrices_in_pheno_models/")
 t1 <- read.table("analytically_derived_rates/rates_all_sites.txt",header=T)
-t2 <- read.csv("inferred_rates/processed_rates/all_rates_all_sites.csv")
+t2 <- read.csv("inferred_rates/processed_rates/rates_all_sites.csv")
 
-r_an <- t1 %>% filter(time==0.000002) %>% select(site,r_tilde_ms_norm)
+r_an <- t1 %>% filter(time==0.000002) %>% select(site,r_tilde_ms)
 r_an$site <- 1:length(r_an$site)
-r_inf <- t2 %>% group_by(time,model,num_taxa,rep) %>% mutate(rate_mean=mean(rate), rate_norm = rate / rate_mean) 
+r_inf <- t2 %>% group_by(time,model,num_taxa,rep) %>% mutate(inf_rate_norm = inf_rate/mean(inf_rate)) 
 all_r <- left_join(r_inf,r_an)
 
 r <- all_r %>% 

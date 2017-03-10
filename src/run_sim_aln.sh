@@ -1,780 +1,750 @@
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_30.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_1.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_2.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_3.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_4.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_5.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_6.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_7.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_8.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_9.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_10.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_11.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_12.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_13.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_14.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_15.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_16.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_17.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_18.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_19.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_20.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_21.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_22.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_23.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_24.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_25.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_26.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_27.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_28.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_29.fa 100000 11
-python src/simulate_codon_aln.py 132L_A_foldx_ddG.txt trees/n2_bl0.52.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.52_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.02.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.02_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.04.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.04_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.06.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.06_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.08.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.08_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.10.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.10_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.12.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.12_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.14.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.14_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.16.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.16_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.18.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.18_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.20.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.20_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.22.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.22_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.24.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.24_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.26.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.26_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.28.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.28_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.30.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.30_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.32.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.32_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.34.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.34_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.36.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.36_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.38.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.38_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.40.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.40_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.42.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.42_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.44.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.44_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.46.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.46_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.48.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.48_30.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_1.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_2.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_3.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_4.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_5.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_6.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_7.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_8.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_9.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_10.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_11.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_12.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_13.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_14.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_15.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_16.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_17.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_18.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_19.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_20.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_21.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_22.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_23.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_24.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_25.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_26.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_27.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_28.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_29.fa 100000 11
+python src/simulate_codon_aln.py trees/n2_bl0.50.tre ../substitution_matrices_in_pheno_models_data/codon_aln/n2_bl0.50_30.fa 100000 11

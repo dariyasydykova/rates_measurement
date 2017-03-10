@@ -4,8 +4,8 @@ library(dplyr)
 library(cowplot)
 
 t1 <- read.table("numerically_derived_rates/all_rates.txt",header=T)
-t2 <- read.csv("inferred_rates/processed_rates/all_rates_all_sites.csv")
-t3 <-  read.csv("inferred_rates/processed_rates/all_rates_ten_sites.csv")
+t2 <- read.csv("inferred_rates/processed_rates/rates_all_sites.csv")
+t3 <-  read.csv("inferred_rates/processed_rates/rates_ten_sites.csv")
 
 t_hyphy <- group_by(t2,time,model) %>% mutate(rate_mean=mean(rate)) %>% mutate(rate_norm = rate / rate_mean) %>% filter(num_taxa==512,model!="JC")
 

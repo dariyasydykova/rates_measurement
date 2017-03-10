@@ -51,7 +51,7 @@ def get_nuc_mu_matrix(nuc,mu_rate):
 	np.fill_diagonal(nuc_mu_matrix, -np.nansum(nuc_mu_matrix,axis=1))
 		
 	if nuc_mu_matrix.sum()-0 > 0.0000001:
- 		print "Rows in the nucleotide mutation matrix do not add up to 0!"
+ 		print("Rows in the nucleotide mutation matrix do not add up to 0!")
  		sys.exit()
  	
 	return nuc_mu_matrix, nuc_lst
@@ -90,8 +90,8 @@ def get_codon_s_matrix(ddg_lst,aa_lst):
 		
 	aa_to_codon_dict = get_aa_to_codon_dict()
 	
- 	codon_s_matrix = list()
- 	codon_name_lst = list()
+	codon_s_matrix = list()
+	codon_name_lst = list()
 	for i in range(len(aa_s_matrix[0,:])):
 		codon_s_row=list()
 		
@@ -110,7 +110,7 @@ def get_codon_s_matrix(ddg_lst,aa_lst):
 			codon_s_matrix.append(codon_s_row)
 	
 	codon_s_matrix=np.array(codon_s_matrix)
- 	return codon_s_matrix,codon_name_lst
+	return codon_s_matrix,codon_name_lst
 	
 ##convert a nucleotide mutation rate matrix to a codon mutation rate matrix
 def get_codon_mut_rate(nuc_mu_matrix, nuc_lst,codon_lst_lst):
@@ -142,7 +142,7 @@ def get_codon_mut_rate(nuc_mu_matrix, nuc_lst,codon_lst_lst):
 	np.fill_diagonal(codon_mu_matrix, -np.nansum(codon_mu_matrix,axis=1))
 			
 	if np.sum(codon_mu_matrix)-61 > 0.0000001:
-		print "Rows in the mutation rate matrix do not add up to 0!"
+		print("Rows in the mutation rate matrix do not add up to 0!")
 		sys.exit()
 	
 	return codon_mu_matrix
@@ -161,19 +161,19 @@ def get_mutsel_q_matrix(s_matrix,mu_matrix,codon_lst_lst):
 	
 	np.fill_diagonal(q_matrix,0)
 	np.fill_diagonal(q_matrix, -np.nansum(q_matrix,axis=1))
+	
+	if q_matrix.sum()-0 > 0.0000001:
+		print("Rows in the subsitution matrix do not add up to 0!")
+		sys.exit()
 
- 	if q_matrix.sum()-0 > 0.0000001:
- 		print "Rows in the subsitution matrix do not add up to 0!"
- 		sys.exit()
-
- 	return q_matrix
+	return q_matrix
 	
 ##get_p_matrix calculates a P(t) matrix for a given time with a given Q matrix.
 ##Here P(t) = e^(tQ) 
 def get_p_matrix(t,q_matrix):
 	p_matrix = linalg.expm(t*q_matrix)
 	if np.sum(p_matrix)-61 > 0.0000001:
-		print "Rows in the projection matrix do not add up to 1!"
+		print("Rows in the projection matrix do not add up to 1!")
 		sys.exit()
 		
 	return p_matrix
@@ -181,10 +181,10 @@ def get_p_matrix(t,q_matrix):
 def get_pi_lst(p_matrix):
 	pi_lst=np.diagonal(p_matrix)
 	if np.sum(pi_lst)-1 > 0.01:
-		print "Equilibrium frequencies do not add up to 1!"
+		print("Equilibrium frequencies do not add up to 1!")
 		sys.exit()
 	if np.all(pi_lst<=0):
-		print 'Negative equilibrium frequencies!'
+		print('Negative equilibrium frequencies!')
 		sys.exit()
 	return pi_lst
 
@@ -219,7 +219,7 @@ def get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst):
 		s_matrix,codon_lst_lst = get_codon_s_matrix(ddg_lst,aa_lst)
 		mu_matrix=get_codon_mut_rate(nuc_mu_matrix, nuc_lst, codon_lst_lst)
 		q_matrix=get_mutsel_q_matrix(s_matrix,mu_matrix,codon_lst_lst)
-
+	
 		p_matrix = get_p_matrix(t,q_matrix)
 
 		p_matrix_equil = get_p_matrix(10,q_matrix)
@@ -258,26 +258,119 @@ def get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst):
 	
 	zero_m=get_bool_zero_matrix(codon_lst_lst)
 #  	print 'zero matrix', zero_m
-  	site_p_matrix[zero_m]=0
-  	site_pi_p_matrix=np.zeros((61,61))
+	site_p_matrix[zero_m]=0
+	site_pi_p_matrix=np.zeros((61,61))
 	for i in range(len(site_pi_lst)):
 		site_pi_p_matrix[i,:]=site_pi_lst[i]*site_p_matrix[i,:]		
 		
 # 	print 'pi*p matrix', pi_p_matrix
 	site_sum=np.sum(site_pi_p_matrix)
 	
-  	m = len(ddg_dict.keys())
- 	r_tilde = np.log( 1.0-((20.0/19.0)*site_sum) ) / ( (1.0/m) * denom_sum)
+	m = len(ddg_dict.keys())
+	r_tilde = np.log( 1.0-((20.0/19.0)*site_sum) ) / ( (1.0/m) * denom_sum)
  	
 #  	print 'r tilde', r_tilde
- 	return r_tilde  
+	return r_tilde  
+
+##get_r_tilde_small_t calculates a site-wise rate (normalized) when t is small using equation ?? from D. K. Sydykova and C. O. Wilke (2017)
+def get_r_tilde_small_t(site,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst):
+				
+	##Calculate all sites denominator
+	denom_sum = 0
+	
+	for temp_site in ddg_dict:
+		ddg_lst = ddg_dict[temp_site]
+
+		s_matrix,codon_lst_lst = get_codon_s_matrix(ddg_lst,aa_lst)
+		mu_matrix=get_codon_mut_rate(nuc_mu_matrix, nuc_lst, codon_lst_lst)
+		q_matrix=get_mutsel_q_matrix(s_matrix,mu_matrix,codon_lst_lst)
+
+		p_matrix_equil = get_p_matrix(10,q_matrix)
+		pi_lst = get_pi_lst(p_matrix_equil)
+
+		zero_m=get_bool_zero_matrix(codon_lst_lst)
+		q_matrix[zero_m]=0
+		pi_q_matrix=np.zeros((61,61))
+		for i in range(len(pi_lst)):
+			pi_q_matrix[i,:]=pi_lst[i]*q_matrix[i,:]		
+		
+		denom_sum += np.sum(pi_q_matrix)
+				
+	##Calculate site-wise variables and the numerator
+	site_ddg_lst = ddg_dict[site]
+	site_s_matrix, codon_lst_lst = get_codon_s_matrix(site_ddg_lst,aa_lst)
+	mu_matrix=get_codon_mut_rate(nuc_mu_matrix, nuc_lst, codon_lst_lst)
+		
+	site_q_matrix = get_mutsel_q_matrix(site_s_matrix,mu_matrix,codon_lst_lst)
+	
+	q_matrix_file="q_matrices/codon/site%s_q_matrix_132L_A.txt" %site
+	site_q_matrix.tofile(file=q_matrix_file,sep="\t")
+	
+	site_p_matrix_equil = get_p_matrix(10,site_q_matrix)
+	site_pi_lst = get_pi_lst(site_p_matrix_equil)
+	
+	zero_m=get_bool_zero_matrix(codon_lst_lst)
+	site_q_matrix[zero_m]=0
+	site_pi_q_matrix=np.zeros((61,61))
+	for i in range(len(site_pi_lst)):
+		site_pi_q_matrix[i,:]=site_pi_lst[i]*site_q_matrix[i,:]		
+		
+	site_sum=np.sum(site_pi_q_matrix)
+	
+	m = len(ddg_dict.keys())
+	r_tilde = site_sum / ( (1.0/m) * denom_sum)
+	
+	return r_tilde
+
+##get_r_tilde_large_t calculates a site-wise rate (normalized) when t is large using equation ?? from D. K. Sydykova and C. O. Wilke (2017)
+def get_r_tilde_large_t(site,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst):
+				
+	##Calculate all sites denominator
+	denom_sum = 0
+	
+	for temp_site in ddg_dict:
+		ddg_lst = ddg_dict[temp_site]
+
+		s_matrix,codon_lst_lst = get_codon_s_matrix(ddg_lst,aa_lst)
+		mu_matrix=get_codon_mut_rate(nuc_mu_matrix, nuc_lst, codon_lst_lst)
+		q_matrix=get_mutsel_q_matrix(s_matrix,mu_matrix,codon_lst_lst)
+
+		p_matrix_equil = get_p_matrix(10,q_matrix)
+		pi_lst = get_pi_lst(p_matrix_equil)
+
+		pi_sqr_lst=np.zeros(61)
+		for i in range(len(pi_lst)):
+			pi_sqr_lst[i]=pi_lst[i]*pi_lst[i]
+		
+		denom_sum += np.log( 1.0-((20.0/19.0)*np.sum(pi_sqr_lst)))
+				
+	##Calculate site-wise variables and the numerator
+	site_ddg_lst = ddg_dict[site]
+	site_s_matrix, codon_lst_lst = get_codon_s_matrix(site_ddg_lst,aa_lst)
+	mu_matrix=get_codon_mut_rate(nuc_mu_matrix, nuc_lst, codon_lst_lst)
+		
+	site_q_matrix = get_mutsel_q_matrix(site_s_matrix,mu_matrix,codon_lst_lst)
+		
+	site_p_matrix_equil = get_p_matrix(10,site_q_matrix)
+	site_pi_lst = get_pi_lst(site_p_matrix_equil)
+	
+	site_pi_sqr_lst=np.zeros(61)
+	for i in range(len(site_pi_lst)):
+		site_pi_sqr_lst[i]=site_pi_lst[i]*site_pi_lst[i]		
+		
+	site_sum=np.sum(site_pi_sqr_lst)
+	
+	m = len(ddg_dict.keys())
+	r_tilde = np.log( 1.0-((20.0/19.0)*site_sum) ) / ( (1.0/m) * denom_sum)
+	
+	return r_tilde
  	
 def main():
 
 	if len(sys.argv) != 6: # wrong number of arguments
-		print """Usage:
-	python analytically_derived_rates.py <ddG_file> <output_txt_file> <site_limit> <nuc> <mu_rate> 
-	"""
+		print("""Usage:
+		python calculate_analytical_rates_codon.py <ddG_file> <output_txt_file> <site_limit> <nuc> <mu_rate> 
+		""")
 		sys.exit()
 
 	infile = sys.argv[1]
@@ -293,7 +386,7 @@ def main():
 	
 	ddg_file = open(infile,"r")
 	out_rate_file = open(outfile,"w")
-	out_rate_file.write('site\ttime\tr_tilde\tmu_nuc\tmu_rate\n')
+	out_rate_file.write('site\ttime\tr_tilde\tr_tilde_small_t\tmu_nuc\tmu_rate\n')
 	
 	ddg_dict,aa_lst = get_ddg_dict(ddg_file,site_limit)
 	nuc_mu_matrix, nuc_lst = get_nuc_mu_matrix(nuc_mu_rate,mu_rate)
@@ -301,9 +394,13 @@ def main():
 	for site in ddg_dict:
 # 		t=0.5
 # 		r_tilde_ms = get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst)
+		r_tilde_small_t = get_r_tilde_small_t(site,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst)
+		#r_tilde_large_t = get_r_tilde_large_t(site,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst)
+
 		for t in np.arange(0.000002,2,0.02):
-	 		r_tilde_ms = get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst)
- 			line = '%d\t%f\t%.10f\t%s\t%d' %(site,t,r_tilde_ms,nuc_mu_rate,mu_rate) 
+	 		r_tilde = get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst)
+
+ 			line = '%d\t%f\t%.10f\t%.10f\t%s\t%d' %(site,t,r_tilde,r_tilde_small_t,nuc_mu_rate,mu_rate) 
  			#print line
  			out_rate_file.write(line+'\n')
 		
