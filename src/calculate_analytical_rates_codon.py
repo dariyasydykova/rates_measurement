@@ -338,11 +338,14 @@ def get_r_tilde_large_t(site,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst):
 		p_matrix_equil = get_p_matrix(10,q_matrix)
 		pi_lst = get_pi_lst(p_matrix_equil)
 
-		pi_sqr_lst=np.zeros(61)
+		pi_pi_matrix=np.zeros((61,61))
 		for i in range(len(pi_lst)):
-			pi_sqr_lst[i]=pi_lst[i]*pi_lst[i]
+			for j in range(len(pi_lst)):
+				pi_pi_matrix[i,j]=pi_lst[i]*pi_lst[j]
 		
-		denom_sum += np.log( 1.0-((20.0/19.0)*np.sum(pi_sqr_lst)))
+		zero_m=get_bool_zero_matrix(codon_lst_lst)
+		pi_pi_matrix[zero_m]=0
+		denom_sum += np.log( 1.0-((20.0/19.0)*np.sum(pi_pi_matrix)))
 				
 	##Calculate site-wise variables and the numerator
 	site_ddg_lst = ddg_dict[site]
@@ -354,11 +357,14 @@ def get_r_tilde_large_t(site,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst):
 	site_p_matrix_equil = get_p_matrix(10,site_q_matrix)
 	site_pi_lst = get_pi_lst(site_p_matrix_equil)
 	
-	site_pi_sqr_lst=np.zeros(61)
+	site_pi_pi_matrix=np.zeros((61,61))
 	for i in range(len(site_pi_lst)):
-		site_pi_sqr_lst[i]=site_pi_lst[i]*site_pi_lst[i]		
-		
-	site_sum=np.sum(site_pi_sqr_lst)
+		for j in range(len(site_pi_lst)):
+			site_pi_pi_matrix[i,j]=site_pi_lst[i]*site_pi_lst[j]		
+	
+	zero_m=get_bool_zero_matrix(codon_lst_lst)
+	site_pi_pi_matrix[zero_m]=0
+	site_sum=np.sum(site_pi_pi_matrix)
 	
 	m = len(ddg_dict.keys())
 	r_tilde = np.log( 1.0-((20.0/19.0)*site_sum) ) / ( (1.0/m) * denom_sum)
@@ -386,7 +392,7 @@ def main():
 	
 	ddg_file = open(infile,"r")
 	out_rate_file = open(outfile,"w")
-	out_rate_file.write('site\ttime\tr_tilde\tr_tilde_small_t\tmu_nuc\tmu_rate\n')
+	out_rate_file.write('site\ttime\tr_tilde\tr_tilde_small_t\tr_tilde_large_t\tmu_nuc\tmu_rate\n')
 	
 	ddg_dict,aa_lst = get_ddg_dict(ddg_file,site_limit)
 	nuc_mu_matrix, nuc_lst = get_nuc_mu_matrix(nuc_mu_rate,mu_rate)
@@ -395,12 +401,12 @@ def main():
 # 		t=0.5
 # 		r_tilde_ms = get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst)
 		r_tilde_small_t = get_r_tilde_small_t(site,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst)
-		#r_tilde_large_t = get_r_tilde_large_t(site,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst)
+		r_tilde_large_t = get_r_tilde_large_t(site,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst)
 
-		for t in np.arange(0.000002,2,0.02):
+		for t in np.arange(0.000002,3,0.02):
 	 		r_tilde = get_r_tilde(site,t,ddg_dict,aa_lst,nuc_mu_matrix,nuc_lst)
 
- 			line = '%d\t%f\t%.10f\t%.10f\t%s\t%d' %(site,t,r_tilde,r_tilde_small_t,nuc_mu_rate,mu_rate) 
+ 			line = '%d\t%f\t%.10f\t%.10f\t%.10f\t%s\t%d' %(site,t,r_tilde,r_tilde_small_t,r_tilde_large_t,nuc_mu_rate,mu_rate) 
  			#print line
  			out_rate_file.write(line+'\n')
 		
