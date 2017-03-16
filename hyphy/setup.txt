@@ -1,0 +1,3 @@
+INFILE = aln_tree_files/translated/n2_bl0.50_30_aln_tree.txt
+OUTFILE = ../inferred_rates/raw_rates/translated/n2_bl0.50_30_JC_equalf_rates.txt
+SITE_DUPL = 100000
