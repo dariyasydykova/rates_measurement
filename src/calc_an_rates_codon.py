@@ -109,7 +109,8 @@ def get_q_matrix(s_matrix, codon_lst, aa_to_codon_dict):
 				q_matrix[i,j]=s_ij/(1-np.exp(-s_ij))
 	
 	##set the rows to equal to zero by setting the diagonal to equal the negative of the sum of off-diagonal values
-	np.fill_diagonal(q_matrix, -np.nansum(q_matrix,axis=1))
+	np.fill_diagonal(q_matrix, 0) #set the diagonal to zero to be able to add rows together.
+	np.fill_diagonal(q_matrix, -q_matrix.sum(axis=1))
 	
 	##check that each row adds up to zero
 	if q_matrix.sum()-0 > 0.0000001:
@@ -154,7 +155,7 @@ def get_r_tilde(infile, outfile, site_limit, aa_to_codon_dict):
 			q_matrix=get_q_matrix(s_matrix, codon_lst, aa_to_codon_dict)
 
 			q_matrix_file="q_matrices/codon/site%s_q_matrix_132L_A.txt" %site
-			q_matrix.tofile(file=q_matrix_file,sep="\t")
+			np.savetxt(q_matrix_file, q_matrix)
 	
 			p_matrix_equil = get_p_matrix(10,q_matrix)
 			pi_lst = get_pi_lst(p_matrix_equil)

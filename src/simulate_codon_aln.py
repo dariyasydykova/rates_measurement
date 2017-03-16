@@ -18,8 +18,7 @@ def sim_mutSel_model(tree_file, aln_file, site_dupl, site_limit):
 	site_lst=[2,3,4,5,6,7,8,9,10,11]					
 	for i in site_lst:
 		q_matrix_file="q_matrices/codon/site%s_q_matrix_132L_A.txt" %i
-		q_matrix_lst=np.loadtxt(q_matrix_file,delimiter="\t")
-		q_matrix=np.reshape(q_matrix_lst,(61,61))
+		q_matrix=np.loadtxt(q_matrix_file)
 		model = Model("custom", {"matrix": q_matrix})		
 		
 		p = Partition(models = model, size = site_dupl)
