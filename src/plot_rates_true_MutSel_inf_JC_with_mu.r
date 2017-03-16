@@ -10,12 +10,13 @@ t2 <- read.csv("inferred_rates/processed_rates/rates_translated.csv")
 t3<- read.csv("inferred_rates/processed_rates/rates_ten_sites.csv")
 t4 <- read.table("analytically_derived_rates/rates_with_mu_1_ten_sites.txt",header=T)
 
-t2 %>% group_by(time) %>% 
-  mutate(rate_mean=mean(rate), rate_norm = rate / rate_mean) -> t_hyphy_codon
+t2 %>% group_by(time, rep) %>% 
+  mutate(rate_norm = rate / mean(rate)) -> t_hyphy_codon
+#t2 ->  t_hyphy_codon
 
 t3 %>% group_by(time) %>% 
-  mutate(rate_mean=mean(rate), rate_norm = rate / rate_mean) -> t_hyphy_aa
-  
+  mutate(rate_norm = rate / mean(rate)) -> t_hyphy_aa
+
 d <- data.frame()
 for (f in r_file_lst){
   r <- read.table(f,header=T,colClasses = c("numeric","numeric","numeric","character","numeric"))
@@ -66,6 +67,7 @@ for (i in sites_to_plot){
     stat_summary(data=r_inf_codon,
                  inherit.aes=FALSE,
                  aes(x=time*0.7702233,y=rate_norm),
+                #  aes(x=time*0.7702233,y=rate),
                  color="red",
                  fun.y = mean,
                  fun.ymin = function(x) mean(x) - sd(x)/sqrt(length(x)), 
@@ -82,9 +84,9 @@ for (i in sites_to_plot){
     #              size=0.25)+
     xlab("Time") +
     ylab("Relative rate") +
-    coord_cartesian(ylim=c(0,2.5),xlim=c(0,3*0.7702233))+
+    coord_cartesian(ylim=c(0,2.5),xlim=c(0,1))+
     scale_y_continuous(breaks=seq(0,2.5,0.5),label=c("0","0.5","1.0","1.5","2.0","2.5")) +
-    scale_x_continuous(breaks=seq(0,2.3,0.5),expand = c(0.01, 0))+ #,label=c("0","0.2","0.4","0.6","0.8","1.0")) +
+    scale_x_continuous(breaks=seq(0,1,0.2),expand = c(0.01, 0),label=c("0","0.2","0.4","0.6","0.8","1.0")) +
     #scale_y_continuous(breaks=seq(0.0,1.6,0.1))+ #,label=c("0","0.5","1.0","1.5","2.0","2.5")) +
     #scale_x_continuous(breaks=seq(0,0.04,0.01),expand = c(0.01, 0)) + #,label=c("0","0.2","0.4","0.6","0.8","1.0")) +
     geom_hline(yintercept=1)+
