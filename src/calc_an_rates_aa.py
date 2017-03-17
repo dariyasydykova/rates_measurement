@@ -43,67 +43,26 @@ def get_ddg_dict(ddg_file,site_limit=None):
 		##assign rearranged ddg value lst to a site in a dictionary
 		ddg_dict[site]=ordered_ddg_lst
 	
-	return ddg_dict,ordered_aa_lst
+	return ddg_dict
 	
-def get_codon_s_matrix(aa_ddg_lst,aa_lst,aa_to_codon_dict):
-	
-	##the codon list that will set the order for all codon matrices and vectors
-	ordered_codon_lst=['AAA','AAC','AAG','AAT',
-	'ACA','ACC','ACG','ACT',
-	'AGA','AGC','AGG','AGT',
-	'ATA','ATC','ATG','ATT',
-	'CAA','CAC','CAG','CAT',
-	'CCA','CCC','CCG','CCT',
-	'CGA','CGC','CGG','CGT',
-	'CTA','CTC','CTG','CTT',
-	'GAA','GAC','GAG','GAT',
-	'GCA','GCC','GCG','GCT',
-	'GGA','GGC','GGG','GGT',
-	'GTA','GTC','GTG','GTT',
-	'TAC','TAT', #stop codons TAA and TAG removed
-	'TCA','TCC','TCG','TCT',
-	'TGC','TGG','TGT', #stop codon TGA removed
-	'TTA','TTC','TTG','TTT'
-	]
-	
-	##make a ddG codon list from amino acid ddG lst
-	##codon ddG list will follow the codon order in ordered_codon_lst
-	codon_ddg_lst=np.empty(61)
-	for i in range(20):
-		aa = aa_lst[i]
-		codon_subset = aa_to_codon_dict[aa]
-		for codon in codon_subset:
-			ind=ordered_codon_lst.index(codon)
-			codon_ddg_lst[ind]=aa_ddg_lst[i]
+def get_codon_s_matrix(ddg_lst):
 		
-	s_matrix=np.empty((61,61))
-	for i in range(61):
-		for j in range(61):
-			s_matrix[i,j]=codon_ddg_lst[i]-codon_ddg_lst[j]
+	s_matrix=np.empty((20,20))
+	for i in range(20):
+		for j in range(20):
+			s_matrix[i,j]=ddg_lst[i]-ddg_lst[j]
 	
-	return s_matrix, ordered_codon_lst
+	return s_matrix
 
-def get_q_matrix(s_matrix, codon_lst, aa_to_codon_dict):
+def get_q_matrix(s_matrix):
 	##set q matrix[i,j]=1 where the codon i and codon j are synonymous.
-	q_matrix=np.empty((61,61))
-	for i in range(61):
-		codon_i=codon_lst[i]
-		for j in range(61):
-			codon_j=codon_lst[j]
+	q_matrix=np.empty((20,20))
+	for i in range(20):
+		for j in range(20):
 			
-			
-			##check if codon_i and codon_j belong to the same amino acid.
-			for aa in aa_to_codon_dict:
-				codon_subset=aa_to_codon_dict[aa]
-				if codon_i in codon_subset and codon_j in codon_subset:
-					syn=True
-					break
-				else:
-					syn=False
-			
-			##assign 1 where two codons are synonymous and if they non-synonymous q_ij=s_ij/(1-e^(-s_ij))
+			##assign 1 where i = j and if they non-synonymous q_ij=s_ij/(1-e^(-s_ij))
 			s_ij=s_matrix[i,j]
-			if syn==True or s_ij==0:
+			if i==j or s_ij==0:
 				q_matrix[i,j]=1
 			else:
 				q_matrix[i,j]=s_ij/(1-np.exp(-s_ij))
@@ -137,12 +96,12 @@ def get_pi_lst(p_matrix):
 		sys.exit()
 	return pi_lst
 
-def get_r_tilde(infile, outfile, site_limit, aa_to_codon_dict):
+def get_r_tilde(infile, outfile, site_limit):
 	
 	##write a header for the output file
 	outfile=open(outfile,'w')
 	outfile.write('site\ttime\tr_tilde\tr_tilde_small_t\tr_tilde_large_t\n')
-	ddg_dict, aa_lst=get_ddg_dict(infile,site_limit)
+	ddg_dict=get_ddg_dict(infile,site_limit)
 	m=len(ddg_dict) ##set total number of sites
 	
 	for t in np.arange(0.000002,2,0.02):
@@ -151,10 +110,10 @@ def get_r_tilde(infile, outfile, site_limit, aa_to_codon_dict):
 		site_num_r_large_t=[]
 		for site in ddg_dict:		
 			ddg_lst = ddg_dict[site]
-			s_matrix, codon_lst = get_codon_s_matrix(ddg_lst,aa_lst, aa_to_codon_dict)
-			q_matrix=get_q_matrix(s_matrix, codon_lst, aa_to_codon_dict)
+			s_matrix = get_codon_s_matrix(ddg_lst)
+			q_matrix=get_q_matrix(s_matrix)
 
-			q_matrix_file="q_matrices/codon/site%s_q_matrix_132L_A.txt" %site
+			q_matrix_file="q_matrices/aa/site%s_q_matrix_132L_A.txt" %site
 			np.savetxt(q_matrix_file, q_matrix)
 	
 			p_matrix_equil = get_p_matrix(10,q_matrix)
@@ -165,22 +124,11 @@ def get_r_tilde(infile, outfile, site_limit, aa_to_codon_dict):
 			num_sum_r=0
 			num_sum_r_small_t=0
 			num_sum_r_large_t=0			
-			for i in range(61):
-				codon_i=codon_lst[i]
-				for j in range(61):
-					codon_j=codon_lst[j]
-				
-					##check if codon_i and codon_j belong to the same amino acid.
-					for aa in aa_to_codon_dict:
-						codon_subset=aa_to_codon_dict[aa]
-						if codon_i in codon_subset and codon_j in codon_subset:
-							syn=True
-							break
-						else:
-							syn=False
+			for i in range(20):
+				for j in range(20):
 	
-					##assign 0 where two codons are synonymous 
-					if syn==True:
+					##assign 0 where i = j
+					if i==j:
 						num_sum_r+=0
 						num_sum_r_small_t+=0
 						num_sum_r_large_t+=0	
@@ -205,7 +153,7 @@ def main():
 
 	if len(sys.argv) != 4: # wrong number of arguments
 		print("""Usage:
-		python calc_an_rates_codon.py <ddG_file> <output_txt_file> <site_limit> 
+		python calc_an_rates_aa.py <ddG_file> <output_txt_file> <site_limit> 
 		""")
 		sys.exit()
 
@@ -213,28 +161,6 @@ def main():
 	outfile = sys.argv[2]
 	site_limit = int(sys.argv[3])
 	
-	aa_to_codon_dict = {'PHE':['TTT','TTC'],
-	'LEU':['TTA','TTG','CTT','CTC','CTA','CTG'],
-	'ILE':['ATT','ATC','ATA'],
-	'MET':['ATG'],
-	'VAL':['GTT','GTC','GTA','GTG'],
-	'SER':['TCT','TCC','TCA','TCG','AGC','AGT'],
-	'PRO':['CCT','CCC','CCA','CCG'],
-	'THR':['ACT','ACC','ACA','ACG'],
-	'ALA':['GCT','GCC','GCA','GCG'],
-	'TYR':['TAT','TAC'],
-	'HIS':['CAT','CAC'],
-	'GLN':['CAA','CAG'],
-	'ASN':['AAT','AAC'],
-	'LYS':['AAA','AAG'],
-	'ASP':['GAT','GAC'],
-	'GLU':['GAA','GAG'],
-	'CYS':['TGT','TGC'],
-	'TRP':['TGG'],
-	'ARG':['CGT','CGC','CGA','CGG','AGA','AGG'],
-	'GLY':['GGT','GGC','GGA','GGG']
-	}
-	
-	get_r_tilde(infile, outfile, site_limit, aa_to_codon_dict)
+	get_r_tilde(infile, outfile, site_limit)
 
 main()

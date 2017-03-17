@@ -1,4 +1,4 @@
-site	time	r_tilde	r_tilde_small_t_tilde_large_t
+site	time	r_tilde	r_tilde_small_t	r_tilde_large_t
 1	0.000002	1.397835	1.397825	1.381826
 2	0.000002	0.726502	0.726513	0.742160
 3	0.000002	1.342066	1.342058	1.571724
