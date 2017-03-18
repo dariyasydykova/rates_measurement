@@ -4,18 +4,18 @@ library(dplyr)
 library(cowplot)
 
 setwd("substitution_matrices_in_pheno_models/")
-t1 <- read.table("analytically_derived_rates/rates_ten_sites.txt",header=T)
+t1 <- read.table("analytically_derived_rates/rates_ten_sites_true_JC.txt",header=T)
 
 sites_to_plot <- c(1,4,5,6,7,9)
 plot_lst <- list()
 
 for (i in sites_to_plot){
-  r_an <- filter(t1,site==i+1)
+  r_an <- filter(t1,site==i)
 
   p_rates <- ggplot(r_an) +
     background_grid("xy")+
-    geom_line(aes(time,true_r_jc),color="black",size=0.8) + 
-    geom_line(aes(time,r_tilde_jc+0.01),color="#33CC33",size=0.8) + 
+    geom_line(aes(time,true_r),color="black",size=0.8) + 
+    geom_line(aes(time,r_tilde+0.01),color="#33CC33",size=0.8) + 
     xlab("Time") +
     ylab("Relative rate") +
     coord_cartesian(ylim=c(0,2.5),xlim=c(0,1))+

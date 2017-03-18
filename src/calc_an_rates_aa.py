@@ -2,9 +2,8 @@ import numpy as np
 from scipy import linalg
 import sys
 
-####################### Amino acid and codon order in this scrip ####################
+####################### Amino acid order in this scrip ####################
 ###amino acid order in all amino acid matrices and vectors: ACDEFGHIKLMNPQRSTVWY
-###Codon order in all codon matrices and vectors:
 
 def get_ddg_dict(ddg_file,site_limit=None):		
 	
@@ -80,7 +79,7 @@ def get_q_matrix(s_matrix):
 
 def get_p_matrix(t,q_matrix):
 	p_matrix = linalg.expm(t*q_matrix)
-	if np.sum(p_matrix)-61 > 0.0000001:
+	if p_matrix.sum()-20 > 0.0000001:
 		print("Rows in the projection matrix do not add up to 1!")
 		sys.exit()
 		

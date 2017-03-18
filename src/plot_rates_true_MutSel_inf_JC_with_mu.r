@@ -14,7 +14,7 @@ t2 %>% group_by(time, rep) %>%
   mutate(rate_norm = rate / mean(rate)) -> t_hyphy_codon
 #t2 ->  t_hyphy_codon
 
-t3 %>% group_by(time) %>% 
+t3 %>% group_by(time, rep) %>% 
   mutate(rate_norm = rate / mean(rate)) -> t_hyphy_aa
 
 d <- data.frame()
@@ -42,7 +42,7 @@ for (i in sites_to_plot){
   r_mu1 <- filter(t4,site==i)
   #r_mu3 <- filter(d,site==i+1,mu_rate==3)
   #r_mu5 <- filter(d,site==i+1,mu_rate==5)
-  r_an <- filter(t1,site==i+1)
+  r_an <- filter(t1,site==i)
   r_inf_codon <- filter(t_hyphy_codon,site==i)
   r_inf_aa <- filter(t_hyphy_aa,site==i)
     
@@ -57,12 +57,12 @@ for (i in sites_to_plot){
     # geom_line(data=r_mu_G3,aes(x=time,y=r_tilde),color="brown",size=0.8) +
     # geom_line(data=r_mu_G5,aes(x=time,y=r_tilde),color="brown",size=0.8) +
     # geom_line(data=r_mu_A1,aes(x=time,y=r_tilde),color="yellow",size=0.8) +
-    geom_line(data=r_mu1,aes(x=time*0.7702233,y=r_tilde),color="red",size=0.8) +
+    geom_line(data=r_mu1,aes(x=time*0.7702233,y=r_tilde),color="black",size=0.8) +
     geom_line(data=r_mu1,aes(x=time*0.7702233,y=r_tilde_small_t),color="blue",size=0.8) +
     geom_line(data=r_mu1,aes(x=time*0.7702233,y=r_tilde_large_t),color="green",size=0.8) +
     #geom_line(data=r_mu3,aes(x=time,y=r_tilde,group=mu_nuc),color="green",size=0.8) +
     #geom_line(data=r_mu5,aes(x=time,y=r_tilde,group=mu_nuc),color="blue",size=0.8) +
-    geom_line(data=r_an,aes(x=time,y=r_tilde_ms),color="black",size=0.8) +
+    geom_line(data=r_an,aes(x=time,y=r_tilde),color="black",size=0.8) +
     geom_text(data=r_an,x=2,y=2.25,label=paste0("site ",i))+
     stat_summary(data=r_inf_codon,
                  inherit.aes=FALSE,

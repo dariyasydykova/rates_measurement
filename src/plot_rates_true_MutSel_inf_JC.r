@@ -4,23 +4,24 @@ library(dplyr)
 library(cowplot)
 
 setwd("substitution_matrices_in_pheno_models/")
-t1 <- read.table("analytically_derived_rates/rates_ten_sites.txt",header=T)
-t2<- read.csv("inferred_rates/processed_rates/rates_ten_sites.csv")
+t1 <- read.table("analytically_derived_rates/rates_ten_sites_aa.txt",header=T)
+t2<- read.csv("inferred_rates/processed_rates/rates_ten_sites_aa.csv")
 
-t2 %>% group_by(time) %>% 
-  mutate(rate_mean=mean(rate), rate_norm = rate / rate_mean) -> t_hyphy
+t2 %>% group_by(time,rep) %>% 
+  mutate(rate_norm = rate / mean(rate)) -> t_hyphy
 
 sites_to_plot <- c(1,2,4,5,7,9)
 plot_lst <- list()
 
 for (i in sites_to_plot){
-  r_an <- filter(t1,site==i+1)
+  r_an <- filter(t1,site==i)
   r_inf <- filter(t_hyphy,site==i) 
   
   p_rates <- ggplot(r_an,aes(x=time)) +
     background_grid("xy")+
-    geom_line(aes(y=r_tilde_ms),color="black",size=0.8) + 
-    geom_line(aes(y=r_tilde_ms_small_t), color="blue",size=0.8) + 
+    geom_line(aes(y=r_tilde),color="black",size=0.8) + 
+    geom_line(aes(y=r_tilde_small_t), color="blue",size=0.8) + 
+    geom_line(aes(y=r_tilde_large_t), color="green",size=0.8) + 
     stat_summary(data=r_inf,
                  inherit.aes=FALSE,
                  aes(x=time,y=rate_norm),
@@ -56,7 +57,3 @@ save_plot("plots/rates_true_MutSel_inf_JC.png", prow,
           nrow = 2, # and 2 rows
           # each individual subplot should have an aspect ratio of 1.3
           base_aspect_ratio = 1.3)
-
-r <- all_r %>% 
-  mutate(cor=cor(rate_norm,r_tilde_ms_norm,method="spearman",use="pairwise.complete.obs"),
-         rmsd=sqrt(mean((rate_norm - r_tilde_ms_norm)^2)))
