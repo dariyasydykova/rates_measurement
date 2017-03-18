@@ -2,7 +2,7 @@
 num_sim=30
 site_dupl=100000
 model='JC_equalf'
-sim_space='codon'
+sim_space='aa'
 
 if [ ! -d "./hyphy/rates" ]; then
 	mkdir ./hyphy/rates
