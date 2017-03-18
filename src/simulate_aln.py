@@ -15,17 +15,20 @@ def sim_mutSel_model(aln_type, tree_file, aln_file, site_dupl, site_limit):
 	tree=read_tree(file = tree_file)
 
 	parts = []	
-	site_lst=[2,3,4,5,6,7,8,9,10,11]					
-	for i in site_lst:
+	for i in range(site_limit+1):
 		if aln_type=='aa':
 			q_matrix_file="q_matrices/aa/site%s_q_matrix_132L_A.txt" %i
-		elif aln_type=='codon:	
+		elif aln_type=='codon':	
 			q_matrix_file="q_matrices/codon/site%s_q_matrix_132L_A.txt" %i
 		else:
-			print 'wrong alignment type!'
+			print('wrong alignment type!')
 			sys.exit()
+		
+		if os.path.isfile(q_matrix_file):
+			q_matrix=np.loadtxt(q_matrix_file)
+		else:
+			continue
 			
-		q_matrix=np.loadtxt(q_matrix_file)
 		model = Model("custom", {"matrix": q_matrix})		
 		
 		p = Partition(models = model, size = site_dupl)
@@ -49,12 +52,7 @@ def main(argv):
 	
 	# Define partition(s) 
 	site_dupl = int(argv[4]) # number of sites simulated under one model
-	site_limit = argv[5]
-		
-	if site_limit == "all" or site_limit=="None":
-		site_limit == None
-	else:
-		site_limit = int(site_limit)
+	site_limit = int(argv[5])
 	
 	sim_mutSel_model(aln_type, tree_file, aln_file, site_dupl, site_limit)
 		
