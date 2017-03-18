@@ -10,15 +10,16 @@ if [ -f "./src/run_sim_all_matrices.sh" ]; then
 	rm ./src/run_sim_all_matrices.sh
 fi
 
+aln_dir=../substitution_matrices_in_pheno_models_data/aa_aln/all_sites
 for br_len in ${br_len_arr[*]} 
 do	 
 	for num in ${taxa_num_arr[*]}  
 	do
 		for n in $(seq 1 $num_sim) 
 		do
-			tree_file=n2_bl${br_len}.tre
-			aln_file=n2_bl${br_len}_${n}.fa
-			echo python src/simulate_aln.py $sim_space trees/${tree_file} ../substitution_matrices_in_pheno_models_data/aa_aln/all_sites/${aln_file} ${site_dupl} ${total_sites} >> ./src/run_sim_all_matrices.sh	
+			tree_file=n${num}_bl${br_len}.tre
+			aln_file=n${num}_bl${br_len}_${n}.fa
+			echo python src/simulate_aln.py $sim_space trees/${tree_file} ${aln_dir}/${aln_file} ${site_dupl} ${total_sites} >> ./src/run_sim_all_matrices.sh	 
 		done
 	done
 done
