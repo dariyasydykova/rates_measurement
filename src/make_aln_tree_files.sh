@@ -1,10 +1,13 @@
 #!/bin/bash
 
 ##This script will concatenate alignment fasta files and tree files for hyphy.
-file_arr=(../substitution_matrices_in_pheno_models_data/aa_aln/ten_sites/*)
-output_dir="hyphy/aln_tree_files/ten_sites/"
+file_arr=(../substitution_matrices_in_pheno_models_data/site_dupl_aln/*)
+#output_dir="hyphy/aln_tree_files/ten_sites/"
+output_dir='hyphy/aln_tree_files/site_dupl/'
+
 #sim_space='codon'
 sim_space='aa'
+site_dupl=true
 
 for aln_file in ${file_arr[*]} 
 do	 
@@ -14,7 +17,12 @@ do
 	else
 		tree_file="n2_${temp1}.tre"
 	fi	
-	temp2=`echo $aln_file | grep -oE 'n\d+_bl\d+\.\d+_\d+'`
+	
+	if [ $site_dupl ]; then
+		temp2=`echo $aln_file | grep -oE 'n\d+_bl\d+\.\d+_site_dupl_\d+_\d+'`
+	else
+		temp2=`echo $aln_file | grep -oE 'n\d+_bl\d+\.\d+_\d+'`
+	fi
 	aln_tree_file="${temp2}_aln_tree.txt"
 	cat $aln_file trees/$tree_file > $output_dir/$aln_tree_file
 done
