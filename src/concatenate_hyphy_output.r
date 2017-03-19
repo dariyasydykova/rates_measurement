@@ -4,8 +4,8 @@ library(dplyr)
 library(cowplot)
 
 setwd("substitution_matrices_in_pheno_models/")
-input_dir <- "inferred_rates/raw_rates/ten_sites"
-output_file <- "inferred_rates/processed_rates/rates_ten_sites_aa.csv"
+input_dir <- "inferred_rates/raw_rates/site_dupl"
+output_file <- "inferred_rates/processed_rates/rates_site_dupl.csv"
 
 file_lst <- list.files(input_dir,full.names=T)
 
