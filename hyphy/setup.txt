@@ -1,3 +1,0 @@
-INFILE = aln_tree_files/all_sites/n256_bl0.00005_16_aln_tree.txt
-OUTFILE = ../inferred_rates/raw_rates/all_sites/n256_bl0.00005_16_JC_rates.txt
-SITE_DUPL = 1
