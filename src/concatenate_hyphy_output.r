@@ -4,8 +4,8 @@ library(dplyr)
 library(cowplot)
 
 setwd("substitution_matrices_in_pheno_models/")
-input_dir <- "inferred_rates/raw_rates/site_dupl"
-output_file <- "inferred_rates/processed_rates/rates_site_dupl.csv"
+input_dir <- "inferred_rates/raw_rates/all_sites"
+output_file <- "inferred_rates/processed_rates/rates_all_sites.csv"
 
 file_lst <- list.files(input_dir,full.names=T)
 
@@ -19,10 +19,10 @@ for (file_name in file_lst) {
   t$num_taxa <- rep(num,length(t$site)) 
   
   str <- regexpr("bl\\d+",file_name)[1]
-  end <- str+5
-  time <- as.numeric(substr(file_name,str+2,end))*logb(num,2)*2
+  end <- regexpr("_\\d+_[[:upper:]]+_rates.txt",file_name)[1]
+  time <- as.numeric(substr(file_name,str+2,end-1))*logb(num,2)*2
   t$time <- rep(time,length(t$site))
-  br_len <- as.numeric(substr(file_name,str+2,end))
+  br_len <- as.numeric(substr(file_name,str+2,end-1))
   t$br_len <- rep(br_len,length(t$site))
   
   if (grepl("site_dupl",file_name)){

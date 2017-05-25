@@ -3,7 +3,7 @@ library(ggplot2)
 library(dplyr)
 library(cowplot)
 
-t1 <- read.table("numerically_derived_rates/all_rates.txt",header=T)
+t1 <- read.table("analytically_derived_rates/all_rates.txt",header=T)
 t2 <- read.csv("inferred_rates/processed_rates/rates_all_sites.csv")
 t3 <-  read.csv("inferred_rates/processed_rates/rates_ten_sites.csv")
 
