@@ -42,9 +42,9 @@ for (i in sites_to_plot){
   r_mu1 <- filter(t4,site==i)
   #r_mu3 <- filter(d,site==i+1,mu_rate==3)
   #r_mu5 <- filter(d,site==i+1,mu_rate==5)
-  r_an <- filter(t1,site==i)
+  #r_an <- filter(t1,site==i)
   r_inf_codon <- filter(t_hyphy_codon,site==i)
-  r_inf_aa <- filter(t_hyphy_aa,site==i)
+  #r_inf_aa <- filter(t_hyphy_aa,site==i)
     
   p_rates <- ggplot() +
     background_grid("xy")+
@@ -62,8 +62,8 @@ for (i in sites_to_plot){
     geom_line(data=r_mu1,aes(x=time*0.7702233,y=r_tilde_large_t),color="green",size=0.8) +
     #geom_line(data=r_mu3,aes(x=time,y=r_tilde,group=mu_nuc),color="green",size=0.8) +
     #geom_line(data=r_mu5,aes(x=time,y=r_tilde,group=mu_nuc),color="blue",size=0.8) +
-    geom_line(data=r_an,aes(x=time,y=r_tilde),color="black",size=0.8) +
-    geom_text(data=r_an,x=2,y=2.25,label=paste0("site ",i))+
+    #geom_line(data=r_an,aes(x=time,y=r_tilde),color="black",size=0.8) +
+    #geom_text(data=r_an,x=2,y=2.25,label=paste0("site ",i))+
     stat_summary(data=r_inf_codon,
                  inherit.aes=FALSE,
                  aes(x=time*0.7702233,y=rate_norm),
@@ -74,14 +74,14 @@ for (i in sites_to_plot){
                  fun.ymax = function(x) mean(x) + sd(x)/sqrt(length(x)), 
                  geom = "pointrange",
                  size=0.25)+
-    stat_summary(data=r_inf_aa,
-                 inherit.aes=FALSE,
-                 aes(x=time,y=rate_norm),
-                 fun.y = mean,
-                 fun.ymin = function(x) mean(x) - sd(x)/sqrt(length(x)),
-                 fun.ymax = function(x) mean(x) + sd(x)/sqrt(length(x)),
-                 geom = "pointrange",
-                 size=0.25)+
+    # stat_summary(data=r_inf_aa,
+    #              inherit.aes=FALSE,
+    #              aes(x=time,y=rate_norm),
+    #              fun.y = mean,
+    #              fun.ymin = function(x) mean(x) - sd(x)/sqrt(length(x)),
+    #              fun.ymax = function(x) mean(x) + sd(x)/sqrt(length(x)),
+    #              geom = "pointrange",
+    #              size=0.25)+
     xlab("Time") +
     ylab("Relative rate") +
     coord_cartesian(ylim=c(0,2.5),xlim=c(0,1))+
