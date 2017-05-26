@@ -19,7 +19,7 @@ for (file_name in file_lst) {
   t$num_taxa <- rep(num,length(t$site)) 
   
   str <- regexpr("bl\\d+",file_name)[1]
-  end <- regexpr("_\\d+_[[:upper:]]+_rates.txt",file_name)[1]
+  end <- regexpr("_\\d+_.+_rates.txt",file_name)[1]
   time <- as.numeric(substr(file_name,str+2,end-1))*logb(num,2)*2
   t$time <- rep(time,length(t$site))
   br_len <- as.numeric(substr(file_name,str+2,end-1))
