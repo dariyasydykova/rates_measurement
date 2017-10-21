@@ -1,54 +1,13 @@
+import argparse
+import textwrap
+import sys
+import os
+import re
 import numpy as np
 from scipy import linalg
-import sys
 
-####################### Amino acid and codon order in this scrip ####################
-###amino acid order in all amino acid matrices and vectors: ACDEFGHIKLMNPQRSTVWY
-###Codon order in all codon matrices and vectors:
-
-def get_ddg_dict(ddg_file,site_limit=None):		
-	
-	##the amino acid list that will set the order for all amino acid matrices and vectors
-	ordered_aa_lst=['ALA','CYS','ASP','GLU', 'PHE',
-	'GLY','HIS','ILE','LYS','LEU',
-	'MET','ASN','PRO','GLN','ARG',
-	'SER','THR','VAL','TRP','TYR']
-
-	f = open(ddg_file,'r')
-	ddg_dict = {} ##set an empty dictionary to get ddG values for each site.
-	for line in f:
-		line = line.strip()
-
-		##get the order of amino acids in the ddg file
-		if line.startswith('SITE'):
-			aa_lst = line.split('\t')[1:]
-			continue
-			
-		##get the site number and ddg values for each site 
-		line_lst = np.fromstring(line,dtype=float,sep=' ')
-		site = int(line_lst[0])	
-		ddg_lst = line_lst[1:]
-		
-		##exit the loop if the file reached the final site
-		if site > site_limit:
-			break
-			
-		##rearrange ddg values to match the amino acid order in ordered_aa_lst
-		ordered_ddg_lst=np.empty(20)
-		for i in range(len(aa_lst)):
-			aa = aa_lst[i]
-			ind=ordered_aa_lst.index(aa)
-			ordered_ddg_lst[ind]=ddg_lst[i]
-		
-		##assign rearranged ddg value lst to a site in a dictionary
-		ddg_dict[site]=ordered_ddg_lst
-	
-	return ddg_dict,ordered_aa_lst
-	
-def get_codon_s_matrix(aa_ddg_lst,aa_lst,aa_to_codon_dict):
-	
-	##the codon list that will set the order for all codon matrices and vectors
-	ordered_codon_lst=['AAA','AAC','AAG','AAT',
+##the codon list that will set the order for all codon matrices and vectors
+codon_lst=['AAA','AAC','AAG','AAT',
 	'ACA','ACC','ACG','ACT',
 	'AGA','AGC','AGG','AGT',
 	'ATA','ATC','ATG','ATT',
@@ -65,155 +24,9 @@ def get_codon_s_matrix(aa_ddg_lst,aa_lst,aa_to_codon_dict):
 	'TGC','TGG','TGT', #stop codon TGA removed
 	'TTA','TTC','TTG','TTT'
 	]
-	
-	##make a ddG codon list from amino acid ddG lst
-	##codon ddG list will follow the codon order in ordered_codon_lst
-	codon_ddg_lst=np.empty(61)
-	for i in range(20):
-		aa = aa_lst[i]
-		codon_subset = aa_to_codon_dict[aa]
-		for codon in codon_subset:
-			ind=ordered_codon_lst.index(codon)
-			codon_ddg_lst[ind]=aa_ddg_lst[i]
-		
-	s_matrix=np.empty((61,61))
-	for i in range(61):
-		for j in range(61):
-			s_matrix[i,j]=codon_ddg_lst[i]-codon_ddg_lst[j]
-	
-	return s_matrix, ordered_codon_lst
 
-def get_q_matrix(s_matrix, codon_lst, aa_to_codon_dict):
-	##set q matrix[i,j]=1 where the codon i and codon j are synonymous.
-	q_matrix=np.empty((61,61))
-	for i in range(61):
-		codon_i=codon_lst[i]
-		for j in range(61):
-			codon_j=codon_lst[j]
-			
-			
-			##check if codon_i and codon_j belong to the same amino acid.
-			for aa in aa_to_codon_dict:
-				codon_subset=aa_to_codon_dict[aa]
-				if codon_i in codon_subset and codon_j in codon_subset:
-					syn=True
-					break
-				else:
-					syn=False
-			
-			##assign 1 where two codons are synonymous and if they non-synonymous q_ij=s_ij/(1-e^(-s_ij))
-			s_ij=s_matrix[i,j]
-			if syn==True or s_ij==0:
-				q_matrix[i,j]=1
-			else:
-				q_matrix[i,j]=s_ij/(1-np.exp(-s_ij))
-	
-	##set the rows to equal to zero by setting the diagonal to equal the negative of the sum of off-diagonal values
-	np.fill_diagonal(q_matrix, 0) #set the diagonal to zero to be able to add rows together.
-	np.fill_diagonal(q_matrix, -q_matrix.sum(axis=1))
-	
-	##check that each row adds up to zero
-	if q_matrix.sum()-0 > 0.0000001:
-		print("Rows in the subsitution matrix do not add up to 0!")
-		sys.exit()
-		
-	return q_matrix
-
-def get_p_matrix(t,q_matrix):
-	p_matrix = linalg.expm(t*q_matrix)
-	if np.sum(p_matrix)-61 > 0.0000001:
-		print("Rows in the projection matrix do not add up to 1!")
-		sys.exit()
-		
-	return p_matrix
-	
-def get_pi_lst(p_matrix):
-	pi_lst=np.diagonal(p_matrix)
-	if np.sum(pi_lst)-1 > 0.01:
-		print("Equilibrium frequencies do not add up to 1!")
-		sys.exit()
-	if np.all(pi_lst<=0):
-		print('Negative equilibrium frequencies!')
-		sys.exit()
-	return pi_lst
-
-def get_r_tilde(infile, outfile, site_limit, aa_to_codon_dict):
-	
-	##write a header for the output file
-	outfile=open(outfile,'w')
-	outfile.write('site\ttime\tr_tilde\tr_tilde_small_t\tr_tilde_large_t\n')
-	ddg_dict, aa_lst=get_ddg_dict(infile,site_limit)
-	m=len(ddg_dict) ##set total number of sites
-	
-	for t in np.arange(0.000002,2,0.02):
-		site_num_r=[]
-		site_num_r_small_t=[]
-		site_num_r_large_t=[]
-		for site in ddg_dict:		
-			ddg_lst = ddg_dict[site]
-			s_matrix, codon_lst = get_codon_s_matrix(ddg_lst,aa_lst, aa_to_codon_dict)
-			q_matrix=get_q_matrix(s_matrix, codon_lst, aa_to_codon_dict)
-
-			q_matrix_file="q_matrices/codon/site%s_q_matrix_132L_A.txt" %site
-			np.savetxt(q_matrix_file, q_matrix)
-	
-			p_matrix_equil = get_p_matrix(10,q_matrix)
-			pi_lst = get_pi_lst(p_matrix_equil)
-
-			p_matrix=get_p_matrix(t,q_matrix)
-
-			num_sum_r=0
-			num_sum_r_small_t=0
-			num_sum_r_large_t=0			
-			for i in range(61):
-				codon_i=codon_lst[i]
-				for j in range(61):
-					codon_j=codon_lst[j]
-				
-					##check if codon_i and codon_j belong to the same amino acid.
-					for aa in aa_to_codon_dict:
-						codon_subset=aa_to_codon_dict[aa]
-						if codon_i in codon_subset and codon_j in codon_subset:
-							syn=True
-							break
-						else:
-							syn=False
-	
-					##assign 0 where two codons are synonymous 
-					if syn==True:
-						num_sum_r+=0
-						num_sum_r_small_t+=0
-						num_sum_r_large_t+=0	
-					else:
-						num_sum_r+=pi_lst[i]*p_matrix[i,j]
-						num_sum_r_small_t+=pi_lst[i]*q_matrix[i,j]
-						num_sum_r_large_t+=pi_lst[i]*pi_lst[j]
-					
-			site_num_r.append(np.log(1.0-((20.0/19.0)*num_sum_r)))
-			site_num_r_small_t.append(num_sum_r_small_t)
-			site_num_r_large_t.append(np.log(1.0-((20.0/19.0)*num_sum_r_large_t)))
-		
-		for i in range(len(site_num_r)):
-			site_r_tilde = site_num_r[i] / ( (1.0/m) * sum(site_num_r))
-			site_r_tilde_small_t = site_num_r_small_t[i] / ( (1.0/m) * sum(site_num_r_small_t))
-			site_r_tilde_large_t = site_num_r_large_t[i] / ( (1.0/m) * sum(site_num_r_large_t))
-
-			line='%d\t%f\t%f\t%f\t%f' %(i+1, t, site_r_tilde, site_r_tilde_small_t, site_r_tilde_large_t) 
-			outfile.write(line+'\n')
-
-def main():
-
-	if len(sys.argv) != 4: # wrong number of arguments
-		print("""Usage:
-		python calc_an_rates_codon.py <ddG_file> <output_txt_file> <site_limit> 
-		""")
-		sys.exit()
-
-	infile = sys.argv[1]
-	outfile = sys.argv[2]
-	site_limit = int(sys.argv[3])
-	
-	aa_to_codon_dict = {'PHE':['TTT','TTC'],
+#dictionary to help generate ddG values for the codons
+aa_to_codon_dict = {'PHE':['TTT','TTC'],
 	'LEU':['TTA','TTG','CTT','CTC','CTA','CTG'],
 	'ILE':['ATT','ATC','ATA'],
 	'MET':['ATG'],
@@ -233,8 +46,172 @@ def main():
 	'TRP':['TGG'],
 	'ARG':['CGT','CGC','CGA','CGG','AGA','AGG'],
 	'GLY':['GGT','GGC','GGA','GGG']
-	}
+	}	
 	
-	get_r_tilde(infile, outfile, site_limit, aa_to_codon_dict)
+#the function calculates a transition matrix P(t)
+def get_p_matrix(t,q_matrix): 
+	p_matrix = linalg.expm(t*q_matrix) ##calculate P(t)=e^(t*Q)
+	if p_matrix.sum()-61 > 0.0000001:#check that the rows add up to 1
+		print("Rows in the projection matrix do not add up to 1!")
+		sys.exit()
+		
+	return p_matrix
+	
+#the function calculates equilibrium frequencies from the transition matrix at equilibrium (t=10)
+def get_pi_lst(q_matrix):
+	p_matrix=get_p_matrix(10,q_matrix) #get the p matrix at the equilibrium
+	pi_lst=np.diagonal(p_matrix) #the diagonal of the p matrix at the equilibrium is the equilibrium frequencies
+	if np.sum(pi_lst)-1 > 0.01: #check that the equilibrium frequencies add up to 1
+		print("Equilibrium frequencies do not add up to 1!")
+		sys.exit()
+	if np.all(pi_lst<=0): #check that the equilibrium frequences are not negative
+		print('Negative equilibrium frequencies!')
+		sys.exit()
+	return pi_lst
 
-main()
+#the function calculates site-wise rates
+def calculate_rate(outfile, q_dir, pdb_id, m):
+	
+	r_dict=dict()
+	r_small_t_dict=dict()
+	r_large_t_dict=dict()
+	
+	#making sure the directory is specified correctly
+	if q_dir.endswith("/"):
+		pass
+	else:
+		q_dir+"/"	
+	
+	#get the list of sites to match m
+	matrix_file_dict=dict() #store site list
+	q_matrices_files=os.listdir(q_dir) #get all q matrices files in the directory q_dir
+	for q_matrix_file in q_matrices_files:
+		match = re.search(r"site(\d+)_", q_matrix_file)
+		site=int(match.group(1))
+		matrix_file_dict[site]=q_matrix_file
+	site_lst=sorted(matrix_file_dict.keys()) #extract a sorted list of sites
+	if m > len(site_lst): #get the sites that match m 
+		final_site_lst=	site_lst
+	else:
+		final_site_lst=site_lst[:m]
+		
+	for t in np.arange(0.000002,2,0.02):
+		#loop over all site's p matrices and equilibrium frequencies to derive the numerator of the rate equations
+		for site in final_site_lst:
+			q_matrix_file=matrix_file_dict[site]
+			q_matrix=np.load(q_dir+q_matrix_file)	#load the q matrix
+			pi_lst = get_pi_lst(q_matrix) #calculate the equilibrium frequencies
+			p_matrix=get_p_matrix(t,q_matrix) #calculate the transition
+
+			r=0 #set up a counter to sum over p^(k)_i*p^(k)_ij(t) for all i,j 
+			r_small_t=0 #set up a counter to sum over p^(k)_i*q^(k)_ij for all i,j 
+			r_large_t=0	#set up a counter to sum over p^(k)_i*p^(k)_i for all i	
+			for i in range(61):
+				for j in range(61):
+					codon_i=codon_lst[i]
+					codon_j=codon_lst[j]
+					
+					#check if codon_i and codon_j belong to the same codon.
+					for codon_subset in aa_to_codon_dict.values():
+						if codon_i in codon_subset and codon_j in codon_subset:
+							syn=True
+							break
+						else:
+							syn=False
+	
+					#assign 0 where two codons are synonymous 
+					if syn==True:
+						pass
+					else:
+						r+=pi_lst[i]*p_matrix[i,j]
+						r_small_t+=pi_lst[i]*q_matrix[i,j]
+						r_large_t+=pi_lst[i]*pi_lst[j]
+					
+			r_dict[site]=np.log(1.0-(20.0/19.0)*r)
+			r_small_t_dict[site]=r_small_t
+			r_large_t_dict[site]=np.log(1.0-(20.0/19.0)*r_large_t)
+		
+		#normalize site-wise rates by dividing them by the average rate in the sequence
+		for site in r_dict:
+			norm_r = r_dict[site] / ( sum(r_dict.values())/m )
+			norm_r_small_t = r_small_t_dict[site] / ( sum(r_small_t_dict.values())/m )
+			norm_r_large_t = r_large_t_dict[site] / ( sum(r_large_t_dict.values())/m )
+
+			#write out the output rates
+			line='%s,%f,%f,%f,%f' %(site, t, norm_r, norm_r_small_t, norm_r_large_t) 
+			outfile.write(line+'\n')
+def main():
+
+	'''
+	Calculate analytical rate when the inference uses the Jukes-Cantor-like matrix and the true model is a codon model
+	'''
+	
+	#creating a parser
+	parser = argparse.ArgumentParser(
+	formatter_class=argparse.RawDescriptionHelpFormatter,
+			description='Calculate analytical rate when the inference uses the Jukes-Cantor-like matrix',
+	        epilog=textwrap.dedent('''\
+	        Notation used in the description of columns r_tilde, r_tilde_small_t, and r_tilde_large_t:
+	        r^(k)       - rate at site k
+	        pi^(k)_a    - equilibrium frequency of codon a at site k
+	        q^(k)_ab    - the substitution rate between codon a and codon b
+	        p^(k)_ab(t) - probability of an codon a changing into an codon b
+	                      after time t at site k
+	        m           - total number of sites
+	        sum_ij      - sum over all amino acids i and amino acids j
+	        sum_ab      - sum over all codons a that belong to amino acid i
+                          and codons b that belong to amino acid j
+            sum_l       - sum over all sites m
+	        sum_i       - sum over all amino acids i
+	        sum_a       - sum over all codon a that belong to amino acid i
+	        
+            This script produces a CSV with the following columns: 
+			
+            Column name        Description
+            =============================================================================
+            site               Site in the codon sequence
+            
+            time               The time point at which the rate was calculated
+            
+            r_tilde            Site-wise rate defined by the equation 
+                               r^(k) = log(1-(20/19)*sum_ij(sum_ab(pi^(k)_i*p^(k)_ij(t))) / 
+                                       (1/m)*sum_l(log(1-(20/19)*sum_ij(sum_ab(pi^(l)_i*p^(l)_ij(t)))))
+            
+            r_tilde_small_t    Site-wise rate when t is small defined by the equation 
+                               r^(k) = sum_ij(sum_ab(pi^(k)_i*q^(k)_ij)) / 
+                                       (1/m)*sum_l(sum_ij(sum_ab(pi^(l)_i*q^(l)_ij)))
+            
+            r_tilde_large_t    Site-wise rate when t is large defined by the equation 
+                               r^(k) = log(1-(20/19)*sum_i(sum_a((pi^(k)_i)^2)) / 
+                                       (1/m)*sum_l(log(1-(20/19)*sum_i(sum_a((pi^(l)_i)^2))))		
+            '''))
+	#adding arguments 
+	parser.add_argument('m', metavar='<int>', type=int, help='number of sites to calculate rates')
+	parser.add_argument('pdb', metavar='<pdb_id>', type=str, help='PDB ID prefix')
+	parser.add_argument('-o', metavar='<output.csv>', type=str, help='output rate file')
+	parser.add_argument('-q', metavar='<directory>', type=str, help='directory of the substitution matrix Q')
+
+	args = parser.parse_args()
+	
+	if args.o is None:
+		outfile='analytical_rates.csv'
+	else:
+		outfile=args.o
+	
+	if args.q is None:
+		q_dir='../q_matrix/codon/'
+	else:
+		q_dir=args.q
+		
+	#input arguments
+	m=args.m
+	pdb_id=args.pdb
+	
+	##write a header for the output file
+	outfile=open(outfile,'w')
+	outfile.write('site,time,r_tilde,r_tilde_small_t,r_tilde_large_t\n')
+	
+	calculate_rate(outfile, q_dir, pdb_id, m)
+
+if __name__ == "__main__":
+	main()     
