@@ -29,10 +29,6 @@ def get_pi_lst(q_matrix):
 
 #the function calculates site-wise rates
 def calculate_rate(outfile, q_dir, pdb_id, m):
-
-	r_dict=dict()
-	r_small_t_dict=dict()
-	r_large_t_dict=dict()
 	
 	#making sure the directory is specified correctly
 	if q_dir.endswith("/"):
@@ -54,6 +50,10 @@ def calculate_rate(outfile, q_dir, pdb_id, m):
 		final_site_lst=site_lst[:m]
 		
 	for t in np.arange(0.000002,2,0.02):
+		r_dict=dict()
+		r_small_t_dict=dict()
+		r_large_t_dict=dict()
+		
 		#loop over all site's p matrices and equilibrium frequencies to derive the numerator of the rate equations
 		for site in final_site_lst:
 			q_matrix_file=matrix_file_dict[site]
