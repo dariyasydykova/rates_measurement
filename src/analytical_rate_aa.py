@@ -44,10 +44,7 @@ def calculate_rate(outfile, q_dir, m):
 		site=int(match.group(1))
 		matrix_file_dict[site]=q_matrix_file
 	site_lst=sorted(matrix_file_dict.keys()) #extract a sorted list of sites
-	if m > len(site_lst): #get the sites that match m 
-		final_site_lst=	site_lst
-	else:
-		final_site_lst=site_lst[:m]
+	final_site_lst=site_lst[:m]
 		
 	for t in np.arange(0.000002,2,0.02):
 		r_dict=dict()

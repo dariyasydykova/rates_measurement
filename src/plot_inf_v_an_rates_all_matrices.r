@@ -3,7 +3,6 @@ library(ggplot2)
 library(dplyr)
 library(cowplot)
 
-setwd("substitution_matrices_in_pheno_models/")
 r_an <- read.table("analytically_derived_rates/rates_all_sites_aa.txt",header=T)
 r_inf <- read.csv("inferred_rates/processed_rates/rates_all_sites.csv")
 
