@@ -70,7 +70,7 @@ def get_pi_lst(q_matrix):
 	return pi_lst
 
 #the function calculates site-wise rates
-def calculate_rate(outfile, q_dir, pdb_id, m):
+def calculate_rate(outfile, q_dir, m):
 	
 	r_dict=dict()
 	r_small_t_dict=dict()
@@ -187,7 +187,6 @@ def main():
             '''))
 	#adding arguments 
 	parser.add_argument('m', metavar='<int>', type=int, help='number of sites to calculate rates')
-	parser.add_argument('pdb', metavar='<pdb_id>', type=str, help='PDB ID prefix')
 	parser.add_argument('-o', metavar='<output.csv>', type=str, help='output rate file')
 	parser.add_argument('-q', metavar='<directory>', type=str, help='directory of the substitution matrix Q')
 
@@ -205,13 +204,12 @@ def main():
 		
 	#input arguments
 	m=args.m
-	pdb_id=args.pdb
 	
 	##write a header for the output file
 	outfile=open(outfile,'w')
 	outfile.write('site,time,r_tilde,r_tilde_small_t,r_tilde_large_t\n')
 	
-	calculate_rate(outfile, q_dir, pdb_id, m)
+	calculate_rate(outfile, q_dir, m)
 
 if __name__ == "__main__":
 	main()     
