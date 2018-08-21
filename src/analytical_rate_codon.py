@@ -140,13 +140,13 @@ def calculate_rate(outfile, q_dir, m):
 def main():
 
 	'''
-	Calculate analytical rate when the inference uses the Jukes-Cantor-like matrix and the true model is a codon model
+	Calculate analytical rate when the inference uses the Jukes-Cantor-like matrix and the true model is a codon MutSel
 	'''
 	
 	#creating a parser
 	parser = argparse.ArgumentParser(
 	formatter_class=argparse.RawDescriptionHelpFormatter,
-			description='Calculate analytical rate when the inference uses the Jukes-Cantor-like matrix',
+			description='Calculate analytical rate when the inference uses the Jukes-Cantor-like matrix and the true model is a codon MutSel',
 	        epilog=textwrap.dedent('''\
 	        Notation used in the description of columns r_tilde, r_tilde_small_t, and r_tilde_large_t:
 	        r^(k)       - rate at site k

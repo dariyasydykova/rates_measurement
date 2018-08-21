@@ -15,20 +15,28 @@ def sim_mutSel_model(aln_type, tree_file, aln_file, site_dupl, site_limit):
 	tree=read_tree(file = tree_file)
 
 	parts = []	
-	for i in range(site_limit+1):
-		if aln_type=='aa':
-			q_matrix_file="q_matrices/aa/site%s_q_matrix_132L_A.txt" %i
-		elif aln_type=='codon':	
-			q_matrix_file="q_matrices/codon/site%s_q_matrix_132L_A.txt" %i
-		else:
-			print('wrong alignment type!')
-			sys.exit()
-		
-		if os.path.isfile(q_matrix_file):
-			q_matrix=np.loadtxt(q_matrix_file)
-		else:
-			continue
-			
+	
+	if aln_type=='aa':
+		q_dir="../q_matrix/amino_acid/"
+	elif aln_type=='codon':	
+		q_dir="../q_matrix/codon/"
+	else:
+		print('wrong alignment type!')
+		sys.exit()
+	
+	matrix_file_dict=dict() #store site list of 132L substitution matrix files
+	q_matrices_files=os.listdir(q_dir)
+	for q_matrix_file in q_matrices_files:
+		match = re.search(r"site(\d+)_", q_matrix_file)
+		site=int(match.group(1))
+		matrix_file_dict[site]=q_matrix_file
+	site_lst=sorted(matrix_file_dict.keys()) #extract a sorted list of sites
+	final_site_lst=site_lst[:site_limit]
+	
+	for site in final_site_lst:
+		q_matrix_file=matrix_file_dict[site]
+		q_matrix=np.load(q_dir+q_matrix_file)
+
 		model = Model("custom", {"matrix": q_matrix})		
 		
 		p = Partition(models = model, size = site_dupl)

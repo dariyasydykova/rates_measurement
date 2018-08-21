@@ -13,7 +13,7 @@ def get_q_matrix():
 		
 	##set the rows to equal to zero by setting the diagonal to equal the negative of the sum of off-diagonal values
 	np.fill_diagonal(q_matrix, 0) #set the diagonal to zero to be able to add rows together.
-	np.fill_diagonal(q_matrix, -q_matrix.sum(axis=1))
+	np.fill_diagonal(q_matrix, -q_matrix.sum(axis=0))
 	
 	##check that each row adds up to zero
 	if q_matrix.sum()-0 > 0.0000001:
@@ -85,13 +85,13 @@ def calculate_rate(outfile, m):
 def main():
 
 	'''
-	Calculate analytical rate when the inference and true models uses the Jukes-Cantor-like matrix
+	Calculate analytical rate when the inference and the true models uses the Jukes-Cantor-like matrix
 	'''
 	
 	#creating a parser
 	parser = argparse.ArgumentParser(
 	formatter_class=argparse.RawDescriptionHelpFormatter,
-			description='Calculate analytical rate when the inference and true models uses the Jukes-Cantor-like matrix',
+			description='Calculate analytical rate when the inference and the true models uses the Jukes-Cantor-like matrix',
 	        epilog=textwrap.dedent('''\
 	        Notation used in the description of columns r_tilde, r_tilde_small_t, and r_tilde_large_t:
 	        r^(k)       - rate at site k
