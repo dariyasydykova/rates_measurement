@@ -8,6 +8,7 @@ from Bio.Align import MultipleSeqAlignment
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 
+
 def sim_mutSel_model(aln_type, tree_file, aln_file, site_dupl, site_limit):
 	'''
 	function simulates MutSel model for the number of site_dupl with num_model model types
