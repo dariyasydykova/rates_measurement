@@ -22,8 +22,8 @@ do
 			echo "INFILE = ../hyphy/aln_tree_files/translated/${aln_tree_file}" > ../hyphy/setup.txt
 			echo "OUTFILE = ../inferred_rates/raw_rates/translated/${rates_file}" >> ../hyphy/setup.txt
 		else
-			echo "INFILE =  ../hyphy/aln_tree_files/ten_sites/${aln_tree_file}" > ../hyphy/setup.txt
-			echo "OUTFILE = ../inferred_rates/raw_rates/ten_sites/${rates_file}" >> ../hyphy/setup.txt
+			echo "INFILE =  ../hyphy/aln_tree_files/JC/${aln_tree_file}" > ../hyphy/setup.txt
+			echo "OUTFILE = ../inferred_rates/raw_rates/JC/${rates_file}" >> ../hyphy/setup.txt
 		fi
 		echo "SITE_DUPL = ${site_dupl}" >> ../hyphy/setup.txt
 		

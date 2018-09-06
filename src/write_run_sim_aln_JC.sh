@@ -14,7 +14,7 @@ do
 		tree_file=n2_bl${br_len}.tre
 		aln_file=n2_bl${br_len}_${n}.fa
 		
-		echo python simulate_aln.py ../trees/${tree_file} ${aln_dir}/${aln_file} ${site_dupl} >> run_sim_aln_JC.sh	 
+		echo python simulate_aln_true_JC.py ../trees/${tree_file} ${aln_dir}/${aln_file} ${site_dupl} >> run_sim_aln_JC.sh	 
 	done
 done
 

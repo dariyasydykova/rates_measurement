@@ -88,17 +88,29 @@ save_plot("../plots/inf_rate_accuracy_v_site_dupl.png",plot=p)
 
 ####Figure: Analytically derived rate and the true rate when true model and inference model is JC#####
 r_an <- read_csv("../analytical_rates/ten_sites_aa_true_JC.csv")
+r_inf <- read_csv("../inferred_rates/processed_rates/rates_ten_sites_JC.csv")
+
+r_inf %>% group_by(time,rep) %>% mutate(rate_norm = rate / mean(rate)) -> r_norm_inf
 
 sites_to_plot <- c(1:6)
 plot_lst <- list()
 
 for (i in sites_to_plot){
   r_an_filtered <- filter(r_an,site==i)
+  r_inf_filtered <- filter(r_norm_inf,site==i+1) 
   
   p_rates <- ggplot(r_an_filtered) +
     background_grid("xy")+
     geom_line(aes(time,true_r),color="black",size=1.2) + 
-    geom_line(aes(time,r_tilde+0.03),color="dodgerblue",size=1.2) + 
+    stat_summary(data= r_inf_filtered,
+                 inherit.aes=FALSE,
+                 aes(x=time,y=rate_norm),
+                 color="orangered",
+                 fun.y = mean,
+                 fun.ymin = function(x) mean(x) - sd(x)/sqrt(length(x)), 
+                 fun.ymax = function(x) mean(x) + sd(x)/sqrt(length(x)), 
+                 geom = "pointrange",
+                 size=0.5)+
     xlab("Time") +
     ylab("Relative rate") +
     coord_cartesian(ylim=c(0,2.5),xlim=c(0,1))+
@@ -141,7 +153,7 @@ d_label <- data.frame(time=c(0.0009,0.009,0.09,0.9),
 r <- r_inf %>% 
   group_by(time,model,num_taxa) %>% 
   mutate(inf_rate_mean=mean(rate),inf_rate_norm=rate/inf_rate_mean)  %>%
-  filter(num_taxa==512,model=="JC" | model=="JC_equalf") %>%
+  filter(num_taxa==512, model=="JC" | model=="JC_equalf") %>%
   group_by(site,model,time) %>%
   summarise(inf_rate_norm_mean=mean(inf_rate_norm)) %>%
   left_join(r_an_temp,by='site') %>%
@@ -192,15 +204,18 @@ r_an_temp$site <- 1:length(r_an_temp$site)
 
 d_label <- data.frame(time=c(0.0009,0.009,0.09,0.9),
                       time_label=c('0.0009','0.009','0.09','0.9'))
+
+model_label <- data.frame(model = c("JC_equalf", "LG", "JTT", "WAG"),
+                          model_label = c("JC", "LG", "JTT", "WAG"))
 r <- r_inf %>% 
   group_by(time,model,num_taxa) %>% 
   mutate(inf_rate_mean=mean(rate),inf_rate_norm=rate/inf_rate_mean)  %>%
-  filter(num_taxa==512,model!="JC_equalf") %>%
+  filter(num_taxa==512, model!="JC") %>%
   group_by(site,model,time) %>%
   summarise(inf_rate_norm_mean=mean(inf_rate_norm)) %>%
   left_join(r_an_temp,by='site') %>%
   left_join(d_label) %>%
-  filter(model=="JC" | model=="LG" | model == "JTT" | model == "WAG")
+  left_join(model_label)
 
 p <- ggplot(r,aes(r_tilde_small_t,inf_rate_norm_mean)) +
   #background_grid("xy")+
@@ -209,10 +224,10 @@ p <- ggplot(r,aes(r_tilde_small_t,inf_rate_norm_mean)) +
   ylab("Inferred rate") +
   xlab("Analytically derived rate") +
   #xlab(expression(paste("Analytically Derived Rates (", hat(r)^(k), "for small t)"))) +
-  facet_grid(model ~ time_label) +
-  coord_cartesian(ylim=c(0,2.2), xlim=c(0,2.2))+
-  scale_y_continuous(breaks=seq(0,2,1)) +
-  scale_x_continuous(breaks=seq(0,2,1)) +
+  facet_grid(model_label ~ time_label) +
+  coord_cartesian(ylim=c(0,3), xlim=c(0,3))+
+  scale_y_continuous(breaks=seq(0,3,1)) +
+  scale_x_continuous(breaks=seq(0,3,1)) +
   theme(axis.title = element_text(size = 16),
         axis.text = element_text(size = 14))+
   panel_border()
@@ -255,8 +270,8 @@ for (i in sites_to_plot){
                  size=0.5)+
     xlab("Time") +
     ylab("Relative rate") +
-    coord_cartesian(ylim=c(0,2.5),xlim=c(0,1))+
-    scale_y_continuous(breaks=seq(0,2.5,0.5),label=c("0","0.5","1.0","1.5","2.0","2.5")) +
+    coord_cartesian(ylim=c(0,2),xlim=c(0,1))+
+    scale_y_continuous(breaks=seq(0,2,0.5),label=c("0","0.5","1.0","1.5","2.0")) +
     scale_x_continuous(breaks=seq(0,1,0.2),expand = c(0.01, 0),label=c("0","0.2","0.4","0.6","0.8","1.0")) +
     geom_hline(yintercept=1)+
     theme(axis.title = element_text(size = 18),

@@ -3,8 +3,8 @@ library(ggplot2)
 library(dplyr)
 library(cowplot)
 
-input_dir <- "../inferred_rates/raw_rates/ten_sites"
-output_file <- "../inferred_rates/processed_rates/rates_ten_sites_QM.csv"
+input_dir <- "../inferred_rates/raw_rates/JC"
+output_file <- "../inferred_rates/processed_rates/rates_ten_sites_JC.csv"
 
 file_lst <- list.files(input_dir,full.names=T)
 
@@ -41,8 +41,8 @@ for (file_name in file_lst) {
     model <- substr(file_name,str,end-1)
     t$model <- rep(model,length(t$site))
     
-    str <- regexpr("_\\d+_\\w+_rates.txt",file_name)[1]
-    end <- regexpr("[[:upper:]]+",file_name)[1]
+    str <- regexpr("_\\d+_\\w+_\\w+_rates.txt",file_name)[1]
+    end <- regexpr("[[:upper:]]+_",file_name)[1]
     sim_num <- as.numeric(substr(file_name,str+1,end-2))
     t$rep <- rep(sim_num,length(t$site))
   }
