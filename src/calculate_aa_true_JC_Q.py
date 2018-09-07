@@ -38,19 +38,19 @@ def get_true_rates(rate_file):
 
 #the function derives Jukes-Cantor-like matrix with all substitution rates = 1/20 for all amino acids
 def get_q_matrix():
-	q_matrix=np.empty((20,20))
-	q_matrix.fill(1./19.)
-		
-	##set the rows to equal to zero by setting the diagonal to equal the negative of the sum of off-diagonal values
-	np.fill_diagonal(q_matrix, 0) #set the diagonal to zero to be able to add rows together.
-	np.fill_diagonal(q_matrix, -q_matrix.sum(axis=0))
-	
-	##check that each row adds up to zero
-	if q_matrix.sum()-0 > 0.0000001:
-		print("Rows in the subsitution matrix do not add up to 0!")
-		sys.exit()
-		
-	return q_matrix
+    q_matrix=np.empty((20,20))
+    q_matrix.fill(1./19.)
+        
+    ##set the rows to equal to zero by setting the diagonal to equal the negative of the sum of off-diagonal values
+    np.fill_diagonal(q_matrix, 0) #set the diagonal to zero to be able to add rows together.
+    np.fill_diagonal(q_matrix, -q_matrix.sum(axis=0))
+    
+    ##check that each row adds up to zero
+    if q_matrix.sum()-0 > 0.0000001:
+        print("Rows in the subsitution matrix do not add up to 0!")
+        sys.exit()
+        
+    return q_matrix
 
 def main():
     '''
