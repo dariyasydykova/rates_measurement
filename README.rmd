@@ -11,11 +11,11 @@ D. K. Sydykova, C. O. Wilke (2018). Theory of measurement for site-specific evol
 ## Contents
 
 * `analytical_rates` contains rates that were calculated using analytical derivations. The following list is the files contained in this direcotry and their descriptions. 
-    * `all_sites_aa.csv` contians site-wise rates for every site in egg white lysozyme (PDB ID: 132L) calculated for different times (column `site` in `all_sites_aa.csv` directly corresponds to column `SITE` in `132L_A_foldx_ddG.txt`). These rates were calculated assuming that the true model is a mutation-selection model, and the inference model is Jukes-Cantor. This file was generated with the command 
+    * `all_sites_aa.csv` contians site-wise rates for every site in egg white lysozyme (PDB ID: 132L) calculated for different times (column `site` in `all_sites_aa.csv` directly corresponds to column `SITE` in `132L_A_foldx_ddG.txt`). These rates were calculated assuming that the true model is a mutation-selection model, and the inference model is Jukes-Cantor (equations 3-5). This file was generated with the command 
     
         `python analytical_rate_aa.py -m 125 -q q_matrix/amino_acid/ -o all_sites_aa.csv`.
         
-    * `ten_sites_aa.csv` contains site-wise rates for the first ten sites in egg white lysozyme (PDB ID: 132L) calculated for different times (column `site` in `ten_sites_aa.csv` directly corresponds to column `SITE` in `132L_A_foldx_ddG.txt`). These rates were calculated assuming that the true model is a mutation-selection model, and the inference model is Jukes-Cantor. This file was generated with the command 
+    * `ten_sites_aa.csv` contains site-wise rates for the first ten sites in egg white lysozyme (PDB ID: 132L) calculated for different times (column `site` in `ten_sites_aa.csv` directly corresponds to column `SITE` in `132L_A_foldx_ddG.txt`). These rates were calculated assuming that the true model is a mutation-selection model, and the inference model is Jukes-Cantor (equations 3-5). This file was generated with the command 
     
         `python analytical_rate_aa.py -m 10 -q q_matrix/amino_acid/ -o ten_sites_aa.csv`.
         
@@ -23,8 +23,11 @@ D. K. Sydykova, C. O. Wilke (2018). Theory of measurement for site-specific evol
     
         `python analytical_rate_aa_true_JC.py -m 10 -o ten_sites_aa_true_JC.csv`.
         
-    * `ten_sites_aa_QM.csv` - 
-    * `ten_sites_codon.csv` - 
+    * `ten_sites_aa_QM.csv` contains site-wise rates for when rate is measured with an arbitrary $Q_\text{M}$ matrix and for when rate is measured with a Jukes-Cantor matrix (equation 1).
+    * `ten_sites_codon.csv` contians site-wise rates for every site in egg white lysozyme (PDB ID: 132L) calculated for different times (column `site` in `all_sites_aa.csv` directly corresponds to column `SITE` in `132L_A_foldx_ddG.txt`). These rates were calculated assuming that the true model is a codon mutation-selection model, and the inference model is an amino acid Jukes-Cantor (equation 6 and equations 22S and 24S). This file was generated with the command 
+    
+        `python analytical_rate_codon.py -m 10 -q q_matrix/codon/ -o ten_sites_codon.csv`.
+
 * `inferred_rates`
 * `q_matrix` contains site-wise substitution matrices $Q$ used for simulating alignments. 
     * `amino_acid` contains amino acid substitution matrices
